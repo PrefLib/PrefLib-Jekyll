@@ -1025,65 +1025,39 @@ Dataset page
 Data search page
 =========== */
 
-.searchForm form {
+#filters {
 	width: 100%;
 }
 
-.searchGrid3 {
-	display: grid;
-	grid-template-columns: 2fr 1fr 2fr;
-	grid-column-gap: 2%;
-	width: 100%;
-}
-
-.searchGrid2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 2%;
-	width: 100%;
-}
-
-.searchCell {
+.filters-wrap {
 	display: flex;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.searchCell table {
-	border-collapse: collapse;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+.filter-wrap {
+	display: grid;
+	grid-template-columns: auto 15ch;
+	gap: 5px;
 }
 
-.searchCell table th {
-	color: var(--color-blue1);
+.filter-label{
+  justify-self: end;
 }
 
-.searchCell table td {
-	text-align: left;
-	padding: 0
+.filter-select-wrap {
+  justify-self: start;
 }
 
-.searchCell table .subHeader {
-	font-weight: bold;
-	padding: 10px 0px;
-}
-
-.slider-wrapper {
-	margin: 10px 30px;
-}
-
-.triValuedSelector {
+.tri-value-selector {
 	margin: 1px 10px;
 }
 
-.triValuedSelector input{
+.tri-value-selector input{
 	display: none;
 }
 
-.triValuedSelector label {
+.tri-value-selector label {
 	display: inline-block;
 	width: 1.5em;
 	height: 1.5em;
@@ -1093,17 +1067,17 @@ Data search page
 	cursor: pointer
 }
 
-.triValuedSelectorYes:checked + label {
+.tri-value-selector-yes:checked + label {
 	background: #33A70D;
 	color: #ffffff;
 }
 
-.triValuedSelectorIndef:checked + label {
+.tri-value-selector-indef:checked + label {
 	background: #f7c561;
 	color: #ffffff;
 }
 
-.triValuedSelectorNo:checked + label {
+.tri-value-selector-no:checked + label {
 	background: #d74444;
 	color: #ffffff;
 }

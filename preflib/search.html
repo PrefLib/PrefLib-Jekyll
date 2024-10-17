@@ -5,8 +5,256 @@ sitemap:
   priority: 1
 ---
 
-<section class="format-content">
+<section>
 
-<h1>Search</h1>
+<h1>Explore the Data Files</h1>
 
+{% assign all_data_types = site.data.datafiles | map: "data_type" | uniq %}
+{% assign all_modification_types = site.data.datafiles | map: "modification_type" | uniq %}
+
+<form id="filters">
+	<div class="filters-wrap">
+		<div class="filter-group" id="filter-data-type-group">
+			<h3>Type of Data</h3>
+			{% for data_type in all_data_types %}
+				<div class="filter-wrap">
+					<div class="filter-label"><a href="{{ 'format#' | append: data_type | relative_url }}">{{ data_type }}</a></div>
+					<div class="filter-select-wrap">
+						{% assign selector_id = "selector-" | append: data_type %}
+						{% include tri_value_selector.html id=selector_id %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="filter-group" id="filter-modification-type-group">
+			<h3>Modification Type</h3>
+			{% for modification_type in all_modification_types %}
+				<div class="filter-wrap">
+					<div class="filter-label">
+						<a href="{{ 'format#modification' | relative_url }}">{{ modification_type }}</a>
+					</div>
+					<div class="filter-select-wrap">
+						{% assign selector_id = "selector-" | append: modification_type %}
+						{% include tri_value_selector.html id=selector_id %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="filter-group" id="filter-structure-group">
+			<h3>Structural Properties</h3>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Approval/Dichotomous preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-approval" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Single-peaked preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-singlepeaked" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Single-peaked on a circle preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-singlepeaked-circle" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Single-peaked on a tree preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-singlepeaked-tree" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Single-crossing preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-singlecrossing" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>1-Euclidean preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-one-euclidean" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Euclidean preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-euclidean" %}
+				</div>
+			</div>
+		</div>
+	</div>
+    <button id="applyFilters">Apply Filters</button>
+</form>
+
+<div class="pagination_wrapper" id="paginator-top">
+    <div class="pagination"></div>
+</div>
+
+<div id="file-list"></div>
+
+<div class="pagination_wrapper" id="paginator-bottom">
+    <div class="pagination"></div>
+</div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+	{% include tri_value_selector_uniq_propagate.js values=all_data_types %}
+	{% include tri_value_selector_uniq_propagate.js values=all_modification_types %}
+
+	const itemsPerPage = 50;  // Number of papers per page
+    const fileList = document.getElementById('file-list');
+    const paginatorTop = document.querySelector('#paginator-top .pagination');
+    const paginatorBottom = document.querySelector('#paginator-bottom .pagination');
+
+    // Pull in data from Jekyll
+    const allFiles = {{ site.data.datafiles | jsonify }};  // Ensure this line is present
+    let filteredFiles = allFiles;
+
+    let currentPage = 1;
+
+    // Function to apply filters
+    function applyFilters() {
+        const numVotersLower = parseInt(document.getElementById('numVotersLower').value) || 0;
+        const numVotersUpper = parseInt(document.getElementById('numVotersUpper').value) || Infinity;
+        const numAlternativesLower = parseInt(document.getElementById('numAlternativesLower').value) || 0;
+        const numAlternativesUpper = parseInt(document.getElementById('numAlternativesUpper').value) || Infinity;
+
+        const modificationTypes = Array.from(document.getElementById('modificationType').selectedOptions).map(option => option.value);
+        const dataTypes = Array.from(document.getElementById('dataType').selectedOptions).map(option => option.value);
+        const isApprovalValue = document.getElementById('isApproval').value;
+
+        // Filter papers based on criteria
+        filteredFiles = allFiles.filter(paper => {
+            const numVoters = parseInt(paper.num_voters); // Use paper.num_voters
+            const numAlternatives = parseInt(paper.num_alternatives); // Use paper.num_alternatives
+            const modificationType = paper.modification_type; // Use paper.modification_type
+            const dataType = paper.data_type; // Use paper.data_type
+            const isApproval = paper.is_approval; // Use paper.is_approval
+
+            const isNumVotersValid = numVoters >= numVotersLower && numVoters <= numVotersUpper;
+            const isNumAlternativesValid = numAlternatives >= numAlternativesLower && numAlternatives <= numAlternativesUpper;
+            const isModificationTypeValid = modificationTypes.length === 0 || modificationTypes.includes(modificationType);
+            const isDataTypeValid = dataTypes.length === 0 || dataTypes.includes(dataType);
+            const isApprovalValid =
+                (isApprovalValue === 'true' && isApproval) ||
+                (isApprovalValue === 'null') ||
+                (isApprovalValue === 'false' && !isApproval);
+
+            return isNumVotersValid && isNumAlternativesValid && isModificationTypeValid && isDataTypeValid && isApprovalValid;
+        });
+
+        currentPage = 1; // Reset to the first page after filtering
+        renderFiles(currentPage);
+        renderPagination(paginatorTop);
+        renderPagination(paginatorBottom);
+    }
+
+    function renderFiles(page) {
+        fileList.innerHTML = '';
+        let startIndex = (page - 1) * itemsPerPage;
+        let endIndex = startIndex + itemsPerPage;
+
+        let filesToShow = filteredFiles.slice(startIndex, endIndex);
+
+        filesToShow.forEach(function(file) {
+            fileList.innerHTML += `
+                <div class="filter-res-file">
+					${file.dataset} - ${file.name} <a href="${file.url}" class="download-button" target="_blank" download>Download</a>
+                </div>`;
+        });
+    }
+
+    function renderPagination(paginator) {
+    paginator.innerHTML = '';
+
+    // Calculate total pages for filtered results
+    const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+
+    if (currentPage > 1) {
+        paginator.innerHTML += `<a href="#" data-page="${currentPage - 1}">«</a>`;
+    } else {
+        paginator.innerHTML += `<a>«</a>`;
+    }
+
+    if (totalPages <= 10) {
+        for (let i = 1; i <= totalPages; i++) {
+            if (i === currentPage) {
+                paginator.innerHTML += `<a class="active" href="#" data-page="${i}">${i}</a>`;
+            } else {
+                paginator.innerHTML += `<a href="#" data-page="${i}">${i}</a>`;
+            }
+        }
+    } else {
+		paginator.innerHTML += `<a href="#" data-page="1" ${currentPage === 1 ? 'class="active"' : ''}>1</a>`;
+		paginator.innerHTML += `<a href="#" data-page="2" ${currentPage === 2 ? 'class="active"' : ''}>2</a>`;
+		if (currentPage > 4) {
+			paginator.innerHTML += `<a>...</a>`;
+		}
+		for (let i = Math.max(3, currentPage - 2); i <= Math.min(totalPages - 2, currentPage + 2); i++) {
+			if (i === currentPage) {
+				paginator.innerHTML += `<a class="active" href="#" data-page="${i}">${i}</a>`;
+			} else {
+				paginator.innerHTML += `<a href="#" data-page="${i}">${i}</a>`;
+			}
+		}
+		if (currentPage < totalPages - 2) {
+			paginator.innerHTML += `<a>...</a>`;
+		}
+		if (totalPages > 2) {
+			paginator.innerHTML += `<a href="#" data-page="${totalPages - 1}" ${currentPage === totalPages - 1 ? 'class="active"' : ''}>${totalPages - 1}</a>`;
+		}
+		if (totalPages > 1) {
+			paginator.innerHTML += `<a href="#" data-page="${totalPages}" ${currentPage === totalPages ? 'class="active"' : ''}>${totalPages}</a>`;
+		}
+	}
+
+    if (currentPage < totalPages) {
+        paginator.innerHTML += `<a href="#" data-page="${currentPage + 1}">»</a>`;
+    } else {
+        paginator.innerHTML += `<span>»</span>`;
+    }
+
+    // Add event listeners for page links
+    const pageLinks = paginator.querySelectorAll('a[data-page]');
+    pageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            currentPage = parseInt(this.getAttribute('data-page'));
+            renderFiles(currentPage);
+            renderPagination(paginatorTop);
+            renderPagination(paginatorBottom);
+        });
+    });
+}
+
+
+    // Initial render
+    renderFiles(currentPage);
+    renderPagination(paginatorTop);
+    renderPagination(paginatorBottom);
+
+    // Add event listener for filters
+    document.getElementById('applyFilters').addEventListener('click', applyFilters);
+});
+</script>

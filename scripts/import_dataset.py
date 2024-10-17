@@ -5,6 +5,7 @@ from zipfile import ZipFile
 import yaml
 from preflibtools.instances import get_parsed_instance
 from preflibtools.instances.dataset import read_info_file
+from preflibtools.properties.basic import is_approval
 
 zip_files = sorted([os.path.join("zip", f) for f in os.listdir("zip") if f.endswith(".zip")])
 # zip_files = ["zip/00001 - irish.zip", "zip/00002 - debian.zip", "zip/00003 - nasa.zip"]
@@ -49,9 +50,12 @@ for zip_file in zip_files:
             instance = get_parsed_instance(os.path.join(tmp_dir_path, file_name))
             num_voters = instance.num_voters
             num_alternatives = instance.num_alternatives
+            approval_instance = is_approval(instance) if instance.data_type in ["toc", "soc", "toi", "soi",
+                                                            "cat"] else None
         else:
             num_voters = 0
             num_alternatives = 0
+            approval_instance = None
         datafile_yml[file_name] = {
             "name": file_name,
             "dataset": dataset_info["abb"],
@@ -63,9 +67,16 @@ for zip_file in zip_files:
             "description": file_info["description"],
             "publication_date": file_info["publication_date"],
             "size": os.path.getsize(os.path.join(tmp_dir_path, file_name)),
+            "url": f"https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/{dataset_info['series']} - {dataset_info['abb']}/{file_name}",
             "num_voters": num_voters,
             "num_alternatives": num_alternatives,
-            "url": f"https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/{dataset_info['series']} - {dataset_info['abb']}/{file_name}"
+            "is_approval": approval_instance,
+            "is_single_peaked": None,
+            "is_single_peaked_circle": None,
+            "is_single_peaked_tree": None,
+            "is_single_crossing": None,
+            "is_1euclidean": None,
+            "is_euclidean": None,
         }
     files_to_remove = []
     for file_name, file_dict in datafile_yml.items():

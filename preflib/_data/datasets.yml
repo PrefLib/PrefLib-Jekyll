@@ -118,8 +118,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00005
     - burlington.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Skate Data
   abbreviation: skate
   series_number: '00006'
@@ -143,8 +143,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00006
     - skate.zip
   data_types:
-  - soc
   - toc
+  - soc
 - name: Electoral Reform Society (ERS) Data
   abbreviation: ers
   series_number: '00007'
@@ -289,9 +289,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00011
     - web.zip
   data_types:
-  - soc
   - toc
   - soi
+  - soc
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -375,10 +375,10 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00014
     - sushi.zip
   data_types:
-  - toi
-  - soc
   - toc
+  - toi
   - soi
+  - soc
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -437,9 +437,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00016
     - aspen.zip
   data_types:
-  - toi
   - toc
   - dat
+  - toi
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -462,9 +462,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00017
     - berkley.zip
   data_types:
-  - toi
   - toc
   - dat
+  - toi
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -515,9 +515,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00019
     - oakland.zip
   data_types:
-  - toi
   - toc
   - dat
+  - toi
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -541,9 +541,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00020
     - pierce.zip
   data_types:
-  - toi
   - toc
   - dat
+  - toi
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -568,9 +568,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00021
     - sf.zip
   data_types:
-  - toi
   - toc
   - dat
+  - toi
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -594,9 +594,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00022
     - sl.zip
   data_types:
-  - toi
   - toc
   - dat
+  - toi
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -619,8 +619,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00023
     - takomapark.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Mechanical Turk Dots
   abbreviation: dots
   series_number: '00024'
@@ -865,10 +865,10 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00032
     - education.zip
   data_types:
-  - toi
-  - soc
   - toc
+  - toi
   - soi
+  - soc
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -903,8 +903,8 @@
     - poster.zip
   data_types:
   - toc
-  - cat
   - dat
+  - cat
 - name: Cities Survey
   abbreviation: cities
   series_number: '00034'
@@ -975,8 +975,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00035
     - breakfast.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -1020,8 +1020,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00036
     - kidney.zip
   data_types:
-  - wmd
   - dat
+  - wmd
 - name: AAMAS Bidding Data
   abbreviation: aamas
   series_number: '00037'
@@ -1053,8 +1053,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00037
     - aamas.zip
   data_types:
-  - csv
   - cat
+  - csv
 - name: Project Bidding Data
   abbreviation: project
   series_number: 00038
@@ -1086,8 +1086,8 @@
     - project.zip
   data_types:
   - toc
-  - soi
   - dat
+  - soi
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
   series_number: 00039
@@ -1168,8 +1168,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00041
     - boardgames.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Boxing
   abbreviation: boxing
   series_number: '00042'
@@ -1199,8 +1199,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00042
     - boxing.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Cycling Races
   abbreviation: cycling
   series_number: '00043'
@@ -1235,8 +1235,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00043
     - cycling.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Table Tennis Ranking
   abbreviation: tabletennis
   series_number: '00044'
@@ -1265,8 +1265,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00044
     - tabletennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Tennis Ranking
   abbreviation: tennis
   series_number: '00045'
@@ -1294,8 +1294,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00045
     - tennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Global University Ranking
   abbreviation: university
   series_number: '00046'
@@ -1324,8 +1324,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00046
     - university.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Daily Chart
   abbreviation: spotifyday
   series_number: '00047'
@@ -1357,8 +1357,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00047
     - spotifyday.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Countries Chart
   abbreviation: spotifycountry
   series_number: 00048
@@ -1392,8 +1392,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00048
     - spotifycountry.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Multilaps Competitions
   abbreviation: mylaps
   series_number: 00049
@@ -1421,8 +1421,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00049
     - mylaps.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Movehub City Ranking
   abbreviation: movehub
   series_number: '00050'
@@ -1479,8 +1479,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00051
     - countries.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Seasons
   abbreviation: f1seasons
   series_number: '00052'
@@ -1508,8 +1508,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00052
     - f1seasons.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Races
   abbreviation: f1races
   series_number: '00053'
@@ -1539,8 +1539,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00053
     - f1races.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Weeks Power Ranking
   abbreviation: weeksport
   series_number: '00054'
@@ -1573,8 +1573,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00054
     - weeksport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Combined Power Ranking
   abbreviation: combinedsport
   series_number: '00055'
@@ -1606,8 +1606,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00055
     - combinedsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Seasons Power Ranking
   abbreviation: seasonsport
   series_number: '00056'
@@ -1639,8 +1639,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00056
     - seasonsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Parliamentary Elections
   abbreviation: parliaments
   series_number: '00057'
@@ -1812,5 +1812,5 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/00062
     - orderaltexpe.zip
   data_types:
-  - soc
   - csv
+  - soc
