@@ -1032,17 +1032,23 @@ Data search page
 .filters-wrap {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .filter-wrap {
 	display: grid;
 	grid-template-columns: auto 15ch;
 	gap: 5px;
+    align-items:center;
 }
 
-.filter-label{
-  justify-self: end;
+.filter-group > h3 {
+    text-align: center;
+}
+
+.filter-label {
+    justify-self: end;
+    color: #607fb9;
 }
 
 .filter-select-wrap {
@@ -1082,36 +1088,54 @@ Data search page
 	color: #ffffff;
 }
 
-.searchResults table {
-	border-collapse: collapse;
+.range-selector-wrap {
+    display: flex;
+    flex-direction: row;
 }
 
-.searchResults table tr {
-	border: none;
+.range-selector-middle-span {
+    font-weight: bold;
+    padding: 0 5px;
 }
 
-.searchResults table tr:nth-child(even) {
-	background: var(--color-blue3);
+.range-selector-input {
+    width: 8ch;
 }
 
-.searchResults table tr td:nth-child(n + 2) {
-	border-left: 1px #ccc solid;
+.range-selector-input::-webkit-outer-spin-button,
+.range-selector-input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.searchResults table th {
-	border-bottom: 1px #ccc solid;
+.range-selector-input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
-th.headerRotate {
-	height: 130px;
-	white-space: nowrap;
+#search-result {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 2fr;
 }
 
-th.headerRotate > div {
-	transform: 
-		translate(10px, 48px)
-		rotate(315deg);
-	width: 30px;
+#search-result span {
+    height: 3.5ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-result .header {
+    font-weight: bold;
+}
+
+#search-result .even-line {
+    background-color: #fafbff;
+
+}
+
+#search-result .odd-line {
+    background-color: var(--color-blue3);
 }
 
 span.res-none {

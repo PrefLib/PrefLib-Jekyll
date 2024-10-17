@@ -50,11 +50,17 @@ for zip_file in zip_files:
             instance = get_parsed_instance(os.path.join(tmp_dir_path, file_name))
             num_voters = instance.num_voters
             num_alternatives = instance.num_alternatives
-            approval_instance = is_approval(instance) if instance.data_type in ["toc", "soc", "toi", "soi",
-                                                            "cat"] else None
+            approval_instance = is_approval(instance) if instance.data_type in ["toc", "soc", "toi", "soi", "cat"] else None
+            if instance.data_type in ["soc", "soi", "toc", "toi"]:
+                num_unique_preferences = instance.num_unique_orders
+            elif instance.data_type == "cat":
+                num_unique_preferences = instance.num_unique_preferences
+            else:
+                num_unique_preferences = 0
         else:
             num_voters = 0
             num_alternatives = 0
+            num_unique_preferences = 0
             approval_instance = None
         datafile_yml[file_name] = {
             "name": file_name,
@@ -70,6 +76,7 @@ for zip_file in zip_files:
             "url": f"https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/{dataset_info['series']} - {dataset_info['abb']}/{file_name}",
             "num_voters": num_voters,
             "num_alternatives": num_alternatives,
+            "num_unique_preferences": num_unique_preferences,
             "is_approval": approval_instance,
             "is_single_peaked": None,
             "is_single_peaked_circle": None,
