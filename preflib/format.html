@@ -607,14 +607,4 @@ sitemap:
         2013.
 </p>
 
-{% for cat in site.data.datafile_metadata %}
-
-	<h3>{{ cat.0|title }}</h3>
-
-    <ul>
-        {% for metadata in cat.1 %}
-            <li id="metadata-{{ metadata.short_name }}"><em>{{ metadata.name|title }}</em>: {{ metadata.description|safe }}</li>
-        {% endfor %}
-    </ul>
-
-{% endfor %}
+</section>
