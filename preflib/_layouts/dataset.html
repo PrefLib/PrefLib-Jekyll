@@ -15,12 +15,12 @@ sitemap:
 	<div>
 		<p>{{ page.dataset.description }}</p>
 
-		{% if page.dataset.required_citations %}
-	    		<p><span class="bold">Required citations:</span> {{ page.dataset.required_citations }} </p>
+		{% if page.dataset.required_citations != "" %}
+            <p><span class="bold">Required citations:</span> {{ page.dataset.required_citations }} </p>
 		{% endif %}
 
-		{% if page.dataset.selected_studies %}
-		    	<p><span class="bold">Selected studies:</span> {{ page.dataset.selected_studies }} </p>
+		{% if page.dataset.selected_studies != "" %}
+            <p><span class="bold">Selected studies:</span> {{ page.dataset.selected_studies }} </p>
 		{% endif %}
 
 		<p class="center" style="margin-top: 30px;"><a href="{{ page.dataset.zip_file_url }}" class="download-button"  target="_blank" download>Download the dataset [zip, {{ page.dataset.zip_file_size | filesize_format }}]</a></p>
