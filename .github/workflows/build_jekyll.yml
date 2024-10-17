@@ -41,7 +41,7 @@ jobs:
       - name: Build with Jekyll
         run: |
           cd preflib
-          bundle exec jekyll build
+          bundle exec jekyll build --baseurl "/PrefLib-Jekyll/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
