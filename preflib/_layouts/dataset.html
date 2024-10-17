@@ -23,7 +23,7 @@ sitemap:
 		    	<p><span class="bold">Selected studies:</span> {{ page.dataset.selected_studies }} </p>
 		{% endif %}
 
-		<p class="center" style="margin-top: 30px;"><a href="{{ 'assets/zip/dataset/' | append: page.dataset.series_number | append: ' - ' | append: page.dataset.abbreviation | append: '.zip' | relative_url }}" class="download-button"  target="_blank" download>Download the dataset [zip, {{ page.dataset.zip_file_size | filesize_format }}]</a></p>
+		<p class="center" style="margin-top: 30px;"><a href="{{ page.dataset.zip_file_url }}" class="download-button"  target="_blank" download>Download the dataset [zip, {{ page.dataset.zip_file_size | filesize_format }}]</a></p>
 	</div>
 
 	<div class="side-by-side-right">
@@ -82,8 +82,9 @@ sitemap:
                         </p>
                     {% endif %}
 
-                    {% if file.related_files %}
-                        <p>The following files are related to this file:</p>
+                    {% assign num_related_files = file.related_files | size %}
+                    {% if num_related_files > 0 %}
+                        <p>The following file{% if num_related_files > 1 %}s are{% else %} is{% endif %} related to this file:</p>
                         <table class="data-file-related-files-table">
                             <tr>
                                 <th>File name</th>

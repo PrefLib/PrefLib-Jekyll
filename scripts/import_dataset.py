@@ -9,10 +9,8 @@ from preflibtools.instances.dataset import read_info_file
 zip_files = sorted([os.path.join("zip", f) for f in os.listdir("zip") if f.endswith(".zip")])
 # zip_files = ["zip/00001 - irish.zip", "zip/00002 - debian.zip", "zip/00003 - nasa.zip"]
 
-dataset_file_path = "datasets.yml"
-datafile_file_path = "datafiles.yml"
-
-to_production = True
+dataset_file_path = os.path.join("..", "preflib", "_data", "datasets.yml")
+datafile_file_path = os.path.join("..", "preflib", "_data", "datafiles.yml")
 
 with open(dataset_file_path, "w", encoding="utf-8") as dataset_file:
     pass
@@ -38,6 +36,7 @@ for zip_file in zip_files:
         "selected_studies": dataset_info["studies"],
         "num_files": len(dataset_info["files"]),
         "zip_file_size": os.path.getsize(zip_file),
+        "zip_file_url": f"https://github.com/PrefLib/PrefLib-Data/raw/refs/heads/main/zip/dataset/{dataset_info['series']} - {dataset_info['abb']}.zip",
         "data_types": list(set(f["file_name"][-3:] for f in dataset_info["files"].values()))
     }
     with open(dataset_file_path, "a", encoding="utf-8") as dataset_file:
@@ -68,7 +67,8 @@ for zip_file in zip_files:
             "num_alternatives": num_alternatives,
             "url": f"https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/{dataset_info['series']} - {dataset_info['abb']}/{file_name}"
         }
-    for file_dict in datafile_yml.values():
+    files_to_remove = []
+    for file_name, file_dict in datafile_yml.items():
         if file_dict["relates_to"]:
             datafile_yml[file_dict["relates_to"]]["related_files"].append({
                 "name": file_dict["name"],
@@ -76,6 +76,9 @@ for zip_file in zip_files:
                 "url": file_dict["url"],
                 "size": file_dict["size"]
                 })
+            files_to_remove.append(file_name)
+    for f in files_to_remove:
+        del datafile_yml[f]
 
     with open(datafile_file_path, "a", encoding="utf-8") as datafile_file:
             yaml.dump(list(datafile_yml.values()), datafile_file, default_flow_style=False, sort_keys=False, encoding='utf-8', allow_unicode=True)
