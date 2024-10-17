@@ -1,0 +1,795 @@
+- name: SPFJL2016_0
+  title: 'Finding a collective set of items: From proportional multirepresentation
+    to group recommendation'
+  authors: P Skowron, P Faliszewski, J Lang
+  publisher: Artificial Intelligence
+  year: '2016'
+  url: https://www.sciencedirect.com/science/article/pii/S0004370216301096
+- name: ASGJGea2014_0
+  title: Computational aspects of multi-winner approval voting
+  authors: H Aziz, S Gaspers, J Gudmundsson et al.
+  publisher: Workshops at the AAAI Conference on Artificial Intelligence
+  year: '2014'
+  url: https://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/viewPaper/8760
+- name: SPFAS2015_0
+  title: 'Achieving fully proportional representation: Approximability results'
+  authors: P Skowron, P Faliszewski, A Slinko
+  publisher: Artificial Intelligence
+  year: '2015'
+  url: https://www.sciencedirect.com/science/article/pii/S0004370215000132
+- name: AHASGTW2015_0
+  title: 'Online fair division: analysing a food bank problem'
+  authors: MD Aleksandrov, H Aziz, S Gaspers, T Walsh
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2015'
+  url: https://www.aaai.org/ocs/index.php/Proceedings of the International Joint Conference
+    on Artificial Intelligence/Proceedings of the International Joint Conference on
+    Artificial Intelligence15/paper/viewPaper/10922
+- name: CSNAPNS2017_0
+  title: Subset selection via implicit utilitarian voting
+  authors: I Caragiannis, S Nath, AD Procaccia, N Shah
+  publisher: Journal of Artificial Intelligence Research
+  year: '2017'
+  url: http://www.jair.org/papers/paper5282.html
+- name: DDMBPea2016_0
+  title: Position-indexed formulations for kidney exchange
+  authors: JP Dickerson, DF Manlove, B Plaut et al.
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2016'
+  url: https://dl.acm.org/doi/abs/10.1145/2940716.2940759
+- name: XZZTFYLea2017_0
+  title: A semantic loss function for deep learning with symbolic knowledge
+  authors: J Xu, Z Zhang, T Friedman, Y Liang et al.
+  publisher: arXiv preprint
+  year: '2017'
+  url: https://arxiv.org/abs/1711.11157
+- name: GJLNMPP2014_0
+  title: Voting with rank dependent scoring rules
+  authors: J Goldsmith, J Lang, N Mattei, P Perny
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2014'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/viewPaper/8549
+- name: L2014_0
+  title: Incomplete preferences in single-peaked electorates
+  authors: M Lackner
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2014'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/viewPaper/8507
+- name: AOLNMJRea2016_0
+  title: 'Strategyproof peer selection: Mechanisms, analyses, and experiments'
+  authors: H Aziz, O Lev, N Mattei, JS Rosenschein et al.
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2016'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12205
+- name: BPFRNea2015_0
+  title: 'Elections with few candidates: Prices, weights, and covering problems'
+  authors: R Bredereck, P Faliszewski, R Niedermeier et al.
+  publisher: Proceedings of the International Conference on Algorithmic Decision Theory
+  year: '2015'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-23114-3_25
+- name: SMLMBDPea2016_0
+  title: Proportional rankings
+  authors: P Skowron, M Lackner, M Brill, D Peters et al.
+  publisher: arXiv preprint
+  year: '2016'
+  url: https://arxiv.org/abs/1612.01434
+- name: MJGAKMM2015_0
+  title: On the complexity of bribery and manipulation in tournaments with uncertain
+    information
+  authors: N Mattei, J Goldsmith, A Klapper, M Mundhenk
+  publisher: Journal of Applied Logic
+  year: '2015'
+  url: https://www.sciencedirect.com/science/article/pii/S1570868315000439
+- name: AMCJGNMea2015_0
+  title: 'Beyond theory and data in preference modeling: Bringing humans into the
+    loop'
+  authors: TE Allen, M Chen, J Goldsmith, N Mattei et al.
+  publisher: Proceedings of the International Conference on Algorithmic Decision Theory
+  year: '2015'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-23114-3_1
+- name: APBSGRDHNMea2020_0
+  title: Stable matching with uncertain linear preferences
+  authors: "H Aziz, P Bir\xF3, S Gaspers, R De Haan, N Mattei et al."
+  publisher: Algorithmica
+  year: '2020'
+  url: https://link.springer.com/article/10.1007/s00453-019-00650-0
+- name: MPF2017_0
+  title: How hard is control in single-crossing elections?
+  authors: K Magiera, P Faliszewski
+  publisher: Autonomous Agents and Multi-Agent Systems
+  year: '2017'
+  url: https://link.springer.com/article/10.1007/s10458-016-9339-3
+- name: BHS2016_0
+  title: On the discriminative power of tournament solutions
+  authors: F Brandt, HG Seedig
+  publisher: Operations Research Proceedings 2014
+  year: '2016'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-28697-6_8
+- name: CSMRMEMea2016_0
+  title: Proxy voting for better outcomes
+  authors: G Cohensius, S Manor, R Meir, E Meirom et al.
+  publisher: arXiv preprint
+  year: '2016'
+  url: https://arxiv.org/abs/1611.08308
+- name: TRMYG2015_0
+  title: A study of human behavior in online voting
+  authors: M Tal, R Meir, Y Gal
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2015'
+  url: http://votelib-hdm.ise.bgu.ac.il/package/fp244-tal.pdf
+- name: KPF2019_0
+  title: Algorithms for destructive shift bribery
+  authors: A Kaczmarczyk, P Faliszewski
+  publisher: Autonomous Agents and Multi-Agent Systems
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s10458-019-09403-3
+- name: AJGHJNMea2016_0
+  title: Generating CP-nets uniformly at random
+  authors: TE Allen, J Goldsmith, HE Justice, N Mattei et al.
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2016'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12439
+- name: BPFAKea2017_0
+  title: Robustness among multiwinner voting rules
+  authors: R Bredereck, P Faliszewski, A Kaczmarczyk et al.
+  publisher: Proceedings of the International Symposium on Algorithmic Game Theory
+  year: '2017'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-66700-3_7
+- name: DGMCIRS2017_0
+  title: A differential evolution algorithm for finding the median ranking under the
+    Kemeny axiomatic approach
+  authors: A D'Ambrosio, G Mazzeo, C Iorio, R Siciliano
+  publisher: Computers & Operations Research
+  year: '2017'
+  url: https://www.sciencedirect.com/science/article/pii/S0305054817300230
+- name: EPFMLea2015_0
+  title: The complexity of recognizing incomplete single-crossing preferences
+  authors: E Elkind, P Faliszewski, M Lackner et al.
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2015'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewPaper/9881
+- name: LNMFRKV2018_0
+  title: Preferences and ethical principles in decision making
+  authors: A Loreggia, N Mattei, F Rossi, KB Venable
+  publisher: AAAI Spring Symposium
+  year: '2018'
+  url: https://www.aaai.org/ocs/index.php/SSS/SSS18/paper/viewPaper/17550
+- name: LNMRNTW2018_0
+  title: 'The conference paper assignment problem: Using order weighted averages to
+    assign indivisible goods'
+  authors: JW Lian, N Mattei, R Noble, T Walsh
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2018'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/17396
+- name: ASGSMNMea2015_0
+  title: Equilibria under the probabilistic serial rule
+  authors: H Aziz, S Gaspers, S Mackenzie, N Mattei et al.
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2015'
+  url: https://www.aaai.org/ocs/index.php/Proceedings of the International Joint Conference
+    on Artificial Intelligence/Proceedings of the International Joint Conference on
+    Artificial Intelligence15/paper/viewPaper/11154
+- name: S2015_0
+  title: What do we elect committees for? A voting committee model for multi-winner
+    rules
+  authors: PK Skowron
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2015'
+  url: https://www.aaai.org/ocs/index.php/Proceedings of the International Joint Conference
+    on Artificial Intelligence/Proceedings of the International Joint Conference on
+    Artificial Intelligence15/paper/viewPaper/10679
+- name: FASKSNT2018_0
+  title: Achieving fully proportional representation by clustering voters
+  authors: P Faliszewski, A Slinko, K Stahl, N Talmon
+  publisher: Journal of Heuristics
+  year: '2018'
+  url: https://link.springer.com/article/10.1007/s10732-018-9376-y
+- name: MNNTW2013_0
+  title: How hard is it to control an election by breaking ties?
+  authors: N Mattei, N Narodytska, T Walsh
+  publisher: arXiv preprint
+  year: '2013'
+  url: https://arxiv.org/abs/1304.6174
+- name: AJCAFSMea2015_0
+  title: Egalitarianism of random assignment mechanisms
+  authors: H Aziz, J Chen, A Filos-Ratsikas, S Mackenzie et al.
+  publisher: arXiv preprint
+  year: '2015'
+  url: https://arxiv.org/abs/1507.06827
+- name: GALFRVS2014_0
+  title: From Sentiment Analysis to Preference Aggregation.
+  authors: U Grandi, A Loreggia, F Rossi, VA Saraswat
+  publisher: ISAIM
+  year: '2014'
+  url: https://www.researchgate.net/profile/Andrea_Loreggia/publication/276277726_From_sentiment_analysis_to_preference_aggregation/links/5554fda608aeaaff3bf4579c/From-sentiment-analysis-to-preference-aggregation.pdf
+- name: F2014_0
+  title: Single-peaked consistency for weak orders is easy
+  authors: Z Fitzsimmons
+  publisher: arXiv preprint
+  year: '2014'
+  url: https://arxiv.org/abs/1406.4829
+- name: AJGAR2017_0
+  title: Utopia in the solution of the bucket order problem
+  authors: "JA Aledo, JA G\xE1mez, A Rosete"
+  publisher: Decision Support Systems
+  year: '2017'
+  url: https://www.sciencedirect.com/science/article/pii/S0167923617300465
+- name: AJGHJNMea2017_0
+  title: Uniform random generation and dominance testing for CP-nets
+  authors: TE Allen, J Goldsmith, HE Justice, N Mattei et al.
+  publisher: Journal of Artificial Intelligence Research
+  year: '2017'
+  url: http://www.jair.org/papers/paper5455.html
+- name: BGCCG2015_0
+  title: 'Pnyx: a powerful and user-friendly tool for preference aggregation'
+  authors: F Brandt, G Chabin, C Geist
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2015'
+  url: http://www.ifaamas.org/Proceedings/aamas2015/aamas/p1915.pdf
+- name: CXCGKea2019_0
+  title: Optimizing positional scoring rules for rank aggregation
+  authors: I Caragiannis, X Chatzigeorgiou, GA Krimpas et al.
+  publisher: Artificial Intelligence
+  year: '2019'
+  url: https://www.sciencedirect.com/science/article/pii/S0004370218306672
+- name: MASTW2017_0
+  title: Mechanisms for Online Organ Matching.
+  authors: N Mattei, A Saffidine, T Walsh
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2017'
+  url: http://www.nickmattei.net/docs/kidney.pdf
+- name: CAP2015_0
+  title: 'Democratix: A declarative approach to winner determination'
+  authors: G Charwat, A Pfandler
+  publisher: Proceedings of the International Conference on Algorithmic Decision Theory
+  year: '2015'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-23114-3_16
+- name: FEH2015_0
+  title: Complexity of manipulative actions when voting with ties
+  authors: Z Fitzsimmons, E Hemaspaandra
+  publisher: Proceedings of the International Conference on Algorithmic Decision Theory
+  year: '2015'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-23114-3_7
+- name: AJGNM2014_0
+  title: Counting, ranking, and randomly generating CP-nets
+  authors: TE Allen, J Goldsmith, N Mattei
+  publisher: Workshops at the AAAI Conference on Artificial Intelligence
+  year: '2014'
+  url: https://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/viewPaper/8840
+- name: HUE2014_0
+  title: Measuring Diversity of Preferences in a Group.
+  authors: V Hashemi, U Endriss
+  publisher: Proceedings of the European Conference on Artificial Intelligence
+  year: '2014'
+  url: https://books.google.com/books?hl=en&lr=&id=Kp3YBAAAQBAJ&oi=fnd&pg=PA423&ots=krVzBbWMpS&sig=zLEccb9A2jsL4SpNz6rIR5BOp8o
+- name: MYBYZ2017_0
+  title: How to form winning coalitions in mixed human-computer settings
+  authors: M Mash, Y Bachrach, Y Zick
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2017'
+  url: https://www.ijcai.org/Proceedings/2017/0066.pdf
+- name: MTW2017_0
+  title: 'APreflib. ORG Retrospective: Lessons Learned and New Directions'
+  authors: N Mattei, T Walsh
+  publisher: Trends in Computational Social Choice
+  year: '2017'
+  url: https://books.google.com/books?hl=en&lr=&id=0qY8DwAAQBAJ&oi=fnd&pg=PA289&ots=s2XhiihhA-&sig=ciJOZdL-hPPBZiqdpRxxzki6lTw
+- name: Y2014_0
+  title: Election attacks with few candidates
+  authors: Y Yang
+  publisher: arXiv preprint
+  year: '2014'
+  url: https://arxiv.org/abs/1405.6562
+- name: ACSJG2017_0
+  title: Learning tree-structured CP-nets with local search
+  authors: TE Allen, C Siler, J Goldsmith
+  publisher: Proceedings of the International Flairs Conference
+  year: '2017'
+  url: https://www.aaai.org/ocs/index.php/FLAIRS/FLAIRS17/paper/viewPaper/15467
+- name: CCGUE2016_0
+  title: Judgment aggregation under issue dependencies
+  authors: M Costantini, C Groenland, U Endriss
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2016'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/11836
+- name: BCGMS2016_0
+  title: Analyzing the practical relevance of voting paradoxes via Ehrhart theory,
+    computer simulations, and empirical data
+  authors: F Brandt, C Geist, M Strobel
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2016'
+  url: http://dss.in.tum.de/files/brandt-research/clp.pdf
+- name: AJGAR2018_0
+  title: 'Approaching rank aggregation problems by using evolution strategies: the
+    case of the optimal bucket order problem'
+  authors: "JA Aledo, JA G\xE1mez, A Rosete"
+  publisher: European Journal of Operational Research
+  year: '2018'
+  url: https://www.sciencedirect.com/science/article/pii/S0377221718303345
+- name: DKLRC2015_0
+  title: Conventional machine learning for social choice
+  authors: JA Doucette, K Larson, R Cohen
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2015'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewPaper/9340
+- name: PNS2016_0
+  title: Optimal aggregation of uncertain preferences
+  authors: AD Procaccia, N Shah
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2016'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/11821
+- name: W2015_0
+  title: Generating single peaked votes
+  authors: T Walsh
+  publisher: arXiv preprint
+  year: '2015'
+  url: https://arxiv.org/pdf/1503.02766
+- name: RNM2019_0
+  title: Building ethically bounded AI
+  authors: F Rossi, N Mattei
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2019'
+  url: https://www.aaai.org/ojs/index.php/AAAI/article/view/5051
+- name: MPPKSea2017_0
+  title: On maximum weight clique algorithms, and how they are evaluated
+  authors: C McCreesh, P Prosser, K Simpson et al.
+  publisher: Proceedings of the International Conference on Principles and Practice
+    of Constraint Programming
+  year: '2017'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-66158-2_14
+- name: BJHMS2019_0
+  title: Exploring the no-show paradox for Condorcet extensions using Ehrhart theory
+    and computer simulations
+  authors: F Brandt, J Hofbauer, M Strobel
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2019'
+  url: https://dl.acm.org/citation.cfm?id=3331735
+- name: BJCRNTW2017_0
+  title: 'Parliamentary voting procedures: Agenda control, manipulation, and uncertainty'
+  authors: R Bredereck, J Chen, R Niedermeier, T Walsh
+  publisher: Journal of Artificial Intelligence Research
+  year: '2017'
+  url: http://www.jair.org/papers/paper5407.html
+- name: FEH2016_0
+  title: Modeling single-peakedness for votes with ties
+  authors: Z Fitzsimmons, E Hemaspaandra
+  publisher: arXiv preprint
+  year: '2016'
+  url: https://arxiv.org/abs/1604.08191
+- name: T2019_0
+  title: Normative uncertainty and social choice
+  authors: C Tarsney
+  publisher: Mind
+  year: '2019'
+  url: https://academic.oup.com/mind/article-abstract/128/512/1285/5173438
+- name: HKHLX2015_0
+  title: Computing Optimal Bayesian Decisions for Rank Aggregation via MCMC Sampling.
+  authors: D Hughes, K Hwang, L Xia
+  publisher: Proceedings of The Conference on Uncertainty in Artificial Intelligence
+  year: '2015'
+  url: https://www.cs.rpi.edu/~xial/Files/HKXProceedings of The Conference on Uncertainty
+    in Artificial Intelligence15.pdf
+- name: ZTVLX2018_0
+  title: Learning mixtures of random utility models
+  authors: Z Zhao, T Villamil, L Xia
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2018'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/16854
+- name: DKLRC2014_0
+  title: Approximate winner selection in social choice with partial preferences
+  authors: JA Doucette, K Larson, R Cohen
+  publisher: Workshop on Exploring Beyond the Worst Case in Computational Social Choice
+  year: '2014'
+  url: https://cs.uwaterloo.ca/~j3doucet/papers/EXPLORE_Workshop.pdf
+- name: LPS2018_0
+  title: A quantitative analysis of multi-winner rules
+  authors: M Lackner, P Skowron
+  publisher: arXiv preprint
+  year: '2018'
+  url: https://arxiv.org/abs/1801.01527
+- name: MTW2016_0
+  title: Empirical evaluation of real world tournaments
+  authors: N Mattei, T Walsh
+  publisher: arXiv preprint
+  year: '2016'
+  url: https://arxiv.org/abs/1608.01039
+- name: EEMSOea2016_0
+  title: Complexity of finding equilibria of plurality voting under structured preferences
+  authors: E Elkind, E Markakis, S Obraztsova et al.
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2016'
+  url: http://www.ifaamas.org/Proceedings/aamas2016/pdfs/p394.pdf
+- name: BLNea2016_0
+  title: 'Between fairness and a mistrial: Consensus under a deadline'
+  authors: M Bannikova, L Naamani-Dery et al.
+  publisher: Proceedings of the Workshop on Advances in Preference Handling
+  year: '2016'
+  url: https://pdfs.semanticscholar.org/3a55/b01cb8cc8a5300f2be77433f972aefa9c6d9.pdf
+- name: PPAIDSMea2017_0
+  title: Monotonicity-based consensus states for the monometric rationalisation of
+    ranking rules and how they are affected by ties
+  authors: "R P\xE9rez-Fern\xE1ndez, P Alonso, I D\xEDaz, S Montes et al."
+  publisher: International Journal of Approximate Reasoning
+  year: '2017'
+  url: https://www.sciencedirect.com/science/article/pii/S0888613X17305649
+- name: PRBFN2016_0
+  title: Solving hard control problems in voting systems via integer programming
+  authors: S Polyakovskiy, R Berghammer, F Neumann
+  publisher: European Journal of Operational Research
+  year: '2016'
+  url: https://www.sciencedirect.com/science/article/pii/S0377221715008085
+- name: TJvEDFIK2020_0
+  title: 'Modelling rankings in R: The PlackettLuce package'
+  authors: HL Turner, J van Etten, D Firth, I Kosmidis
+  publisher: Computational Statistics
+  year: '2020'
+  url: https://link.springer.com/article/10.1007/s00180-020-00959-3
+- name: BFBCGPHea2019_0
+  title: k-Majority Digraphs and the Hardness of Voting with a Constant Number of
+    Voters
+  authors: G Bachmeier, F Brandt, C Geist, P Harrenstein et al.
+  publisher: Journal of Computer and System Sciences
+  year: '2019'
+  url: https://www.sciencedirect.com/science/article/pii/S0022000019300261
+- name: BAD2018_0
+  title: Efficient algorithms using subiterative convergence for Kemeny ranking problem
+  authors: PS Badal, A Das
+  publisher: Computers & Operations Research
+  year: '2018'
+  url: https://www.sciencedirect.com/science/article/pii/S0305054818301618
+- name: JDPEE2018_0
+  title: On recognising nearly single-crossing preferences
+  authors: F Jaeckle, D Peters, E Elkind
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2018'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/16831
+- name: H2015_0
+  title: Ballot-Level Observations about Vermont's 2014 General Election.
+  authors: JA Hansen
+  publisher: New England Journal of Political Science
+  year: '2015'
+  url: https://www.researchgate.net/profile/Jeremy_Hansen2/publication/294580168_Ballot-Level_Observations_About_Vermont's_2014_General_Election/links/56c1fadd08aeedba0567c714/Ballot-Level-Observations-About-Vermonts-2014-General-Election.pdf
+- name: FEH2019_0
+  title: High-multiplicity election problems
+  authors: Z Fitzsimmons, E Hemaspaandra
+  publisher: Autonomous Agents and Multi-Agent Systems
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s10458-019-09410-4
+- name: AOLNMJRTW2019_0
+  title: Strategyproof peer selection using randomization, partitioning, and apportionment
+  authors: H Aziz, O Lev, N Mattei, JS Rosenschein, T Walsh
+  publisher: Artificial Intelligence
+  year: '2019'
+  url: https://www.sciencedirect.com/science/article/pii/S0004370219301523
+- name: NES2019_0
+  title: Asymptotic properties of Lee distance
+  authors: NI Nikolov, E Stoimenova
+  publisher: Metrika
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s00184-018-0687-7
+- name: LZZCLPLLX2019_0
+  title: Learning plackett-luce mixtures from partial preferences
+  authors: A Liu, Z Zhao, C Liao, P Lu, L Xia
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2019'
+  url: https://wvvw.aaai.org/ojs/index.php/AAAI/article/view/4342
+- name: HKLRC2018_0
+  title: Investigating the characteristics of one-sided matching mechanisms under
+    various preferences and risk attitudes
+  authors: H Hosseini, K Larson, R Cohen
+  publisher: Autonomous Agents and Multi-Agent Systems
+  year: '2018'
+  url: https://link.springer.com/article/10.1007/s10458-018-9387-y
+- name: FEH2017_0
+  title: The complexity of succinct elections
+  authors: Z Fitzsimmons, E Hemaspaandra
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2017'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/viewPaper/14962
+- name: A2014_0
+  title: Testing top monotonicity
+  authors: H Aziz
+  publisher: arXiv preprint
+  year: '2014'
+  url: https://arxiv.org/abs/1403.7625
+- name: CMPFRKV2019_0
+  title: 'Multi-agent soft constraint aggregation via sequential voting: theoretical
+    and experimental results'
+  authors: C Cornelio, MS Pini, F Rossi, KB Venable
+  publisher: Autonomous Agents and Multi-Agent Systems
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s10458-018-09400-y
+- name: ASGea2015_0
+  title: Empirical analysis of a Food Bank problem
+  authors: M Aleksandrov, S Gaspers et al.
+  publisher: Workshop on Exploring Beyond the Worst Case in Computational Social Choice
+  year: '2015'
+  url: http://www.explore-2015.preflib.org/wp-content/uploads/2015/04/paper_11.pdf
+- name: MLT2020_0
+  title: 'PLMIX: an R package for modelling and clustering partially ranked data'
+  authors: C Mollica, L Tardella
+  publisher: Journal of Statistical Computation and Simulation
+  year: '2020'
+  url: https://www.tandfonline.com/doi/abs/10.1080/00949655.2020.1711909
+- name: BYCFDJL2017_0
+  title: Voting by sequential elimination with few voters.
+  authors: S Bouveret, Y Chevaleyre, F Durand, J Lang
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2017'
+  url: https://www.ijcai.org/proceedings/2017/0019.pdf
+- name: T2015_0
+  title: 'Privacy in Elections: k-Anonymizing Preference Orders'
+  authors: N Talmon
+  publisher: International Symposium on Fundamentals of Computation Theory
+  year: '2015'
+  url: https://link.springer.com/chapter/10.1007/978-3-319-22177-9_23
+- name: FALRMKG2019_0
+  title: Modeling People's Voting Behavior with Poll Information
+  authors: R Fairstein, A Lauz, R Meir, K Gal
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2019'
+  url: https://dl.acm.org/citation.cfm?id=3331852
+- name: LNNFRKVea2014_0
+  title: 'Controlling elections by replacing candidates: Theoretical and experimental
+    results'
+  authors: A Loreggia, N Narodytska, F Rossi, KB Venable et al.
+  publisher: Workshops at the AAAI Conference on Artificial Intelligence
+  year: '2014'
+  url: https://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/viewPaper/8758
+- name: DCIMSRS2019_0
+  title: Median constrained bucket order rank aggregation
+  authors: A D'Ambrosio, C Iorio, M Staiano, R Siciliano
+  publisher: Computational Statistics
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s00180-018-0858-z
+- name: H2016_0
+  title: 'The random pairs voting rule: Introduction and evaluation with a large dataset'
+  authors: J Hansen
+  publisher: Proceedings of the Workshop on Computational Social Choice
+  year: '2016'
+  url: https://www.researchgate.net/profile/Jeremy_Hansen2/publication/304676609_The_Random_Pairs_Voting_Rule_Introduction_and_Evaluation_With_a_Large_Dataset/links/5776f01008aeb9427e279432.pdf
+- name: PKRPS2018_0
+  title: 'Collective schedules: Scheduling meets computational social choice'
+  authors: F Pascual, K Rzadca, P Skowron
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2018'
+  url: https://dl.acm.org/citation.cfm?id=3237482
+- name: BNMSRPS2019_0
+  title: 'House markets and single-peaked preferences: From centralized to decentralized
+    allocation procedures'
+  authors: A Beynier, N Maudet, S Rey, P Shams
+  publisher: arXiv preprint
+  year: '2019'
+  url: https://arxiv.org/abs/1906.10250
+- name: B2017_0
+  title: Social Choice on the Web
+  authors: S Bouveret
+  publisher: Trends in Computational Social Choice
+  year: '2017'
+  url: https://books.google.com/books?hl=en&lr=&id=0qY8DwAAQBAJ&oi=fnd&pg=PA387&ots=s2XhiihhGZ&sig=eAQec7uIOwX8oq7zHr-lsVwxJMU
+- name: CMLRP2018_0
+  title: Computing the Schulze Method for Large-Scale Preference Data Sets.
+  authors: T Csar, M Lackner, R Pichler
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2018'
+  url: https://www.ijcai.org/proceedings/2018/0025.pdf
+- name: RJU2018_0
+  title: Choosing to Rank
+  authors: S Ragain, J Ugander
+  publisher: arXiv preprint
+  year: '2018'
+  url: https://arxiv.org/abs/1809.05139
+- name: MSH2018_0
+  title: Exploring the median of permutations problem
+  authors: R Milosz, S Hamel
+  publisher: Journal of Discrete Algorithms
+  year: '2018'
+  url: https://www.sciencedirect.com/science/article/pii/S1570866718301643
+- name: DFMLN2016_0
+  title: 'SVVAMP: simulator of various voting algorithms in manipulating populations'
+  authors: F Durand, F Mathieu, L Noirie
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2016'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12242/12288
+- name: ANBAJLDP2019_0
+  title: 'Single transferable vote: Incomplete knowledge and communication issues'
+  authors: M Ayadi, N Ben Amor, J Lang, D Peters
+  publisher: Proceedings of the International Conference on Autonomous Agents and
+    Multiagent Systems
+  year: '2019'
+  url: https://dl.acm.org/citation.cfm?id=3331833
+- name: NSNES2017_0
+  title: 'Flexible Level-1 Consensus Ensuring Stable Social Choice: Analysis and Algorithms'
+  authors: M Nitzan, S Nitzan, E Segal-Halevi
+  publisher: arXiv preprint
+  year: '2017'
+  url: https://arxiv.org/abs/1704.06037v2
+- name: BCGMS2020_0
+  title: Analyzing the practical relevance of the Condorcet loser paradox and the
+    agenda contraction paradox
+  authors: F Brandt, C Geist, M Strobel
+  publisher: Evaluating Voting Systems with Probability Models:Essays by and in Honor
+    of William Gehrlein and Dominique Lepelley
+  year: '2020'
+  url: http://dss.in.tum.de/files/brandt-research/clp_chapter_final.pdf
+- name: A2016_0
+  title: Online Fair Division Redux.
+  authors: M Aleksandrov
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2016'
+  url: https://pdfs.semanticscholar.org/c82c/bff23511405c97852aa8af0ebb1546bc47fa.pdf
+- name: Y2019_0
+  title: Complexity of manipulating and controlling approval-based multiwinner voting
+  authors: Y Yang
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2019'
+  url: https://www.ijcai.org/proceedings/2019/0090.pdf
+- name: F2015_0
+  title: Realistic assumptions for attacks on elections
+  authors: Z Fitzsimmons
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2015'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewPaper/9331
+- name: AXHNMES2019_0
+  title: The Constrained Round Robin Algorithm for Fair and Efficient Allocation
+  authors: H Aziz, X Huang, N Mattei, E Segal-Halevi
+  publisher: arXiv preprint
+  year: '2019'
+  url: https://arxiv.org/abs/1908.00161
+- name: BPFAKea2019_0
+  title: An experimental view on committees providing justified representation
+  authors: R Bredereck, P Faliszewski, A Kaczmarczyk et al.
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2019'
+  url: https://www.ijcai.org/proceedings/2019/0016.pdf
+- name: KJGAF2019_0
+  title: The prevalence and consequences of ballot truncation in ranked-choice elections
+  authors: "DM Kilgour, JC Gr\xE9goire, AM Foley"
+  publisher: Public Choice
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s11127-019-00723-2
+- name: BTH2019_0
+  title: How hard is the manipulative design of scoring systems?
+  authors: D Baumeister, T Hogrebe
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2019'
+  url: https://www.ijcai.org/proceedings/2019/0011.pdf
+- name: NSNES2018_0
+  title: 'Flexible level-1 consensus ensuring stable social choice: analysis and algorithms'
+  authors: M Nitzan, S Nitzan, E Segal-Halevi
+  publisher: Social Choice and Welfare
+  year: '2018'
+  url: https://link.springer.com/article/10.1007/s00355-017-1092-2
+- name: FEHAHea2019_0
+  title: Very hard electoral control problems
+  authors: Z Fitzsimmons, E Hemaspaandra, A Hoover et al.
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2019'
+  url: https://www.aaai.org/ojs/index.php/AAAI/article/view/4021
+- name: S2018_0
+  title: Optimal Multi-Attribute Decision Making in Social Choice Problems.
+  authors: S Sikdar
+  publisher: Proceedings of the International Joint Conference on Artificial Intelligence
+  year: '2018'
+  url: https://sujoyksikdar.github.io/papers/abstract.pdf
+- name: W2018_0
+  title: Smart Machines ARE a Threat to Humanity
+  authors: K Warwick
+  publisher: Artificial Intelligence Safety and Security
+  year: '2018'
+  url: https://www.taylorfrancis.com/books/e/9781351251389/chapters/10.1201/9781351251389-28
+- name: AJP2017_0
+  title: 'A reward-based approach for preference modeling: A case study'
+  authors: E Armengol, J Puyol-Gruart
+  publisher: Journal of Applied Logic
+  year: '2017'
+  url: https://www.sciencedirect.com/science/article/pii/S157086831630060X
+- name: WSSTSZZea2019_0
+  title: Practical Algorithms for Multi-Stage Voting Rules with Parallel Universes
+    Tiebreaking
+  authors: J Wang, S Sikdar, T Shepherd, Z Zhao et al.
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2019'
+  url: https://wvvw.aaai.org/ojs/index.php/AAAI/article/view/4053
+- name: LCB2020_0
+  title: Preference elicitation and robust winner determination for single-and multi-winner
+    social choice
+  authors: T Lu, C Boutilier
+  publisher: Artificial Intelligence
+  year: '2020'
+  url: https://www.sciencedirect.com/science/article/pii/S0004370219301973
+- name: LVM2020_0
+  title: Branch-and-cut-and-price for the cardinality-constrained multi-cycle problem
+    in kidney exchange
+  authors: E Lam, V Mak-Hau
+  publisher: Computers & Operations Research
+  year: '2020'
+  url: https://www.sciencedirect.com/science/article/pii/S0305054819302941
+- name: MKGMT2020_0
+  title: 'Strategic voting in the lab: compromise and leader bias behavior'
+  authors: R Meir, K Gal, M Tal
+  publisher: Autonomous Agents and Multi-Agent Systems
+  year: '2020'
+  url: https://link.springer.com/article/10.1007/s10458-020-09446-x
+- name: GNMRS2014_0
+  title: Who is Watching You Eat?
+  authors: J Goldsmith, N Mattei, RH Sloan
+  publisher: Workshops at the AAAI Conference on Artificial Intelligence
+  year: '2014'
+  url: https://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/viewPaper/8761
+- name: MKV2018_0
+  title: Decision Making Over Combinatorially-Structured Domains
+  authors: A Martin, KB Venable
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2018'
+  url: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/16610
+- name: SRATBea2019_0
+  title: Bottom-up approaches to achieve Pareto optimal agreements in group decision
+    making
+  authors: "V Sanchez-Anguix, R Aydo\u011Fan, T Baarslag et al."
+  publisher: Knowledge and Information Systems
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s10115-018-01325-y
+- name: AJP2015_0
+  title: A Simple Experiment to Guide the Design of a Preference Model.
+  authors: E Armengol, J Puyol-Gruart
+  publisher: CCIA
+  year: '2015'
+  url: https://books.google.com/books?hl=en&lr=&id=GqPRCgAAQBAJ&oi=fnd&pg=PA59&ots=Y2mXgF-kym&sig=geoZgXemyzhOvI7bOMvv2qK7eew
+- name: BLDSOea2019_0
+  title: 'Between Discord and Deadlock: Consensus Under a Deadline'
+  authors: M Bannikova, L Dery, S Obraztsova et al.
+  publisher: arXiv preprint
+  year: '2019'
+  url: https://arxiv.org/abs/1905.07173
+- name: GNMRS2015_0
+  title: Who is watching you eat? a noir preferences thriller
+  authors: J Goldsmith, N Mattei, RH Sloan
+  publisher: AI Matters
+  year: '2015'
+  url: https://dl.acm.org/doi/pdf/10.1145/2757001.2757004
+- name: FPSASSSea2019_0
+  title: How Similar Are Two Elections?
+  authors: P Faliszewski, P Skowron, A Slinko, S Szufa et al.
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2019'
+  url: https://www.aaai.org/ojs/index.php/AAAI/article/view/4017
+- name: DSOZRea2019_0
+  title: 'Lie on the Fly: Strategic Voting in an Iterative Preference Elicitation
+    Process'
+  authors: L Dery, S Obraztsova, Z Rabinovich et al.
+  publisher: Group Decision and Negociation
+  year: '2019'
+  url: https://link.springer.com/article/10.1007/s10726-019-09637-2
+- name: NPSea2017_0
+  title: Robustness Among Multiwinner Voting Rules
+  authors: R Niedermeier, P Skowron et al.
+  publisher: Proceedings of the International Symposium on Algorithmic Game Theory
+  year: '2017'
+  url: https://books.google.com/books?hl=en&lr=&id=EXMzDwAAQBAJ&oi=fnd&pg=PA80&ots=PkorOmNgJ4&sig=HAS_YhDVYWNPIBg2ASIi7visLAM
+- name: ANA2015_0
+  title: Multi-round Vote Elicitation for Manipulation under Candidate Uncertainty
+  authors: M Ayadi, NB Amor
+  publisher: Proceedings of the IEEE International Conference on Tools with Artificial
+    Intelligence
+  year: '2015'
+  url: https://ieeexplore.ieee.org/abstract/document/7372209/
+- name: SJHNMea2019_0
+  title: Heuristics in Multi-Winner Approval Voting
+  authors: J Scheuerman, JL Harman, N Mattei et al.
+  publisher: arXiv preprint
+  year: '2019'
+  url: https://arxiv.org/abs/1905.12104
+- name: GLGSSea2019_0
+  title: Who Is in Your Top Three? Optimizing Learning in Elections with Many Candidates
+  authors: N Garg, LL Gelauff, S Sakshuwong et al.
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  year: '2019'
+  url: https://wvvw.aaai.org/ojs/index.php/HCOMP/article/view/5273

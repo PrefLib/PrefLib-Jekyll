@@ -1,0 +1,229 @@
+---
+layout: default
+title: PrefLib | Datasets
+sitemap:
+  priority: 1
+---
+
+{% if site.data.datasets %}
+
+    <section>
+    <p>
+        Below you can find all the datasets. You can order them differently and filter them by tag easily.
+    </p>
+    </section>
+
+    <section>
+        <div class="tag-filter-wrapper center">
+            <p class="center">
+                {% for tag in site.data.dataset_tags %}
+                    <span class="tag-filter-tag tag-filter-active-tag" title="{{ tag.description }}" datatag="{{ tag.name }}">{{ tag.name }}</span>
+                {% endfor %}
+            </p>
+        </div>
+    </section>
+
+    <section>
+    <p>
+        Sort by:
+        <a href="javascript:sortByNew()" id="sort-new" style="font-weight: bold;">Newest first</a> &middot;
+        <a href="javascript:sortByOld()" id="sort-old">Oldest first</a> &middot;
+        <a href="javascript:sortByName()" id="sort-name">Dataset name (A-Z)</a> &middot;
+        <a href="javascript:sortByNum()" id="sort-num">Series Number</a>
+    </p>
+
+
+	<div id="section-datasets">
+	<nav id="dataset-menu">
+		<ul>
+        	{% for dataset in site.data.datasets %}
+		    	<li data-timestamp="{{ dataset.publication_date }}" data-number="{{ dataset.series_number }}" data-name="{{ dataset.name }}" data-tags="{{ dataset.tags }}" class="dataset-menu-item">
+                    <a href="#{{ dataset.series_number }}">{{ dataset.name }}</a>
+                </li>
+			{% endfor %}
+		</ul>
+	</nav>
+
+	<ul id="dataset-list">
+	{% for dataset in site.data.datasets %}
+        <li id="{{ dataset.series_number }}" data-timestamp="{{ dataset.publication_date }}" data-number="{{ dataset.series_number }}" data-name="{{ dataset.name }}" data-tags="{{ dataset.tags }}" class="dataset-list-item">
+            <h2 class="dataset-title"><a href="{{ 'dataset/' | append: dataset.series_number | relative_url }}" id="{{ dataset.series_number }}_title">{{ dataset.name }}</a></h2>
+
+            <p class="dataset-number">{{dataset.series_number}}</p>
+
+            {% if dataset.tags %}
+                <p class="dataset-tags">
+                    {% for tag in dataset.tags %}
+					{% assign tag_object = site.data.dataset_tags | where: "name", tag | first %}
+                        <span title="{{ tag_object.description }}" class="data-tag">{{ tag_object.name }}</span>
+                    {% endfor %}
+                </p>
+            {% endif %}
+
+            <div class="dataset-description">
+                {{ dataset.description }}
+            </div>
+
+            <p class="data-file-list">
+                {% assign data_files = site.data.datafiles | where: "dataset", dataset.abbreviation %}
+                {% assign data_files_num = data_files | size %}
+                Consists of {{ data_files_num }} data file{% if data_files_num > 1 %}s{% endif %}.
+            </p>
+
+            <div class="button-row">
+                <a href="{{ 'dataset/' | append: dataset.series_number | relative_url }}" class="download-button">Details</a>
+                <a href="{{ 'assets/zip/dataset/' | append: dataset.series_number | append: ' - ' | append: dataset.abbreviation | append: '.zip' | relative_url }}" class="download-button" target="_blank" download>Download [zip, {{ dataset.zip_file_size | filesize_format }}]</a>
+            </div>
+        </li>
+	{% endfor %}
+	</ul>
+	</div>
+    </section>
+
+	<script>
+		// sorting
+		var list = document.querySelector('#dataset-list');
+		var menu = document.querySelector('#dataset-menu ul');
+
+		function bolden(id) {
+			for (link of ["#sort-name", "#sort-new", "#sort-old", "#sort-num"]) {
+				if (link == id) {
+					document.querySelector(link).style.fontWeight = "bold";
+				} else {
+					document.querySelector(link).style.fontWeight = "normal";
+				}
+			}
+		}
+
+		function sortByName() {
+			[...list.children]
+			.sort((a,b)=>a.dataset.name.localeCompare(b.dataset.name))
+			.forEach(node=>list.appendChild(node));
+			[...menu.children]
+			.sort((a,b)=>a.dataset.name.localeCompare(b.dataset.name))
+			.forEach(node=>menu.appendChild(node));
+			bolden("#sort-name");
+		}
+		function sortByNew() {
+			[...list.children]
+			.sort((a,b)=>b.dataset.timestamp.localeCompare(a.dataset.timestamp))
+			.forEach(node=>list.appendChild(node));
+			[...menu.children]
+			.sort((a,b)=>b.dataset.timestamp.localeCompare(a.dataset.timestamp))
+			.forEach(node=>menu.appendChild(node));
+			bolden("#sort-new");
+		}
+		function sortByOld() {
+			[...list.children]
+			.sort((a,b)=>a.dataset.timestamp.localeCompare(b.dataset.timestamp))
+			.forEach(node=>list.appendChild(node));
+			[...menu.children]
+			.sort((a,b)=>a.dataset.timestamp.localeCompare(b.dataset.timestamp))
+			.forEach(node=>menu.appendChild(node));
+			bolden("#sort-old");
+		}
+		function sortByNum() {
+			[...list.children]
+			.sort((a,b)=>a.dataset.number.localeCompare(b.dataset.number))
+			.forEach(node=>list.appendChild(node));
+			[...menu.children]
+			.sort((a,b)=>a.dataset.number.localeCompare(b.dataset.number))
+			.forEach(node=>menu.appendChild(node));
+			bolden("#sort-num");
+		}
+
+		// menu updates
+		function debounce(func, timeout = 300) {
+			let timer;
+			return (...args) => {
+				clearTimeout(timer);
+				timer = setTimeout(() => {
+				func.apply(this, args);
+				}, timeout);
+			};
+		}
+
+		function updateDatasetMenu() {
+			var current = "NOTHING";
+
+			// figure out where we are
+			document.querySelectorAll("#dataset-list > li").forEach((section) => {
+                if (section.style.display !== "none") {
+                    const sectionTop = section.offsetTop;
+                    if (scrollY >= sectionTop - 122) {
+                        current = section.dataset.number;
+                    }
+                }
+			});
+
+			// show current element in menu
+			document.querySelectorAll("#dataset-menu ul li").forEach((li) => {
+				li.classList.remove("current");
+				if (li.dataset.number == current) {
+					li.classList.add("current");
+					li.scrollIntoView({ block: "nearest" });
+				}
+			});
+		}
+
+		document.addEventListener("DOMContentLoaded", (event) => {
+			window.onscroll = () => {
+				debounce(updateDatasetMenu, 75)();
+			};
+			sortByNew();
+		});
+
+        // Tag filter
+        function toggleTag(tagSpan) {
+            if (tagSpan.classList.contains('tag-filter-active-tag')) {
+                tagSpan.classList.remove('tag-filter-active-tag');
+                tagSpan.classList.add('tag-filter-inactive-tag');
+            } else {
+                tagSpan.classList.add('tag-filter-active-tag');
+                tagSpan.classList.remove('tag-filter-inactive-tag');
+            }
+            var tags = document.getElementsByClassName('tag-filter-tag');
+            var datasets = document.getElementsByClassName('dataset-list-item');
+            var menuitems = document.getElementsByClassName('dataset-menu-item');
+            for (var i = 0, ds_len = datasets.length; i < ds_len; i++) {
+                datasets[i].style.display = "none";
+            }
+            for (var i = 0, menu_len = menuitems.length; i < menu_len; i++) {
+                menuitems[i].style.display = "none";
+            }
+            for (var i = 0, ds_len = datasets.length; i < ds_len; i++) {
+                for (var j = 0, tag_len = tags.length; j < tag_len; j++) {
+                    var tag = tags[j].getAttribute('datatag');
+                    if (datasets[i].getAttribute('data-tags').includes(tag)) {
+                        if (tags[j].classList.contains('tag-filter-active-tag')) {
+                            datasets[i].style.display = "block";
+                        }
+                    }
+                }
+            }
+            for (var i = 0, menu_len = menuitems.length; i < menu_len; i++) {
+                for (var j = 0, tag_len = tags.length; j < tag_len; j++) {
+                    var tag = tags[j].getAttribute('datatag');
+                    if (menuitems[i].getAttribute('data-tags').includes(tag)) {
+                        if (tags[j].classList.contains('tag-filter-active-tag')) {
+                            menuitems[i].style.display = "block";
+                        }
+                    }
+                }
+            }
+            updateDatasetMenu();
+        }
+        var tags = document.getElementsByClassName('tag-filter-tag');
+
+        for (var i = 0, len = tags.length; i < len; i++) {
+            tags[i].addEventListener('click', function () {
+                toggleTag(this)
+            })
+        }
+	</script>
+
+{% else %}
+    <section>
+    	<p> There are no datasets yet. Do you want to contribute? </p>
+    </section>
+{% endif %}

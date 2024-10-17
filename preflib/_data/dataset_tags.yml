@@ -1,0 +1,26 @@
+- name: Combinatorial
+  description: The data represent combinatorial preferences over the alternatives.
+
+- name: Election
+  description: The preferences apply to a scenario in which some alternatives are to be selected/elected.
+
+- name: Experiment
+  description: The datafiles were collected as part of an experiment.
+
+- name: Matching
+  description: The preferences apply to a scenario in which alternatives are to be matched to one another.
+
+- name: Mturk
+  description: The preferences were collected on Amazon Mechanical Turk.
+
+- name: Politics
+  description: The preferences apply to a political scenario.
+
+- name: Ratings
+  description: The preferences express ratings about the alternatives.
+
+- name: Sport
+  description: The data represent sport events, interpreted as elections.
+
+- name: STV
+  description: STV (single-transferable vote) was the voting rule used for the selection of the winner.

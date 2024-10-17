@@ -1,0 +1,125 @@
+---
+layout: default
+sitemap:
+  priority: 1
+---
+
+<section>
+
+<h1>{{ page.dataset.name }} ({{ page.dataset.series_number }})</h1>
+
+{% assign data_files = site.data.datafiles | where: "dataset", page.dataset.abbreviation %}
+{% assign data_files_num = data_files | size %}
+
+<div class="side-by-side-wrapper">
+	<div>
+		<p>{{ page.dataset.description }}</p>
+
+		{% if page.dataset.required_citations %}
+	    		<p><span class="bold">Required citations:</span> {{ page.dataset.required_citations }} </p>
+		{% endif %}
+
+		{% if page.dataset.selected_studies %}
+		    	<p><span class="bold">Selected studies:</span> {{ page.dataset.selected_studies }} </p>
+		{% endif %}
+
+		<p class="center" style="margin-top: 30px;"><a href="{{ 'assets/zip/dataset/' | append: page.dataset.series_number | append: ' - ' | append: page.dataset.abbreviation | append: '.zip' | relative_url }}" class="download-button"  target="_blank" download>Download the dataset [zip, {{ page.dataset.zip_file_size | filesize_format }}]</a></p>
+	</div>
+
+	<div class="side-by-side-right">
+		<h2>Details</h2>
+        {% if page.dataset.tags %}
+            <p class="dataset-tags">
+                {% for tag in page.dataset.tags %}
+					{% assign tag_object = site.data.dataset_tags | where: "name", tag | first %}
+                    <span title="{{ tag_object.description }}" class="data-tag">{{ tag_object.name }}</span>
+                {% endfor %}
+            </p>
+        {% endif %}
+		<ul>
+			<li> Number of files: {{ data_files_num }}</li>
+			{% assign total_size = 0 %}
+			{% for file in data_files %}
+				{% assign total_size = total_size | plus: file.size %}
+			{% endfor %}
+			<li> Total size: {{ total_size | filesize_format }}</li>
+			<li> Data types: {% for type in page.dataset.data_types %}<a href="{{ 'format/#' | append: type | relative_url }}">{{ type }}</a>{% unless forloop.last == true %}, {% endunless %}{% endfor %} </li>
+			<li> Publication date: {{ page.dataset.publication_date }} </li>
+		</ul>
+	</div>
+</div>
+
+<div class="all-data-files">
+    {% for file in data_files %}
+        <div class="data-file-wrapper">
+            <div class="data-file-title collapsible" id="{{ file.name }}">
+                <div class="menu-icon"><div></div><div></div><div></div></div>
+                <div class="file-name">
+                    {{ file.title }} &#8212; {{ file.name }}
+                </div>
+                {% if file.num_voters > 0 or file.num_alternatives > 0 %}
+                    <div class="vot-alt-numbers">
+                        {% if file.num_voters %}
+                            <span>
+                                {{ file.num_voters }} Voter{% if file.num_voters > 1%}s{% endif %}{% if file.num_alternatives %}, {% endif %}
+                            </span>
+                        {% endif %}
+                        {% if file.num_alternatives %}
+                            <span>{{ file.num_alternatives }} Alternative{% if file.num_alternatives > 1 %}s{% endif %}</span>
+                        {% endif %}
+                    </div>
+                {% endif %}
+                <div class="button-wrapper">
+                    <a href="{{ file.url }}" class="download-button"  target="_blank" download>Download [{{ file.size | filesize_format }}]</a>
+                </div>
+            </div>
+
+            <div class="collapsible-content" style="display: none">
+                <div class="data-file-content">
+                    {% if file.description %}
+                        <p>
+                            {{ file.description }}
+                        </p>
+                    {% endif %}
+
+                    {% if file.related_files %}
+                        <p>The following files are related to this file:</p>
+                        <table class="data-file-related-files-table">
+                            <tr>
+                                <th>File name</th>
+                                <th>Description</th>
+                                <th></th>
+                            </tr>
+                            {% for related_file in file.related_files %}
+                                <tr>
+                                    <td>{{ related_file.name }}</td>
+                                    <td>{{ related_file.description }}</td>
+                                    <td>
+                                        <a href="{{ related_file.url }}"  target="_blank" download>Download [{{ related_file.size | filesize_format }}]</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+</section>
+
+<script>
+	const collapsibles = document.getElementsByClassName("collapsible");
+	let i;
+	for (i = 0; i < collapsibles.length; i++) {
+		collapsibles[i].addEventListener("click", function() {
+			const content = this.nextElementSibling;
+			if (content.style.display === "none"){
+				content.style.display = "block";
+			} else {
+				content.style.display = "none";
+			}
+		});
+	}
+</script>
