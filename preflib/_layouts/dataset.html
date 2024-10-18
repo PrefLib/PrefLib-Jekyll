@@ -23,7 +23,9 @@ sitemap:
             <p><span class="bold">Selected studies:</span> {{ page.dataset.selected_studies }} </p>
 		{% endif %}
 
-		<p class="center" style="margin-top: 30px;"><a href="{{ page.dataset.zip_file_url }}" class="download-button"  target="_blank" download>Download the dataset [zip, {{ page.dataset.zip_file_size | filesize_format }}]</a></p>
+        <div class="button-wrapper" style="justify-content: center;">
+            <a href="{{ page.dataset.zip_file_url }}" class="download-button"  target="_blank" download>Download the dataset [zip, {{ page.dataset.zip_file_size | filesize_format }}]</a>
+        </div>
 	</div>
 
 	<div class="side-by-side-right">

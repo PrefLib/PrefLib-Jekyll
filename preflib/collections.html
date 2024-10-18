@@ -32,7 +32,7 @@ sitemap:
             {% assign all_data_types = all_data_types | where_exp: "item", "item != 'dat'" %}
             <div class="collection-buttons-wrap">
                 {% for type in all_data_types %}
-                    <div class="collection-button">
+                    <div class="collection-button button-wrapper">
                         <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_{{ type }}.zip" class="download-button">{{ type | upcase  }} files</a>
                     </div>
                 {% endfor %}
@@ -44,7 +44,7 @@ sitemap:
             {% assign all_modification_types = site.data.datafiles | map: "modification_type" | uniq | sort %}
             <div class="collection-buttons-wrap">
                 {% for type in all_modification_types %}
-                    <div class="collection-button">
+                    <div class="collection-button button-wrapper">
                         <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/modif_{{ type }}.zip" class="download-button">{{ type | title_case }} files</a>
                     </div>
                 {% endfor %}
@@ -55,7 +55,7 @@ sitemap:
             <h3>Structural Properties</h3>
 
             <div class="collection-buttons-wrap">
-                <div class="collection-button">
+                <div class="collection-button button-wrapper">
                     <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isApproval.zip" class="download-button">Approval files</a>
                 </div>
 <!--                <div class="collection-button">-->

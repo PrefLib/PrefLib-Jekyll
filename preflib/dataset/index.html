@@ -71,8 +71,13 @@ sitemap:
             </p>
 
             <div class="button-row">
-                <a href="{{ 'dataset/' | append: dataset.series_number | relative_url }}" class="download-button">Details</a>
-                <a href="{{ dataset.zip_file_url }}" class="download-button" target="_blank" download>Download [zip, {{ dataset.zip_file_size | filesize_format }}]</a>
+                <div class="button-wrapper">
+                    <a href="{{ 'dataset/' | append: dataset.series_number | relative_url }}" class="download-button">Details</a>
+                </div>
+
+                <div class="button-wrapper">
+                    <a href="{{ dataset.zip_file_url }}" class="download-button" target="_blank" download>Download [zip, {{ dataset.zip_file_size | filesize_format }}]</a>
+                </div>
             </div>
         </li>
 	{% endfor %}

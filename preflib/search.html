@@ -376,28 +376,28 @@ document.addEventListener('DOMContentLoaded', function() {
             let filesToShow = filteredFiles.slice(startIndex, endIndex);
 
             searchResult.innerHTML += `
-				<div class="header odd-line" data-sort="dataset">Dataset</div>
-				<div class="header odd-line" data-sort="name">File</div>
-				<div class="header odd-line" data-sort="data_type">Type</div>
-				<div class="header odd-line" data-sort="modification_type">Modif.</div>
-				<div class="header odd-line" data-sort="num_voters">#Voters</div>
-				<div class="header odd-line" data-sort="num_alternatives">#Alt.</div>
-				<div class="header odd-line" data-sort="num_unique_preferences">#Uniq.</div>
-				<div class="header odd-line"></div>`;
+				<div class="header column-header odd-line" data-sort="dataset">Dataset</div>
+				<div class="header column-header odd-line" data-sort="name">File</div>
+				<div class="header column-header odd-line" data-sort="data_type">Type</div>
+				<div class="header column-header odd-line" data-sort="modification_type">Modif.</div>
+				<div class="header column-header odd-line" data-sort="num_voters">#Voters</div>
+				<div class="header column-header odd-line" data-sort="num_alternatives">#Alt.</div>
+				<div class="header column-header odd-line" data-sort="num_unique_preferences">#Uniq.</div>
+				<div class="header column-header odd-line"></div>`;
             filesToShow.forEach(function (file, index) {
                 let rowClass = (index % 2 === 0) ? 'even-line' : 'odd-line';
                 searchResult.innerHTML += `
-                    <div class="${rowClass}"><a href="${file.datasetUrl}">${file.dataset}</a></div>
-                    <div class="${rowClass}">${file.name}</div>
-                    <div class="${rowClass}">${file.data_type}</div>
-                    <div class="${rowClass}">${file.modification_type}</div>
-                    <div class="${rowClass}">${file.num_voters}</div>
-                    <div class="${rowClass}">${file.num_alternatives}</div>
-                    <div class="${rowClass}">${file.num_unique_preferences}</div>
+                    <div class="${rowClass}"><span class="header row-header">Dataset:&nbsp;</span> <a href="${file.datasetUrl}">${file.dataset}</a></div>
+                    <div class="${rowClass}"><span class="header row-header">File:&nbsp;</span>${file.name}</div>
+                    <div class="${rowClass}"><span class="header row-header">Type:&nbsp;</span>${file.data_type}</div>
+                    <div class="${rowClass}"><span class="header row-header">Modif.:&nbsp;</span>${file.modification_type}</div>
+                    <div class="${rowClass}"><span class="header row-header">#Voters:&nbsp;</span>${file.num_voters}</div>
+                    <div class="${rowClass}"><span class="header row-header">#Alt.:&nbsp;</span>${file.num_alternatives}</div>
+                    <div class="${rowClass}"><span class="header row-header">#Uniq.:&nbsp;</span>${file.num_unique_preferences}</div>
                     <div class="${rowClass}"><a href="${file.url}" class="download-button" target="_blank" download>Download</a></div>`;
             });
 
-			document.querySelectorAll('.header').forEach(header => {
+			document.querySelectorAll('.column-header').forEach(header => {
 				const sortKey = header.getAttribute('data-sort');
 				if (sortKey === currentSortKey) {
 					header.classList.toggle('ascending', isAscending);
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
 		// Add sorting functionality
-		document.querySelectorAll('.header').forEach(header => {
+		document.querySelectorAll('.column-header').forEach(header => {
 			header.addEventListener('click', function() {
 				const sortKey = this.getAttribute('data-sort');
 	            isAscending = (currentSortKey === sortKey) ? !isAscending : true;
