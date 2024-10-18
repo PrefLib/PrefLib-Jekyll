@@ -22,11 +22,30 @@ sitemap:
 </section>
 
 <section>
-{% assign all_data_types = site.data.datafiles | map: "data_type" | uniq %}
-{% assign all_modification_types = site.data.datafiles | map: "modification_type" | uniq %}
+{% assign all_data_types = site.data.datafiles | map: "data_type" | uniq | sort %}
+{% assign all_data_types = all_data_types | where_exp: "item", "item != 'csv'" %}
+{% assign all_data_types = all_data_types | where_exp: "item", "item != 'dat'" %}
+{% assign all_modification_types = site.data.datafiles | map: "modification_type" | uniq | sort %}
 
 <form id="filters">
     <div class="filters-wrap">
+		<div class="filter-group" id="filter-dataset-group">
+			<h3>Datasets</h3>
+			{% assign sorted_datasets = site.data.datasets | sort: "series_number" %}
+	        <p class="center">
+				<button type="button" id="select-all-datasets">Select None</button>
+			</p>
+			<div id="filter-dataset-all-filters">
+				{% for dataset in sorted_datasets %}
+					<div>
+						<label>
+							<input type="checkbox" name="dataset" value="{{ dataset.series_number }} - {{ dataset.name }}" checked>
+							<span class="filter-label">{{ dataset.series_number }} - {{ dataset.name }}</span>
+						</label>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
         <div class="filter-group">
             <h3>Instance Size</h3>
             <div class="filter-wrap">
@@ -129,63 +148,68 @@ sitemap:
 					{% include tri_value_selector.html id="selector-approval" %}
 				</div>
 			</div>
-			<div class="filter-wrap">
-				<div class="filter-label">
-					<a>Single-peaked preferences?</a>
-				</div>
-				<div class="filter-select-wrap">
-					{% include tri_value_selector.html id="selector-singlepeaked" %}
-				</div>
-			</div>
-			<div class="filter-wrap">
-				<div class="filter-label">
-					<a>Single-peaked on a circle preferences?</a>
-				</div>
-				<div class="filter-select-wrap">
-					{% include tri_value_selector.html id="selector-singlepeaked-circle" %}
-				</div>
-			</div>
-			<div class="filter-wrap">
-				<div class="filter-label">
-					<a>Single-peaked on a tree preferences?</a>
-				</div>
-				<div class="filter-select-wrap">
-					{% include tri_value_selector.html id="selector-singlepeaked-tree" %}
-				</div>
-			</div>
-			<div class="filter-wrap">
-				<div class="filter-label">
-					<a>Single-crossing preferences?</a>
-				</div>
-				<div class="filter-select-wrap">
-					{% include tri_value_selector.html id="selector-singlecrossing" %}
-				</div>
-			</div>
-			<div class="filter-wrap">
-				<div class="filter-label">
-					<a>1-Euclidean preferences?</a>
-				</div>
-				<div class="filter-select-wrap">
-					{% include tri_value_selector.html id="selector-one-euclidean" %}
-				</div>
-			</div>
-			<div class="filter-wrap">
-				<div class="filter-label">
-					<a>Euclidean preferences?</a>
-				</div>
-				<div class="filter-select-wrap">
-					{% include tri_value_selector.html id="selector-euclidean" %}
-				</div>
-			</div>
+<!--			<div class="filter-wrap">-->
+<!--				<div class="filter-label">-->
+<!--					<a>Single-peaked preferences?</a>-->
+<!--				</div>-->
+<!--				<div class="filter-select-wrap">-->
+<!--					{% include tri_value_selector.html id="selector-singlepeaked" %}-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="filter-wrap">-->
+<!--				<div class="filter-label">-->
+<!--					<a>Single-peaked on a circle preferences?</a>-->
+<!--				</div>-->
+<!--				<div class="filter-select-wrap">-->
+<!--					{% include tri_value_selector.html id="selector-singlepeaked-circle" %}-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="filter-wrap">-->
+<!--				<div class="filter-label">-->
+<!--					<a>Single-peaked on a tree preferences?</a>-->
+<!--				</div>-->
+<!--				<div class="filter-select-wrap">-->
+<!--					{% include tri_value_selector.html id="selector-singlepeaked-tree" %}-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="filter-wrap">-->
+<!--				<div class="filter-label">-->
+<!--					<a>Single-crossing preferences?</a>-->
+<!--				</div>-->
+<!--				<div class="filter-select-wrap">-->
+<!--					{% include tri_value_selector.html id="selector-singlecrossing" %}-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="filter-wrap">-->
+<!--				<div class="filter-label">-->
+<!--					<a>1-Euclidean preferences?</a>-->
+<!--				</div>-->
+<!--				<div class="filter-select-wrap">-->
+<!--					{% include tri_value_selector.html id="selector-one-euclidean" %}-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="filter-wrap">-->
+<!--				<div class="filter-label">-->
+<!--					<a>Euclidean preferences?</a>-->
+<!--				</div>-->
+<!--				<div class="filter-select-wrap">-->
+<!--					{% include tri_value_selector.html id="selector-euclidean" %}-->
+<!--				</div>-->
+<!--			</div>-->
 		</div>
 	</div>
     <p style="text-align: center;">
         <span id="applyFilters" class="download-button">Apply Filters</span>
+        &nbsp;
+        <span id="resetFilters" class="download-button">Reset Filters</span>
     </p>
 </form>
 
 </section>
+
 <section>
+<p id="result-count" class="center"></p>
+
 <div class="pagination_wrapper" id="paginator-top">
     <div class="pagination"></div>
 </div>
@@ -203,16 +227,35 @@ document.addEventListener('DOMContentLoaded', function() {
 	{% include tri_value_selector_uniq_propagate.js values=all_data_types %}
 	{% include tri_value_selector_uniq_propagate.js values=all_modification_types %}
 
-	const itemsPerPage = 50;  // Number of papers per page
+	const itemsPerPage = 50;  // Number of files per page
     const searchResult = document.getElementById('search-result');
     const paginatorTop = document.querySelector('#paginator-top .pagination');
     const paginatorBottom = document.querySelector('#paginator-bottom .pagination');
 
     // Pull in data from Jekyll
-    const allFiles = {{ site.data.datafiles | jsonify }};  // Ensure this line is present
+    const allFiles = [
+        {% for file in site.data.datafiles %}
+			{% assign dataset = site.data.datasets | where: "abbreviation", file.dataset | first %}
+			{
+				"num_voters": "{{ file.num_voters }}",
+				"num_alternatives": "{{ file.num_alternatives }}",
+				"num_unique_preferences": "{{ file.num_unique_preferences }}",
+				"is_approval": "{{ file.is_approval }}",
+				"is_single_peaked": "{{ file.is_single_peaked }}",
+				"data_type": "{{ file.data_type }}",
+				"modification_type": "{{ file.modification_type }}",
+				"dataset": "{{ dataset.series_number }} - {{ dataset.name }}",
+				"datasetUrl": "{{ 'dataset/' | append: dataset.series_number | relative_url }}",
+				"name": "{{ file.name }}",
+				"url": "{{ file.url }}",
+			}{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    ];
     let filteredFiles = allFiles;
 
     let currentPage = 1;
+	let currentSortKey = '';
+	let isAscending = true;
 
     // Function to apply filters
     function applyFilters() {
@@ -223,9 +266,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const nuniqpref_lb = parseInt(document.getElementById("nuniqpref-selector-lb").value);
         const nuniqpref_ub = parseInt(document.getElementById("nuniqpref-selector-ub").value);
 
+		const selectedDatasets = Array.from(document.querySelectorAll('#filter-dataset-group input[name="dataset"]:checked'))
+        .map(input => input.value);
+
         // Filter structural properties (approval, single-peaked, etc.)
         const approvalFilter = document.querySelector('input[name="selector-approval"]:checked').value;
-        const singlePeakedFilter = document.querySelector('input[name="selector-singlepeaked"]:checked').value;
+        // const singlePeakedFilter = document.querySelector('input[name="selector-singlepeaked"]:checked').value;
 
         let acceptableDataTypes = [{% for t in all_data_types %}'{{ t }}',{% endfor %}];
         const allTypeSelectors = document.querySelectorAll('#filter-data-type-group .tri-value-selector-no');
@@ -248,44 +294,81 @@ document.addEventListener('DOMContentLoaded', function() {
         // Apply filters one by one
         filteredFiles = allFiles.filter(file => {
             // Check for number of voters
-            const numVotersMatch = (file.num_voters >= nvoter_lb && file.num_voters <= nvoter_ub);
+			const numVotersMatch = (
+				(isNaN(nvoter_lb) || file.num_voters >= nvoter_lb) &&
+				(isNaN(nvoter_ub) || file.num_voters <= nvoter_ub)
+			);
+            if (!numVotersMatch) {
+                return false;
+            }
 
             // Check for number of alternatives
-            const numAlternativesMatch = (file.num_alternatives >= nalt_lb && file.num_alternatives <= nalt_ub);
+			const numAlternativesMatch = (
+				(isNaN(nalt_lb) || file.num_alternatives >= nalt_lb) &&
+				(isNaN(nalt_ub) || file.num_alternatives <= nalt_ub)
+			);
+            if (!numAlternativesMatch) {
+                return false;
+            }
 
             // Check for number of unique preferences
-            const numUniqPrefsMatch = (file.num_unique_preferences >= nuniqpref_lb && file.num_unique_preferences <= nuniqpref_ub);
+			const numUniqPrefsMatch = (
+				(isNaN(nuniqpref_lb) || file.num_unique_preferences >= nuniqpref_lb) &&
+				(isNaN(nuniqpref_ub) || file.num_unique_preferences <= nuniqpref_ub)
+			);
+            if (!numUniqPrefsMatch) {
+                return false;
+            }
 
             // Apply approval filter (trinary logic: yes, no, or undefined)
             const approvalMatch = approvalFilter === "indef" ||
-                                  (approvalFilter === "yes" && file.is_approval) ||
-                                  (approvalFilter === "no" && !file.is_approval);
+                                  (approvalFilter === "yes" && file.is_approval === "true") ||
+                                  (approvalFilter === "no" && !file.is_approval === "false");
+            if (!approvalMatch) {
+                return false;
+            }
 
             // Apply single-peaked filter
-            const singlePeakedMatch = singlePeakedFilter === "indef" ||
-                                      (singlePeakedFilter === "yes" && file.is_single_peaked) ||
-                                      (singlePeakedFilter === "no" && !file.is_single_peaked);
+            // const singlePeakedMatch = singlePeakedFilter === "indef" ||
+            //                           (singlePeakedFilter === "yes" && file.is_single_peaked) ||
+            //                           (singlePeakedFilter === "no" && !file.is_single_peaked);
 
             // Filter based on data type (e.g., csv)
             const dataTypeMatch = acceptableDataTypes.includes(file.data_type);
+            if (!dataTypeMatch) {
+                return false;
+            }
 
             // Apply modification type filter
             const modificationTypeMatch = acceptableModifTypes.includes(file.modification_type);
+            if (!modificationTypeMatch) {
+                return false;
+            }
 
-            // Combine all filters (use logical AND to ensure all conditions are met)
-            return numVotersMatch && numAlternativesMatch && numUniqPrefsMatch && approvalMatch && singlePeakedMatch && dataTypeMatch && modificationTypeMatch;
+			let datasetMatch;
+			if (selectedDatasets.length === 0) {
+				datasetMatch = false;
+			} else {
+				datasetMatch = selectedDatasets.includes(file.dataset);
+			}
+            if (!datasetMatch) {
+                return false;
+            }
+
+            return true;
         });
 
         currentPage = 1; // Reset to the first page after filtering
         renderFiles(currentPage);
+        // updateFilterRanges(filteredFiles);
         renderPagination(paginatorTop);
         renderPagination(paginatorBottom);
     }
 
     function renderFiles(page) {
         searchResult.innerHTML = '';
+		document.getElementById('result-count').textContent = `${filteredFiles.length} file${filteredFiles.length !== 1 ? 's' : ''} found`;
         if (filteredFiles.length === 0) {
-            searchResult.innerHTML = '<p>There is no file matching to your query.</p>'
         } else {
             let startIndex = (page - 1) * itemsPerPage;
             let endIndex = startIndex + itemsPerPage;
@@ -293,98 +376,199 @@ document.addEventListener('DOMContentLoaded', function() {
             let filesToShow = filteredFiles.slice(startIndex, endIndex);
 
             searchResult.innerHTML += `
-                <span class="header odd-line">Dataset</span>
-                <span class="header odd-line">File</span>
-                <span class="header odd-line">Type</span>
-                <span class="header odd-line">Modif.</span>
-                <span class="header odd-line">#Voters</span>
-                <span class="header odd-line">#Alt.</span>
-                <span class="header odd-line"></span>`;
+				<div class="header odd-line" data-sort="dataset">Dataset</div>
+				<div class="header odd-line" data-sort="name">File</div>
+				<div class="header odd-line" data-sort="data_type">Type</div>
+				<div class="header odd-line" data-sort="modification_type">Modif.</div>
+				<div class="header odd-line" data-sort="num_voters">#Voters</div>
+				<div class="header odd-line" data-sort="num_alternatives">#Alt.</div>
+				<div class="header odd-line" data-sort="num_unique_preferences">#Uniq.</div>
+				<div class="header odd-line"></div>`;
             filesToShow.forEach(function (file, index) {
                 let rowClass = (index % 2 === 0) ? 'even-line' : 'odd-line';
                 searchResult.innerHTML += `
-                    <span class="${rowClass}">${file.dataset}</span>
-                    <span class="${rowClass}">${file.name}</span>
-                    <span class="${rowClass}">${file.data_type}</span>
-                    <span class="${rowClass}">${file.modification_type}</span>
-                    <span class="${rowClass}">${file.num_voters}</span>
-                    <span class="${rowClass}">${file.num_alternatives}</span>
-                    <span class="${rowClass}"><a href="${file.url}" class="download-button" target="_blank" download>Download</a></span>`;
+                    <div class="${rowClass}"><a href="${file.datasetUrl}">${file.dataset}</a></div>
+                    <div class="${rowClass}">${file.name}</div>
+                    <div class="${rowClass}">${file.data_type}</div>
+                    <div class="${rowClass}">${file.modification_type}</div>
+                    <div class="${rowClass}">${file.num_voters}</div>
+                    <div class="${rowClass}">${file.num_alternatives}</div>
+                    <div class="${rowClass}">${file.num_unique_preferences}</div>
+                    <div class="${rowClass}"><a href="${file.url}" class="download-button" target="_blank" download>Download</a></div>`;
             });
+
+			document.querySelectorAll('.header').forEach(header => {
+				const sortKey = header.getAttribute('data-sort');
+				if (sortKey === currentSortKey) {
+					header.classList.toggle('ascending', isAscending);
+					header.classList.toggle('descending', !isAscending);
+				} else {
+					header.classList.remove('ascending', 'descending'); // Reset other headers
+				}
+			});
         }
+
+		// Add sorting functionality
+		document.querySelectorAll('.header').forEach(header => {
+			header.addEventListener('click', function() {
+				const sortKey = this.getAttribute('data-sort');
+	            isAscending = (currentSortKey === sortKey) ? !isAscending : true;
+				currentSortKey = sortKey;
+				sortFiles(sortKey, !isAscending); // Sort files based on the header clicked
+				renderFiles(currentPage); // Re-render the files after sorting
+				renderPagination(paginatorTop);
+				renderPagination(paginatorBottom);
+			});
+		});
     }
 
     function renderPagination(paginator) {
-    paginator.innerHTML = '';
+		paginator.innerHTML = '';
 
-    // Calculate total pages for filtered results
-    const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+		// Calculate total pages for filtered results
+		const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
 
-    if (totalPages > 1) {
-        if (currentPage > 1) {
-            paginator.innerHTML += `<a href="#" data-page="${currentPage - 1}">«</a>`;
-        } else {
-            paginator.innerHTML += `<a>«</a>`;
-        }
+		if (totalPages > 1) {
+			if (currentPage > 1) {
+				paginator.innerHTML += `<a href="#" data-page="${currentPage - 1}">«</a>`;
+			} else {
+				paginator.innerHTML += `<a>«</a>`;
+			}
 
-        if (totalPages <= 10) {
-            for (let i = 1; i <= totalPages; i++) {
-                if (i === currentPage) {
-                    paginator.innerHTML += `<a class="active" href="#" data-page="${i}">${i}</a>`;
-                } else {
-                    paginator.innerHTML += `<a href="#" data-page="${i}">${i}</a>`;
-                }
-            }
-        } else {
-            paginator.innerHTML += `<a href="#" data-page="1" ${currentPage === 1 ? 'class="active"' : ''}>1</a>`;
-            paginator.innerHTML += `<a href="#" data-page="2" ${currentPage === 2 ? 'class="active"' : ''}>2</a>`;
-            if (currentPage > 4) {
-                paginator.innerHTML += `<a>...</a>`;
-            }
-            for (let i = Math.max(3, currentPage - 2); i <= Math.min(totalPages - 2, currentPage + 2); i++) {
-                if (i === currentPage) {
-                    paginator.innerHTML += `<a class="active" href="#" data-page="${i}">${i}</a>`;
-                } else {
-                    paginator.innerHTML += `<a href="#" data-page="${i}">${i}</a>`;
-                }
-            }
-            if (currentPage < totalPages - 2) {
-                paginator.innerHTML += `<a>...</a>`;
-            }
-            if (totalPages > 2) {
-                paginator.innerHTML += `<a href="#" data-page="${totalPages - 1}" ${currentPage === totalPages - 1 ? 'class="active"' : ''}>${totalPages - 1}</a>`;
-            }
-            if (totalPages > 1) {
-                paginator.innerHTML += `<a href="#" data-page="${totalPages}" ${currentPage === totalPages ? 'class="active"' : ''}>${totalPages}</a>`;
-            }
-        }
+			if (totalPages <= 10) {
+				for (let i = 1; i <= totalPages; i++) {
+					if (i === currentPage) {
+						paginator.innerHTML += `<a class="active" href="#" data-page="${i}">${i}</a>`;
+					} else {
+						paginator.innerHTML += `<a href="#" data-page="${i}">${i}</a>`;
+					}
+				}
+			} else {
+				paginator.innerHTML += `<a href="#" data-page="1" ${currentPage === 1 ? 'class="active"' : ''}>1</a>`;
+				paginator.innerHTML += `<a href="#" data-page="2" ${currentPage === 2 ? 'class="active"' : ''}>2</a>`;
+				if (currentPage > 4) {
+					paginator.innerHTML += `<a>...</a>`;
+				}
+				for (let i = Math.max(3, currentPage - 2); i <= Math.min(totalPages - 2, currentPage + 2); i++) {
+					if (i === currentPage) {
+						paginator.innerHTML += `<a class="active" href="#" data-page="${i}">${i}</a>`;
+					} else {
+						paginator.innerHTML += `<a href="#" data-page="${i}">${i}</a>`;
+					}
+				}
+				if (currentPage < totalPages - 2) {
+					paginator.innerHTML += `<a>...</a>`;
+				}
+				if (totalPages > 2) {
+					paginator.innerHTML += `<a href="#" data-page="${totalPages - 1}" ${currentPage === totalPages - 1 ? 'class="active"' : ''}>${totalPages - 1}</a>`;
+				}
+				if (totalPages > 1) {
+					paginator.innerHTML += `<a href="#" data-page="${totalPages}" ${currentPage === totalPages ? 'class="active"' : ''}>${totalPages}</a>`;
+				}
+			}
 
-        if (currentPage < totalPages) {
-            paginator.innerHTML += `<a href="#" data-page="${currentPage + 1}">»</a>`;
-        } else {
-            paginator.innerHTML += `<a>»</a>`;
-        }
+			if (currentPage < totalPages) {
+				paginator.innerHTML += `<a href="#" data-page="${currentPage + 1}">»</a>`;
+			} else {
+				paginator.innerHTML += `<a>»</a>`;
+			}
 
-        // Add event listeners for page links
-        const pageLinks = paginator.querySelectorAll('a[data-page]');
-        pageLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                currentPage = parseInt(this.getAttribute('data-page'));
-                renderFiles(currentPage);
-                renderPagination(paginatorTop);
-                renderPagination(paginatorBottom);
-            });
-        });
+			// Add event listeners for page links
+			const pageLinks = paginator.querySelectorAll('a[data-page]');
+			pageLinks.forEach(link => {
+				link.addEventListener('click', function (e) {
+					e.preventDefault();
+					currentPage = parseInt(this.getAttribute('data-page'));
+					renderFiles(currentPage);
+					renderPagination(paginatorTop);
+					renderPagination(paginatorBottom);
+				});
+			});
+		}
+	}
+
+	function sortFiles(key, ascending) {
+		filteredFiles.sort((a, b) => {
+			let comparison = 0;
+
+			// Determine comparison based on the key
+			if (key === "num_voters" || key === "num_alternatives" || key === "num_unique_preferences") {
+				comparison = a[key] - b[key]; // Numeric comparison
+			} else {
+				comparison = a[key].localeCompare(b[key]); // String comparison
+			}
+
+			return ascending ? comparison : -comparison; // Return sorted order
+		});
+	}
+
+    function getMinMaxValues(filteredFiles, key) {
+        const values = filteredFiles.map(file => file[key]);
+        const minValue = Math.min(...values);
+        const maxValue = Math.max(...values);
+        return { minValue, maxValue };
     }
-}
 
+    function updateFilterRanges(filteredFiles) {
+        // Get min/max values for each attribute
+        const nvoterRange = getMinMaxValues(filteredFiles, 'num_voters');
+        const naltRange = getMinMaxValues(filteredFiles, 'num_alternatives');
+        const nuniqprefRange = getMinMaxValues(filteredFiles, 'num_unique_preferences');
 
-    // Initial render
-    renderFiles(currentPage);
-    renderPagination(paginatorTop);
-    renderPagination(paginatorBottom);
+        // Update the input fields for "Number of voters"
+        document.getElementById('nvoter-selector-lb').value = nvoterRange.minValue;
+        document.getElementById('nvoter-selector-ub').value = nvoterRange.maxValue;
+
+        // Update the input fields for "Number of alternatives"
+        document.getElementById('nalt-selector-lb').value = naltRange.minValue;
+        document.getElementById('nalt-selector-ub').value = naltRange.maxValue;
+
+        // Update the input fields for "Number of unique preferences"
+        document.getElementById('nuniqpref-selector-lb').value = nuniqprefRange.minValue;
+        document.getElementById('nuniqpref-selector-ub').value = nuniqprefRange.maxValue;
+    }
+
+    function toggleDatasetSelection(forceSelectAll = false) {
+		const datasetCheckboxes = document.querySelectorAll('#filter-dataset-group input[name="dataset"]');
+        let allChecked;
+        if (forceSelectAll) {
+            allChecked = false;
+        } else {
+            allChecked = Array.from(datasetCheckboxes).every(checkbox => checkbox.checked);
+        }
+		datasetCheckboxes.forEach(checkbox => checkbox.checked = !allChecked);
+		document.getElementById('select-all-datasets').textContent = allChecked ? 'Select All' : 'Select None';
+	}
+
+	document.getElementById('select-all-datasets').addEventListener('click', function () {
+        toggleDatasetSelection();
+    });
+
+    document.getElementById('resetFilters').addEventListener('click', function() {
+        document.getElementById('nvoter-selector-lb').value = {{ min_voters }};
+        document.getElementById('nvoter-selector-ub').value = {{ max_voters }};
+
+        document.getElementById('nalt-selector-lb').value = {{ min_alt }};
+        document.getElementById('nalt-selector-ub').value = {{ max_alt }};
+
+        document.getElementById('nuniqpref-selector-lb').value = {{ min_pref }};
+        document.getElementById('nuniqpref-selector-ub').value = {{ max_pref }};
+
+        // Set all tri-value selectors to "indef"
+        const triValueSelectors = document.querySelectorAll('.tri-value-selector input[type="radio"]');
+        triValueSelectors.forEach(selector => {
+            selector.checked = selector.value === "indef";
+        });
+
+        // Select all datasets
+        toggleDatasetSelection(true);
+
+        applyFilters();
+    });
 
     document.getElementById('applyFilters').addEventListener('click', applyFilters);
+
+    // Initial render
+	applyFilters();
 });
 </script>

@@ -1021,9 +1021,9 @@ Dataset page
 	text-align: right;
 }
 
-/* ===========
+/* =============
 Data search page
-=========== */
+============= */
 
 #filters {
 	width: 100%;
@@ -1033,6 +1033,7 @@ Data search page
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	gap: 20px;
 }
 
 .filter-wrap {
@@ -1053,6 +1054,18 @@ Data search page
 
 .filter-select-wrap {
   justify-self: start;
+}
+
+#filter-dataset-group p {
+	margin: 5px 0;
+}
+
+#filter-dataset-all-filters {
+	height: 15ch;
+	overflow-y: scroll;
+    background-color: #fafbff;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 .tri-value-selector {
@@ -1115,18 +1128,28 @@ Data search page
 
 #search-result {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: repeat(8, auto);
 }
 
-#search-result span {
-    height: 3.5ch;
+#search-result div {
+	height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+	padding: 0 20px;
 }
 
 #search-result .header {
     font-weight: bold;
+    cursor: pointer;
+}
+
+#search-result .header.ascending::after {
+    content: '\00a0▲';
+}
+
+#search-result .header.descending::after {
+    content: '\00a0▼';
 }
 
 #search-result .even-line {
@@ -1169,4 +1192,25 @@ span.res-no {
 	line-height: 1.5em;
 	background: #d74444;
 	color: white;
+}
+
+/* ============
+Collection page
+============ */
+
+.collections-wrap {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.collection-wrap h3 {
+	text-align: center;
+}
+
+.collection-buttons-wrap {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
 }
