@@ -380,6 +380,7 @@ document.addEventListener('DOMContentLoaded', function() {
         searchResult.innerHTML = '';
 		document.getElementById('result-count').textContent = `${filteredFiles.length} file${filteredFiles.length !== 1 ? 's' : ''} found`;
         // Generate the download scripts
+        document.getElementById('script-show-button-wrap').innerHTML = "";
         const pythonScript = `import requests\n\nurls = [\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n]\n\nfor url in urls:\n    file_name = url.split('/')[-1]\n    with open(file_name, 'wb') as f:\n        response = requests.get(url)\n        f.write(response.content)\n        print(f"Downloaded {file_name}")\n`;
         const bashScript = `urls=(\n${filteredFiles.map(file => `    "${file.url}"`).join('\n')}\n)\n\nfor url in "\${urls[@]}"; do\n    wget "$url"\ndone\n`;
         const powershellScript = `$urls = @(\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n)\n\nforeach ($url in $urls) {\n    $fileName = Split-Path $url -Leaf\n    Invoke-WebRequest -Uri $url -OutFile $fileName\n    Write-Host "Downloaded $fileName"\n}\n`;
