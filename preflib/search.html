@@ -219,6 +219,17 @@ sitemap:
 <div class="pagination_wrapper" id="paginator-bottom">
     <div class="pagination"></div>
 </div>
+
+</section>
+
+<section>
+<div id="download-script-wrap">
+    <h3>Download Scripts</h3>
+    <p>Want to download all the files matching your criteria? Use one of the scripts provided below.</p>
+    <div id="script-show-button-wrap"></div>
+    <div id="script-download-button-wrap"></div>
+    <div id="script-content"></div>
+</div>
 </section>
 
 <script>
@@ -368,6 +379,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderFiles(page) {
         searchResult.innerHTML = '';
 		document.getElementById('result-count').textContent = `${filteredFiles.length} file${filteredFiles.length !== 1 ? 's' : ''} found`;
+        // Generate the download scripts
+        const pythonScript = `import requests\n\nurls = [\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n]\n\nfor url in urls:\n    file_name = url.split('/')[-1]\n    with open(file_name, 'wb') as f:\n        response = requests.get(url)\n        f.write(response.content)\n        print(f"Downloaded {file_name}")\n`;
+        const bashScript = `urls=(\n${filteredFiles.map(file => `    "${file.url}"`).join('\n')}\n)\n\nfor url in "\${urls[@]}"; do\n    wget "$url"\ndone\n`;
+        const powershellScript = `$urls = @(\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n)\n\nforeach ($url in $urls) {\n    $fileName = Split-Path $url -Leaf\n    Invoke-WebRequest -Uri $url -OutFile $fileName\n    Write-Host "Downloaded $fileName"\n}\n`;
+        const jsScript = `const urls = [\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n];\n\nurls.forEach(url => {\n    const a = document.createElement('a');\n    a.href = url;\n    a.download = url.split('/').pop();\n    document.body.appendChild(a);\n    a.click();\n    document.body.removeChild(a);\n});\n`;
+        createScriptSection('Python Script', pythonScript, 'python-script');
+        createScriptSection('Bash Script', bashScript, 'bash-script');
+        createScriptSection('PowerShell Script', powershellScript, 'powershell-script');
+        createScriptSection('JavaScript Script', jsScript, 'javascript-script');
+
         if (filteredFiles.length === 0) {
         } else {
             let startIndex = (page - 1) * itemsPerPage;
@@ -539,6 +560,50 @@ document.addEventListener('DOMContentLoaded', function() {
 		datasetCheckboxes.forEach(checkbox => checkbox.checked = !allChecked);
 		document.getElementById('select-all-datasets').textContent = allChecked ? 'Select All' : 'Select None';
 	}
+
+    function createScriptSection(language, scriptContent, scriptId) {
+        const scriptDiv = document.getElementById('script-show-button-wrap');
+
+        // Create button to toggle visibility
+        const button = document.createElement('button');
+        button.className = 'script-show-button';
+        button.textContent = language;
+        button.onclick = function () {
+            toggleScript(scriptId, scriptContent);
+        };
+        scriptDiv.appendChild(button);
+    }
+
+    // Function to toggle script visibility
+    function toggleScript(language, scriptText) {
+        const scriptContent = document.getElementById("script-content");
+        const downloadButtonWrap = document.getElementById("script-download-button-wrap");
+        downloadButtonWrap.innerText = "";
+        scriptContent.innerHTML = "";
+        if (scriptContent.classList.contains(language)) {
+            scriptContent.style.display = "none";
+            scriptContent.classList.remove(language);
+        } else {
+            const button = document.createElement('a');
+            button.className = 'download-button';
+            button.textContent = "Copy Script";
+            button.onclick = function () {
+                copyScript();
+            };
+            downloadButtonWrap.appendChild(button);
+            const codeElement = document.createElement('code');
+            scriptContent.classList.add(language);
+            codeElement.textContent = scriptText;
+            codeElement.id = "script-content-code";
+            scriptContent.appendChild(codeElement);
+            scriptContent.style.display = "block";
+        }
+    }
+
+    function copyScript() {
+        const scriptText = document.getElementById('script-content-code').textContent;
+        navigator.clipboard.writeText(scriptText);
+    }
 
 	document.getElementById('select-all-datasets').addEventListener('click', function () {
         toggleDatasetSelection();

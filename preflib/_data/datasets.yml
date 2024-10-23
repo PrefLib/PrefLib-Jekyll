@@ -113,8 +113,8 @@
   zip_file_size: 9596
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00005_burlington.zip
   data_types:
-  - toc
   - toi
+  - toc
 - name: Skate Data
   abbreviation: skate
   series_number: '00006'
@@ -137,8 +137,8 @@
   zip_file_size: 42393
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00006_skate.zip
   data_types:
-  - soc
   - toc
+  - soc
 - name: Electoral Reform Society (ERS) Data
   abbreviation: ers
   series_number: '00007'
@@ -279,8 +279,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
   - toc
-  - soc
   - soi
+  - soc
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -361,10 +361,10 @@
   zip_file_size: 429919
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
-  - toc
-  - soc
-  - soi
   - toi
+  - toc
+  - soi
+  - soc
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -421,9 +421,9 @@
   zip_file_size: 30265
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
-  - dat
-  - toc
   - toi
+  - toc
+  - dat
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -445,9 +445,9 @@
   zip_file_size: 2842
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
-  - dat
-  - toc
   - toi
+  - toc
+  - dat
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -496,9 +496,9 @@
   zip_file_size: 44306
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
-  - dat
-  - toc
   - toi
+  - toc
+  - dat
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -521,9 +521,9 @@
   zip_file_size: 14598
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
-  - dat
-  - toc
   - toi
+  - toc
+  - dat
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -547,9 +547,9 @@
   zip_file_size: 186471
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
-  - dat
-  - toc
   - toi
+  - toc
+  - dat
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -572,9 +572,9 @@
   zip_file_size: 9901
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
-  - dat
-  - toc
   - toi
+  - toc
+  - dat
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -596,8 +596,8 @@
   zip_file_size: 2038
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00023_takomapark.zip
   data_types:
-  - toc
   - toi
+  - toc
 - name: Mechanical Turk Dots
   abbreviation: dots
   series_number: '00024'
@@ -833,10 +833,10 @@
   zip_file_size: 8060
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
-  - toc
-  - soc
-  - soi
   - toi
+  - toc
+  - soi
+  - soc
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -869,9 +869,9 @@
   zip_file_size: 6107
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00033_poster.zip
   data_types:
-  - dat
   - cat
   - toc
+  - dat
 - name: Cities Survey
   abbreviation: cities
   series_number: '00034'
@@ -940,8 +940,8 @@
   zip_file_size: 10099
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00035_breakfast.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -984,8 +984,8 @@
   zip_file_size: 207774332
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
-  - dat
   - wmd
+  - dat
 - name: AAMAS Bidding Data
   abbreviation: aamas
   series_number: '00037'
@@ -1048,8 +1048,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
   - toc
-  - dat
   - soi
+  - dat
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
   series_number: 00039
@@ -1127,8 +1127,8 @@
   zip_file_size: 1190834
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00041_boardgames.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Boxing
   abbreviation: boxing
   series_number: '00042'
@@ -1157,8 +1157,8 @@
   zip_file_size: 130898
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00042_boxing.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Cycling Races
   abbreviation: cycling
   series_number: '00043'
@@ -1192,8 +1192,8 @@
   zip_file_size: 1396936
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00043_cycling.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Table Tennis Ranking
   abbreviation: tabletennis
   series_number: '00044'
@@ -1221,8 +1221,8 @@
   zip_file_size: 1614895
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00044_tabletennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Tennis Ranking
   abbreviation: tennis
   series_number: '00045'
@@ -1249,8 +1249,8 @@
   zip_file_size: 279943
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00045_tennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Global University Ranking
   abbreviation: university
   series_number: '00046'
@@ -1278,8 +1278,8 @@
   zip_file_size: 115553
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00046_university.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Daily Chart
   abbreviation: spotifyday
   series_number: '00047'
@@ -1310,8 +1310,8 @@
   zip_file_size: 25789024
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00047_spotifyday.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Countries Chart
   abbreviation: spotifycountry
   series_number: 00048
@@ -1344,8 +1344,8 @@
   zip_file_size: 13337574
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00048_spotifycountry.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Multilaps Competitions
   abbreviation: mylaps
   series_number: 00049
@@ -1372,8 +1372,8 @@
   zip_file_size: 1279009
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00049_mylaps.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Movehub City Ranking
   abbreviation: movehub
   series_number: '00050'
@@ -1428,8 +1428,8 @@
   zip_file_size: 84678
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00051_countries.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Seasons
   abbreviation: f1seasons
   series_number: '00052'
@@ -1456,8 +1456,8 @@
   zip_file_size: 125526
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00052_f1seasons.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Races
   abbreviation: f1races
   series_number: '00053'
@@ -1486,8 +1486,8 @@
   zip_file_size: 1190486
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00053_f1races.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Weeks Power Ranking
   abbreviation: weeksport
   series_number: '00054'
@@ -1519,8 +1519,8 @@
   zip_file_size: 29483883
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00054_weeksport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Combined Power Ranking
   abbreviation: combinedsport
   series_number: '00055'
@@ -1551,8 +1551,8 @@
   zip_file_size: 21773628
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00055_combinedsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Seasons Power Ranking
   abbreviation: seasonsport
   series_number: '00056'
@@ -1583,8 +1583,8 @@
   zip_file_size: 28129140
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00056_seasonsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Parliamentary Elections
   abbreviation: parliaments
   series_number: '00057'
@@ -1688,8 +1688,8 @@
   zip_file_size: 421438107
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00060_polkadot.zip
   data_types:
-  - dat
   - cat
+  - dat
 - name: Kusama Network
   abbreviation: kusama
   series_number: '00061'
@@ -1717,11 +1717,11 @@
     AAAI, 2024.'
   selected_studies: ''
   num_files: 3040
-  zip_file_size: 532214042
+  zip_file_size: 532215589
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00061_kusama.zip
   data_types:
-  - dat
   - cat
+  - dat
 - name: Alternative Order Experiment
   abbreviation: orderaltexpe
   series_number: '00062'
@@ -1750,5 +1750,23 @@
   zip_file_size: 2470
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00062_orderaltexpe.zip
   data_types:
-  - soc
   - csv
+  - soc
+- name: CTU Tutorial Time Selection
+  abbreviation: ctu
+  series_number: '00063'
+  tags:
+  - Election
+  publication_date: '2024-10-24'
+  description: <p>This dataset contains the results of surveying students of the BI-AG1
+    courses at the Czech Technical University in Prague about their preferred tutorial
+    time. Each student selected, from the set of predefined alternatives, those that
+    fits into their schedule.</p><p>The data on this page has been donated by <a href="https://knopdusa.pages.fit/">Dušan
+    Knop</a> and <a href="https://pages.fit.cvut.cz/schiesim/">Šimon Schierreich</a>.</p>
+  required_citations: ''
+  selected_studies: ''
+  num_files: 1
+  zip_file_size: 2178
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00063_ctu.zip
+  data_types:
+  - cat
