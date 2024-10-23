@@ -25,17 +25,32 @@ sitemap:
 <section>
     <div class="collections-wrap">
         <div class="collection-wrap">
-            <h3>Data Type</h3>
+            <h3>Strict Order Complete (SOC)</h3>
+            <p>Strict order complete files encode preferences in which all respondent submitted a strict ranking containing all the alternatives.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_soc.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Strict Order Incomplete (SOI)</h3>
+            <p>Strict order incomplete files encode preferences in which all respondent submitted a strict ranking containing some of the alternatives.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_soi.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
 
-            {% assign all_data_types = site.data.datafiles | map: "data_type" | uniq | sort %}
-            {% assign all_data_types = all_data_types | where_exp: "item", "item != 'csv'" %}
-            {% assign all_data_types = all_data_types | where_exp: "item", "item != 'dat'" %}
-            <div class="collection-buttons-wrap">
-                {% for type in all_data_types %}
-                    <div class="collection-button button-wrapper">
-                        <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_{{ type }}.zip" class="download-button">{{ type | upcase  }} files</a>
-                    </div>
-                {% endfor %}
+        <div class="collection-wrap">
+            <h3>Tie Order Complete (TOC)</h3>
+            <p>Strict order complete files encode preferences in which all respondent submitted a ranking containing all the alternatives where ties between alternatives are allowed.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toc.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Tie Order Incomplete (TOI)</h3>
+            <p>Strict order incomplete files encode preferences in which all respondent submitted a strict ranking containing some of the alternatives where ties between alternatives are allowed.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
             </div>
         </div>
 

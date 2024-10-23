@@ -381,14 +381,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('result-count').textContent = `${filteredFiles.length} file${filteredFiles.length !== 1 ? 's' : ''} found`;
         // Generate the download scripts
         document.getElementById('script-show-button-wrap').innerHTML = "";
-        const pythonScript = `import requests\n\nurls = [\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n]\n\nfor url in urls:\n    file_name = url.split('/')[-1]\n    with open(file_name, 'wb') as f:\n        response = requests.get(url)\n        f.write(response.content)\n        print(f"Downloaded {file_name}")\n`;
-        const bashScript = `urls=(\n${filteredFiles.map(file => `    "${file.url}"`).join('\n')}\n)\n\nfor url in "\${urls[@]}"; do\n    wget "$url"\ndone\n`;
+        document.getElementById('script-content').innerHTML = "";
+        const pythonScript = `import urllib.request\nimport urllib.parse\nimport os\n\nurls = [\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n]\n\nfor url in urls:\n    encoded_url = urllib.parse.quote(url, safe=':/')\n    try:\n        file_name = url.split('/')[-1]\n        urllib.request.urlretrieve(encoded_url, file_name)\n        print(f"Downloaded {file_name}")\n    except Exception as e:\n        print(f"Failed to download {url}. Error: {e}")`;
+        const bashScript = `#!/bin/bash\n\nurls=(\n${filteredFiles.map(file => `    "${file.url}"`).join('\n')}\n)\n\nfor url in "\${urls[@]}"; do\n    wget "$url"\ndone\n`;
         const powershellScript = `$urls = @(\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n)\n\nforeach ($url in $urls) {\n    $fileName = Split-Path $url -Leaf\n    Invoke-WebRequest -Uri $url -OutFile $fileName\n    Write-Host "Downloaded $fileName"\n}\n`;
-        const jsScript = `const urls = [\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n];\n\nurls.forEach(url => {\n    const a = document.createElement('a');\n    a.href = url;\n    a.download = url.split('/').pop();\n    document.body.appendChild(a);\n    a.click();\n    document.body.removeChild(a);\n});\n`;
         createScriptSection('Python Script', pythonScript, 'python-script');
         createScriptSection('Bash Script', bashScript, 'bash-script');
         createScriptSection('PowerShell Script', powershellScript, 'powershell-script');
-        createScriptSection('JavaScript Script', jsScript, 'javascript-script');
 
         if (filteredFiles.length === 0) {
         } else {

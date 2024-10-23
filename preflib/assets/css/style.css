@@ -606,6 +606,7 @@ Download button
 
 .download-button:hover {
 	background-color: var(--color-blue1);
+	cursor: pointer;
 }
 
 /* ========
