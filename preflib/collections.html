@@ -24,6 +24,7 @@ sitemap:
 
 <section>
     <div class="collections-wrap">
+        <h2>Data Type</h2>
         <div class="collection-wrap">
             <h3>Strict Order Complete (SOC)</h3>
             <p>Strict order complete files encode preferences in which all respondent submitted a strict ranking containing all the alternatives.</p>
@@ -53,29 +54,73 @@ sitemap:
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
             </div>
         </div>
-
         <div class="collection-wrap">
-            <h3>Modification Type</h3>
-            {% assign all_modification_types = site.data.datafiles | map: "modification_type" | uniq | sort %}
-            <div class="collection-buttons-wrap">
-                {% for type in all_modification_types %}
-                    <div class="collection-button button-wrapper">
-                        <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/modif_{{ type }}.zip" class="download-button">{{ type | title_case }} files</a>
-                    </div>
-                {% endfor %}
+            <h3>Categorical (CAT)</h3>
+            <p>Categorical files encode preferences in which all respondent classified some of the alternatives in categories. The categories are themselves globally ordered which defines preferences.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
             </div>
         </div>
+        <div class="collection-wrap">
+            <h3>Weighted Matching Data (WMD)</h3>
+            <p>Weighted matching data files encode preferences that are seen as a weighted directed graphs, i.e., a collection of edges between the alternatives associated with a weight.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="collections-wrap">
+        <h2>Modification Type</h2>
 
         <div class="collection-wrap">
-            <h3>Structural Properties</h3>
+            <h3>Original Files</h3>
+            <p>In original files the preferences appear as they were submitted.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/modif_original.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Induced Files</h3>
+            <p>In induced files the preferences have been induced from another context but not modified: the format differs but not the content.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/modif_induced.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Imbued Files</h3>
+            <p>In imbued files the preferences have been induced from another context and additional (arbitrary) information has been added.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/modif_imbued.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Synthetic Files</h3>
+            <p>In synthetic files the preferences have been generated artificially.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/modif_synthetic.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+    </div>
 
-            <div class="collection-buttons-wrap">
-                <div class="collection-button button-wrapper">
-                    <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isApproval.zip" class="download-button">Approval files</a>
-                </div>
-<!--                <div class="collection-button">-->
-<!--                    <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/approval.zip" class="download-button">Single-Peaked files</a>-->
-<!--                </div>-->
+    <div class="collections-wrap">
+        <h2>Structural Properties</h2>
+
+
+        <div class="collection-wrap">
+            <h3>Approval Files</h3>
+            <p>
+                Approval files correspond to cases in which the preferences can be read as: each respondent approves of
+                a given subset of alternatives. This includes:
+            </p>
+            <ul>
+                <li>Ordinal preferences with ties where each respondent submitted a single indifference class;</li>
+                <li>Ordinal preferences with ties where each respondent submitted two indifference classes containing all the alternatives;</li>
+                <li>Categorical preferences with 1 category;</li>
+                <li>Categorical preferences with 2 categories containing all the alternatives.</li>
+            </ul>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isApproval.zip" class="download-button">Download all files</a>
             </div>
         </div>
     </div>

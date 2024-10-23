@@ -26,7 +26,7 @@ description: >
   recommender systems, data mining, machine learning, combinatorial optimization, to name just a few. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://preflib.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_url: "https://github.com/PrefLib/PrefLib-Jekyll"
 
 

@@ -1244,8 +1244,7 @@ Collection page
 	text-align: center;
 }
 
-.collection-buttons-wrap {
+.collection-button {
 	display: flex;
-	gap: 10px;
 	justify-content: center;
 }
