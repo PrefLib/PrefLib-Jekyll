@@ -381,7 +381,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('result-count').textContent = `${filteredFiles.length} file${filteredFiles.length !== 1 ? 's' : ''} found`;
         // Generate the download scripts
         document.getElementById('script-show-button-wrap').innerHTML = "";
+        document.getElementById('script-download-button-wrap').innerHTML = "";
         document.getElementById('script-content').innerHTML = "";
+        document.getElementById('script-content').style.display = "none";
         const pythonScript = `import urllib.request\nimport urllib.parse\nimport os\n\nurls = [\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n]\n\nfor url in urls:\n    encoded_url = urllib.parse.quote(url, safe=':/')\n    try:\n        file_name = url.split('/')[-1]\n        urllib.request.urlretrieve(encoded_url, file_name)\n        print(f"Downloaded {file_name}")\n    except Exception as e:\n        print(f"Failed to download {url}. Error: {e}")`;
         const bashScript = `#!/bin/bash\n\nurls=(\n${filteredFiles.map(file => `    "${file.url}"`).join('\n')}\n)\n\nfor url in "\${urls[@]}"; do\n    wget "$url"\ndone\n`;
         const powershellScript = `$urls = @(\n${filteredFiles.map(file => `    "${file.url}"`).join(',\n')}\n)\n\nforeach ($url in $urls) {\n    $fileName = Split-Path $url -Leaf\n    Invoke-WebRequest -Uri $url -OutFile $fileName\n    Write-Host "Downloaded $fileName"\n}\n`;
@@ -580,9 +582,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const downloadButtonWrap = document.getElementById("script-download-button-wrap");
         downloadButtonWrap.innerText = "";
         scriptContent.innerHTML = "";
-        if (scriptContent.classList.contains(language)) {
+        if (scriptContent.dataset.language === language) {
             scriptContent.style.display = "none";
-            scriptContent.classList.remove(language);
+            scriptContent.dataset.language = "";
         } else {
             const button = document.createElement('a');
             button.className = 'download-button';
@@ -592,7 +594,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             downloadButtonWrap.appendChild(button);
             const codeElement = document.createElement('code');
-            scriptContent.classList.add(language);
+            scriptContent.dataset.language = language;
             codeElement.textContent = scriptText;
             codeElement.id = "script-content-code";
             scriptContent.appendChild(codeElement);

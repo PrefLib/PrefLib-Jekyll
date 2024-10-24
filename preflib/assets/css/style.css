@@ -433,6 +433,10 @@ section:nth-child(odd) {
 	background: white;
 }
 
+section:nth-child(odd) h2 {
+    background: white;
+}
+
 section:nth-child(even) {
 	/*background: #e0ebeb;*/
 	background: var(--color-blue3);
@@ -1234,14 +1238,9 @@ Collection page
 ============ */
 
 .collections-wrap {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	margin-bottom: 20px;
 }
 
 .collection-wrap h3 {
-	text-align: center;
 }
 
 .collection-button {
