@@ -85,6 +85,8 @@ for zip_file in zip_files:
             "num_alternatives": num_alternatives,
             "num_unique_preferences": num_unique,
             "is_approval": metadata.get("isApproval", None) == "True",
+            "is_strict": metadata.get("isStrict", None) == "True",
+            "is_complete": metadata.get("isComplete", None) == "True",
             "is_single_peaked": None,
             "is_single_peaked_circle": None,
             "is_single_peaked_tree": None,

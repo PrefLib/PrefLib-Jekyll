@@ -1238,9 +1238,35 @@ Collection page
 ============ */
 
 .collections-wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	box-sizing: border-box;
+	gap:20px;
+}
+
+@media screen and (max-width: 750px) {
+	.collections-wrap {
+		grid-template-columns: 1fr;
+	}
+}
+
+.collections-wrap > .collection-wrap:nth-child(2n-1):last-of-type {
+	grid-column: span 2;
+}
+
+.collection-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border: 1px solid var(--color-blue2);
+	padding: 10px;
+	border-radius: 5px;
 }
 
 .collection-wrap h3 {
+	text-align: center;
+	margin-top: 0;
 }
 
 .collection-button {

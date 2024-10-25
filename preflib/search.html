@@ -142,7 +142,23 @@ sitemap:
 			<h3>Structural Properties</h3>
 			<div class="filter-wrap">
 				<div class="filter-label">
-					<a>Approval/Dichotomous preferences?</a>
+					<a>Strict preferences</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-strict" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Complete preferences</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-complete" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Approval/Dichotomous preferences</a>
 				</div>
 				<div class="filter-select-wrap">
 					{% include tri_value_selector.html id="selector-approval" %}
@@ -252,7 +268,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				"num_alternatives": "{{ file.num_alternatives }}",
 				"num_unique_preferences": "{{ file.num_unique_preferences }}",
 				"is_approval": "{{ file.is_approval }}",
-				"is_single_peaked": "{{ file.is_single_peaked }}",
+				"is_strict": "{{ file.is_strict }}",
+				"is_complete": "{{ file.is_complete }}",
 				"data_type": "{{ file.data_type }}",
 				"modification_type": "{{ file.modification_type }}",
 				"dataset": "{{ dataset.series_number }} - {{ dataset.name }}",
@@ -282,6 +299,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Filter structural properties (approval, single-peaked, etc.)
         const approvalFilter = document.querySelector('input[name="selector-approval"]:checked').value;
+        const strictFilter = document.querySelector('input[name="selector-strict"]:checked').value;
+        const completeFilter = document.querySelector('input[name="selector-complete"]:checked').value;
         // const singlePeakedFilter = document.querySelector('input[name="selector-singlepeaked"]:checked').value;
 
         let acceptableDataTypes = [{% for t in all_data_types %}'{{ t }}',{% endfor %}];
@@ -336,6 +355,22 @@ document.addEventListener('DOMContentLoaded', function() {
                                   (approvalFilter === "yes" && file.is_approval === "true") ||
                                   (approvalFilter === "no" && !file.is_approval === "false");
             if (!approvalMatch) {
+                return false;
+            }
+
+            // Apply strict filter (trinary logic: yes, no, or undefined)
+            const strictMatch = strictFilter === "indef" ||
+                                  (strictFilter === "yes" && file.is_strict === "true") ||
+                                  (strictFilter === "no" && !file.is_strict === "false");
+            if (!strictMatch) {
+                return false;
+            }
+
+            // Apply complete filter (trinary logic: yes, no, or undefined)
+            const completeMatch = completeFilter === "indef" ||
+                                  (completeFilter === "yes" && file.is_complete === "true") ||
+                                  (completeFilter === "no" && !file.is_complete === "false");
+            if (!completeMatch) {
                 return false;
             }
 

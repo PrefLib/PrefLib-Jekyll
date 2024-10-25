@@ -23,8 +23,8 @@ sitemap:
 </section>
 
 <section>
+    <h2>Data Type</h2>
     <div class="collections-wrap">
-        <h2>Data Type</h2>
         <div class="collection-wrap">
             <h3>Strict Order Complete (SOC)</h3>
             <p>Strict order complete files encode preferences in which all respondent submitted a strict ranking containing all the alternatives.</p>
@@ -35,6 +35,7 @@ sitemap:
         <div class="collection-wrap">
             <h3>Strict Order Incomplete (SOI)</h3>
             <p>Strict order incomplete files encode preferences in which all respondent submitted a strict ranking containing some of the alternatives.</p>
+            <p>This collection also includes the SOC files since they are a special case of SOI.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_soi.zip" class="download-button">Download all files</a>
             </div>
@@ -43,6 +44,7 @@ sitemap:
         <div class="collection-wrap">
             <h3>Tie Order Complete (TOC)</h3>
             <p>Strict order complete files encode preferences in which all respondent submitted a ranking containing all the alternatives where ties between alternatives are allowed.</p>
+            <p>This collection also includes the SOC files since they are a special case of TOC.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toc.zip" class="download-button">Download all files</a>
             </div>
@@ -50,6 +52,7 @@ sitemap:
         <div class="collection-wrap">
             <h3>Tie Order Incomplete (TOI)</h3>
             <p>Strict order incomplete files encode preferences in which all respondent submitted a strict ranking containing some of the alternatives where ties between alternatives are allowed.</p>
+            <p>This collection also includes the SOC, SOI and TOC files since they are a special case of TOI.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
             </div>
@@ -72,9 +75,8 @@ sitemap:
 </section>
 
 <section>
+    <h2>Modification Type</h2>
     <div class="collections-wrap">
-        <h2>Modification Type</h2>
-
         <div class="collection-wrap">
             <h3>Original Files</h3>
             <p>In original files the preferences appear as they were submitted.</p>
@@ -107,12 +109,30 @@ sitemap:
 </section>
 
 <section>
+    <h2>Structural Properties</h2>
     <div class="collections-wrap">
-        <h2>Structural Properties</h2>
-
-
         <div class="collection-wrap">
-            <h3>Approval Files</h3>
+            <h3>Strict Preferences</h3>
+            <p>
+                In strict preferences files the respondent ordered the alternatives in a strict manner: no ties is allowed.
+            </p>
+            <p>This should contain all SOC and SOI files (otherwise, there is a problem with the database).</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isStrict.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Complete Preferences</h3>
+            <p>
+                In complete preferences files the respondent reported their preferences for all the alternatives.
+            </p>
+            <p>This should contain all SOC and TOC files, together with the CAT files that are complete.</p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isComplete.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Approval Preferences</h3>
             <p>
                 Approval files correspond to cases in which the preferences can be read as: each respondent approves of
                 a given subset of alternatives. This includes:
