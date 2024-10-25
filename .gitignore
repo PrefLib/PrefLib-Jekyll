@@ -7,5 +7,9 @@ _site/
 vendor/
 
 scripts/zip
+scripts/datafiles.yml
+scripts/datasets.yml
+
+preflib/Gemfile.lock
 
 .idea/
