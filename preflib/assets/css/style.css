@@ -20,6 +20,57 @@ Responsiveness
 	.extraLargeScreen {display: none;}
 }
 
+html {
+  font-size: 18px;
+  font-family: "Kantumruy Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
 /* =============================
 Header with the name and logo 
 ============================= */
@@ -32,7 +83,7 @@ Header with the name and logo
 #banner {
 	background: var(--color-blue1);
 	color: white;
-	padding: 0px 5%;
+	padding: 0 5%;
 }
 
 .title-wrap {
@@ -42,17 +93,16 @@ Header with the name and logo
 }
 
 .title p {
-	font-size: 250%;
+	font-size: 2rem;
 	font-weight: bold;
 	height: 1em;
 	line-height: 1em;
 	white-space: nowrap;
-	text-shadow: 0px 2px 0px black;
+	text-shadow: 0 2px 0 black;
 }
 
 .title a {
     text-decoration: none;
-    font-size: 130%;
     font-weight: bold;
     font-style: normal;
     color:white;
@@ -76,7 +126,7 @@ Header menu
 	background: var(--color-blue2);
 	color: white;
 	margin: 0;
-	padding: 0px 5%;
+	padding: 0 5%;
 	display: flex;
 	align-items: center;
 }
@@ -86,13 +136,13 @@ Header menu
 }
 
 #account-wrap {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 #menu ul, #menu li, #account-wrap ul {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 }
 
@@ -100,7 +150,6 @@ Header menu
 	color: white;
 	padding: 10px 40px;
 	font-style: normal;
-	font-size: 120%;
 	transition: all linear 0.1s;
 }
 
@@ -110,8 +159,9 @@ Header menu
 }
 
 #menu > ul > li > a, #toggle-menu, #account-wrap > ul > li > a {
-	text-shadow: 0px 1px 0px black;
+	text-shadow: 0 1px 0 black;
 	font-weight: bold;
+	font-size: 1.3rem;
 }
 
 #menu > ul > li > ul > li:hover {
@@ -164,7 +214,6 @@ Header menu
 
 #toggle-menu {
 	width: 100%;
-	font-size: 150%;
 }
 
 #toggle-menu > div {
@@ -173,46 +222,15 @@ Header menu
 }
 
 .drop-icon {
-	text-shadow: 0px 1px 1px black;
+	text-shadow: 0 1px 1px black;
 }
 
 #menucheck:checked + .main-menu {
 	display: block;
 }
 
-#account-window {
-	display: none;
-	background-color: var(--color-blue1);
-	padding: 30px;
-}
-
-#account-window p {
-	margin: 0px;
-	font-size: 100%;
-}
-
-#account-window li {
-	font-size: 100%;
-	list-style: inside;
-	white-space: nowrap;
-}
-
-#account-window a {
-	color: white;
-	font-style: normal;
-}
-
-#account-window input {
-	margin-top: 5px;
-}
-
-#account-window #login_button {
-	margin-bottom: 10px;
-}
-
 @media only screen and (max-width: 1100px) {
 	.title p {
-		font-size: 200%;
 		margin: 20px 0;
 	}
 
@@ -230,7 +248,7 @@ Header menu
 	}
 
 	#toggle-menu > div {
-		padding: 0px 5%;
+		padding: 0;
 	}
 	
 	#menu li > a {
@@ -240,7 +258,6 @@ Header menu
 	
 	#menu li > ul > li > a {
 		padding: 10px 9%;
-		font-size: 90%;
 	}
 
 	.sub-sub-menu label.drop-icon {
@@ -358,9 +375,9 @@ Footer
 	background: var(--color-blue2);
 	width: 100%;
 	color: white;
-	margin: 0px;
+	margin: 0;
     text-align: center;
-    padding: 1px 0px;
+    padding: 1px 0;
     border-bottom: 15px solid var(--color-blue1);
 }
 
@@ -397,20 +414,11 @@ html {
 }
 
 body {
-	margin: 0px 0px;
+	margin: 0 0;
 }
 
 p {
 	text-align: justify;
-	font-size: 120%;
-}
-
-li {
-	font-size: 120%;
-}
-
-li li {
-	font-size: inherit;
 }
 
 a {
@@ -425,7 +433,7 @@ a:hover {
 }
 
 section {
-	/*margin: 0px 5%;*/
+	/*margin: 0 5%;*/
 	padding: 1% 5%;
 }
 
@@ -457,7 +465,6 @@ Titles
 h1 {
 	text-align: center;
 	color: var(--color-blue1);
-	font-size: 220%;
 }
 
 h1 a {
@@ -471,7 +478,6 @@ h2 {
 	color: var(--color-blue1);
 	background: var(--color-blue3);
 	padding: 10px;
-	font-size: 150%;
 }
 
 h2 a {
@@ -501,7 +507,6 @@ h2 span {
 h3 {
 	color: var(--color-blue1);
 	text-align: left;
-	font-size: 120%;
 }
 
 h3 a {
@@ -521,6 +526,16 @@ h4 {
 h4 a {
 	text-decoration: none;
 	color: var(--color-blue1);
+	font-style: normal;
+}
+
+h5 {
+	color: var(--color-blue2);
+}
+
+h5 a {
+	text-decoration: none;
+	color: var(--color-blue2);
 	font-style: normal;
 }
 
@@ -556,7 +571,7 @@ Lists layout
 ========= */
 
 li {
-	margin: 10px 0px;
+	margin: 10px 0;
 }
 
 /* =======
@@ -601,9 +616,8 @@ Download button
 .download-button {
 	font-style: normal;
 	color: white;
-	font-size: 90%;
 	background-color: var(--color-blue2);
-	box-shadow: 0px 0px 1px 0px var(--color-blue1);
+	box-shadow: 0 0 1px 0 var(--color-blue1);
 	padding: 4px;
 	border-radius: 5px;
 }
@@ -717,7 +731,7 @@ Admin menu
 
 .adminMenu h4 {
 	background: var(--color-blue2);
-	margin: 0px;
+	margin: 0;
 	padding: 10px;
 	color: white;
 	text-align: center;
@@ -759,14 +773,25 @@ Index page
 Format page
 ========= */
 
-.format-content h2 {
+#format-content h2 {
 	margin-top: 50px;
+	margin-bottom: 30px;
+	background-color: var(--color-blue3);
+}
+
+#format-content h3 {
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
-.format-content h3 {
-	margin-top: 30px;
-	margin-bottom: 30px;
+#format-content pre {
+	padding: 10px;
+	border: 1px solid #ddd;
+	background-color: #f9f9f9;
+	margin-top: 5px;
+	white-space: pre-wrap;
+	font-family: monospace;
+	font-size: smaller;
 }
 
 /* =========
@@ -791,7 +816,6 @@ ul#dataset-list {
 ul#dataset-list > li {
 	padding-top: 0;
 	margin-top: 0;
-	font-size: 100%;
 }
 
 ul#dataset-list > li:not(:first-child) {
@@ -802,8 +826,11 @@ ul#dataset-list > li:first-child > h2 {
 	margin-top: 0;
 }
 
+ul#dataset-list > li > h2 {
+	background-color: var(--color-blue3);
+}
+
 ul#dataset-list .dataset-number {
-	font-size: 100%;
 	margin-top: 0;
 	color: #444;
 }
@@ -819,9 +846,8 @@ ul#dataset-list .dataset-description {
 }
 
 .data-file-list .data-file {
-	font-size: 80%;
 	background-color: var(--color-blue3);
-	box-shadow: 0px 0px 1px 0px var(--color-blue1);
+	box-shadow: 0 0 1px 0 var(--color-blue1);
 	padding: 2px 3px;
 	border-radius: 3px;
 }
@@ -832,12 +858,11 @@ ul#dataset-list .dataset-description {
 }
 
 .dataset-tags .data-tag {
-	font-size: 80%;
 	background-color: var(--color-blue3);
 	box-shadow: 0 0 1px 0 var(--color-blue1);
 	padding: 2px 3px;
 	border-radius: 3px;
-
+	font-size: smaller;
 }
 
 .button-row {
@@ -859,10 +884,16 @@ nav#dataset-menu {
 .tag-filter-wrapper p {
 	line-height: 220%;
 }
+
+.tag-filter-tag:hover {
+	cursor: pointer;
+}
+
 .tag-filter-tag {
 	box-shadow: 0 0 1px 0 var(--color-blue1);
 	padding: 6px 6px;
 	border-radius: 3px;
+	font-size: smaller;
 }
 
 .tag-filter-tag:not(:first-child) {
@@ -874,11 +905,21 @@ nav#dataset-menu {
 	color: white;
 }
 
+.tag-filter-active-tag:hover {
+	background-color: var(--color-blue1);
+
+}
+
 .tag-filter-inactive-tag {
 	background-color: #cccccc;
 	color: black;
 
 }
+
+.tag-filter-inactive-tag:hover {
+	background-color: var(--color-blue3);
+}
+
 @media screen and (min-width: 1100px) {
 	#section-datasets {
 		display: grid;
@@ -898,7 +939,6 @@ nav#dataset-menu {
 		margin-left: -5px;
 		overflow-y: auto;
 		max-height: 100vh;
-		font-size: 90%;
 		scroll-padding: 100px;
 	}
 
@@ -953,7 +993,6 @@ Dataset page
 }
 
 .data-file-title .file-name {
-	font-size: 120%;
 }
 
 .data-file-title .download-button {
@@ -1226,7 +1265,6 @@ Data search page
 	padding: 10px;
 	cursor: pointer;
 	margin-bottom: 5px;
-	font-size: 16px;
 }
 
 .script-show-button:hover {

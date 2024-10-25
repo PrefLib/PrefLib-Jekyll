@@ -71,3 +71,12 @@ file-size restrictions while keeping the process fully integrated within the Git
 The website is fully static but offers functionalities of a dynamic website (the search page for instance).
 This is possible because of our heavy use of JavaScript. While this approach may make the site somewhat
 heavier and occasionally more challenging to maintain, it allows us to offer more functionalities.
+
+### Jekyll Plugins
+
+Here is a quick description of the custom plugins used for the website:
+
+- `dataset_page_generator.rb`: Generates all the pages for the datasets by reading the `_data/datasets.yml` file.
+- `fetch_specification_file.rb`: Fetches the FORMAT_SPECIFICATION.md file from the [PrefLib-Data repository](https://github.com/PrefLib/PrefLib-Data) to avoid duplicate information.
+- `filesize_format.rb`: Filter to render the size of a file in a nice way.
+- `title_case_filter.rb`: Filter to render a string with title case.

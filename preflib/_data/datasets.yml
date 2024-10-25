@@ -21,8 +21,8 @@
   zip_file_size: 618023
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00001_irish.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Debian Project Data
   abbreviation: debian
   series_number: '00002'
@@ -41,8 +41,8 @@
   zip_file_size: 21698
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00002_debian.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Mariner Path Selection
   abbreviation: nasa
   series_number: '00003'
@@ -113,8 +113,8 @@
   zip_file_size: 9617
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00005_burlington.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Skate Data
   abbreviation: skate
   series_number: '00006'
@@ -131,14 +131,13 @@
   required_citations: ''
   selected_studies: 'Warren D. Smith. <em>Analysis of the Skate Data</em>. <a href="http://rangevoting.org/Skating1998.html">Available
     at RangeVoting.com</a>, 2000. Sandra J. Loosemore. <em>OBO: A Detailed Analysis</em>.
-    <a href="http://www.frogsonice.com/skateweb/obo/obo-analysis.shtml">Personal Website
-    and Manuscript</a>, 1998.'
+    No longer available, 1998.'
   num_files: 48
-  zip_file_size: 42444
+  zip_file_size: 42405
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00006_skate.zip
   data_types:
-  - soc
   - toc
+  - soc
 - name: Electoral Reform Society (ERS) Data
   abbreviation: ers
   series_number: '00007'
@@ -147,16 +146,15 @@
   publication_date: '2013-08-17'
   description: <p>This dataset contains the results of 86 separate elections of various
     elections held by non-profit organizations, trade unions, and professional organizations.  They
-    were originally donated by <a href="https://sites.google.com/site/nicolaustideman/">Nicolaus
-    Tideman</a> who secured NSF funding to have the ballots tabulated.  The ballots
-    are from elections held under various voting rules requiring incomplete strict
-    orders.  The tabulated results were initially collected by the Electoral Reform
-    Society in the UK in order to support the adoption of STV and other range voting
-    methods.</p> <p>The files contain vote records with a maximum of 29 candidates
-    and as few as 3; the number of voters ranges from 9 to 3419.  The <b>toc</b> files
-    have all unranked candidates tied, at the end of the order.  Additionally, some
-    of these are complete sets of ballots from the given elections and some are random
-    samples from the set of all ballots.</p>
+    were originally donated by Nicolaus Tideman who secured NSF funding to have the
+    ballots tabulated.  The ballots are from elections held under various voting rules
+    requiring incomplete strict orders.  The tabulated results were initially collected
+    by the Electoral Reform Society in the UK in order to support the adoption of
+    STV and other range voting methods.</p> <p>The files contain vote records with
+    a maximum of 29 candidates and as few as 3; the number of voters ranges from 9
+    to 3419.  The <b>toc</b> files have all unranked candidates tied, at the end of
+    the order.  Additionally, some of these are complete sets of ballots from the
+    given elections and some are random samples from the set of all ballots.</p>
   required_citations: ''
   selected_studies: 'N. Tideman and F. Plassmann. <em>Modeling the outcomes of vote-casting
     in actual elections</em>. In: Dan Felsenthal and Mose Machover (eds.) Electoral
@@ -166,11 +164,11 @@
     encounter voting paradoxes in three-candidate elections?</em> Social Choice and
     Welfare, 2013.'
   num_files: 174
-  zip_file_size: 302073
+  zip_file_size: 302027
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00007_ers.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Glasgow City Council
   abbreviation: glasgow
   series_number: 00008
@@ -193,8 +191,8 @@
   zip_file_size: 464070
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00008_glasgow.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: AGH Course Selection
   abbreviation: agh
   series_number: 00009
@@ -231,7 +229,7 @@
     a rank ordering over the candidates (competitiors).  We have created a toc datafile
     where all candidates are tied, at the end of rankings.</p> <p>Note that this dataset
     used to contain the Formula 1 data. A larger set of the F1 data is now available
-    in the <a href="dataset/00052">00052</a> and <a href="dataset/00053">00053</a>
+    in the <a href="/dataset/00052">00052</a> and <a href="/dataset/00053">00053</a>
     datasets.</p>
   required_citations: ''
   selected_studies: 'R. Bredereck. <em>Fixed-Parameter Algorithms for Computing Kemeny
@@ -240,11 +238,11 @@
     <em>Partial Kernelization for Rank Aggregation: Theory and Experiments</em>. Proc.
     5th International Symposium on Parameterized and Exact Computation (IPEC), 2010.'
   num_files: 4
-  zip_file_size: 19712
+  zip_file_size: 19714
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00010_ski.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Web Search
   abbreviation: web
   series_number: '00011'
@@ -361,10 +359,10 @@
   zip_file_size: 429948
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
-  - toi
   - toc
   - soi
   - soc
+  - toi
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -421,9 +419,9 @@
   zip_file_size: 30289
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
-  - toi
-  - dat
   - toc
+  - dat
+  - toi
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -445,9 +443,9 @@
   zip_file_size: 2862
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
-  - toi
-  - dat
   - toc
+  - dat
+  - toi
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -472,8 +470,8 @@
   zip_file_size: 59337
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00018_minneapolis.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Oakland Election Data
   abbreviation: oakland
   series_number: 00019
@@ -496,9 +494,9 @@
   zip_file_size: 44340
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
-  - toi
-  - dat
   - toc
+  - dat
+  - toi
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -521,9 +519,9 @@
   zip_file_size: 14626
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
-  - toi
-  - dat
   - toc
+  - dat
+  - toi
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -547,9 +545,9 @@
   zip_file_size: 186519
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
-  - toi
-  - dat
   - toc
+  - dat
+  - toi
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -572,9 +570,9 @@
   zip_file_size: 9930
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
-  - toi
-  - dat
   - toc
+  - dat
+  - toi
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -596,8 +594,8 @@
   zip_file_size: 2057
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00023_takomapark.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Mechanical Turk Dots
   abbreviation: dots
   series_number: '00024'
@@ -683,8 +681,8 @@
   zip_file_size: 27768
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00026_frenchapproval.zip
   data_types:
-  - cat
   - toc
+  - cat
 - name: Proto French Election
   abbreviation: frenchrate
   series_number: '00027'
@@ -739,8 +737,8 @@
   zip_file_size: 35879
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00028_apa.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Proto French Election Ratings
   abbreviation: frenchratecombi
   series_number: 00029
@@ -787,8 +785,8 @@
   zip_file_size: 2277
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00030_uklabor.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Vermont District Races
   abbreviation: vermont
   series_number: '00031'
@@ -831,10 +829,10 @@
   zip_file_size: 8086
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
-  - toi
   - toc
   - soi
   - soc
+  - toi
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -867,9 +865,9 @@
   zip_file_size: 6134
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00033_poster.zip
   data_types:
+  - toc
   - cat
   - dat
-  - toc
 - name: Cities Survey
   abbreviation: cities
   series_number: '00034'
@@ -982,8 +980,8 @@
   zip_file_size: 207774400
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
-  - wmd
   - dat
+  - wmd
 - name: AAMAS Bidding Data
   abbreviation: aamas
   series_number: '00037'
@@ -1003,7 +1001,7 @@
     > {no response} > {no} > {conflict}</b>. Note that not all years have the same
     categories. We are deeply grateful to the IFAAMAS board and <a href="http://www.inf.pucrs.br/r.bordini/Rafael_Bordini/Welcome.html">Rafael
     Bordini</a>, <a href="https://www.cs.ox.ac.uk/people/edith.elkind/">Edith Elkind</a>,
-    <a href="https://www.rmit.edu.au/contact/staff-contacts/academic-staff/t/thangarajah-associate-professor-john">John
+    <a href="https://www.rmit.edu.au/contact/staff-contacts/academic-staff/t/thangarajah-john">John
     Thangarajah</a>, and <a href="https://www.liverpool.ac.uk/computer-science/staff/david-shield/">David
     Shield</a> for approving, coordinating, and providing this dataset. The 2021 data
     has been generously provided by <a href="https://staff.science.uva.nl/u.endriss/">Ulle
@@ -1011,11 +1009,11 @@
   required_citations: ''
   selected_studies: ''
   num_files: 4
-  zip_file_size: 205858
+  zip_file_size: 205846
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00037_aamas.zip
   data_types:
-  - cat
   - csv
+  - cat
 - name: Project Bidding Data
   abbreviation: project
   series_number: 00038
@@ -1045,9 +1043,9 @@
   zip_file_size: 29963
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
-  - dat
-  - soi
   - toc
+  - soi
+  - dat
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
   series_number: 00039
