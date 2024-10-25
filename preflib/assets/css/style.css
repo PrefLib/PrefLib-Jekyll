@@ -1284,15 +1284,20 @@ Collection page
 	gap:20px;
 }
 
+.collections-wrap > .collection-wrap:nth-child(2n-1):last-of-type {
+	grid-column: span 2;
+}
+
 @media screen and (max-width: 750px) {
 	.collections-wrap {
 		grid-template-columns: 1fr;
 	}
+
+	.collections-wrap > .collection-wrap:nth-child(2n-1):last-of-type {
+		grid-column: span 1;
+	}
 }
 
-.collections-wrap > .collection-wrap:nth-child(2n-1):last-of-type {
-	grid-column: span 2;
-}
 
 .collection-wrap {
 	display: flex;
