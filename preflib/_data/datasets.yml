@@ -81,7 +81,7 @@
     3 candidate elections and the elements 101 - 201 are all 4 candidate elections.
     </p>
   required_citations: James Bennett and Stan Lanning. <em>The Netflix Prize</em>.
-    Proceedings of The KDD Cup and Workshops, 2007 (<a href="/static/bib/BeLa07.bib">Bibtex</a>).
+    Proceedings of The KDD Cup and Workshops, 2007 (<a href="/assets/bib/BeLa07.bib">Bibtex</a>).
   selected_studies: An Empirical Study of Voting Rules and Manipulation with Large
     Datasets; Nicholas Mattei, James Forshee, and Judy Goldsmith; 4th International
     Workshop on Computational Social Choice (COMSOC); 2012 | Empirical Evaluation
@@ -278,9 +278,9 @@
   zip_file_size: 6482156
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
-  - soc
-  - soi
   - toc
+  - soi
+  - soc
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -318,7 +318,7 @@
     by <a href="https://www.ariel.ac.il/wp/lihi-dery/">Lihi Dery</a>.</p>'
   required_citations: 'Ofrit Lesser, Lihi Naamani-Dery, Meir Kalech, and Yuval Elovici.
     <em>Group Decision Support for Leisure Activities Using Voting and Social Networks</em>
-    Group Decision and Negotiation Journal: 26(3): 473-494, 2017 (<a href="/static/bib/LNKE17.bib">Bibtex</a>).'
+    Group Decision and Negotiation Journal: 26(3): 473-494, 2017 (<a href="/assets/bib/LNKE17.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 3
   zip_file_size: 215492
@@ -362,9 +362,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
   - toi
-  - soc
-  - soi
   - toc
+  - soi
+  - soc
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -375,7 +375,7 @@
     Bing, Google, Yahoo, and Ask.  This data is provided by <a href="http://robert.bredereck.info/">Robert
     Bredereck</a> at TU Berlin.  Robert provides tools to compute Kemeny rankings
     on this data at his <a href="http://fpt.akt.tu-berlin.de/kconsens/README">website
-    at TU Berlin</a>.</p> <p> These data files differ from the other set of <a href="https://preflibtools.org/dataset/00011">web
+    at TU Berlin</a>.</p> <p> These data files differ from the other set of <a href="/dataset/00011">web
     data</a> in that these files are forced to be <b>complete.</b>  This means that
     the results are restricted to only those candidates (sites) that appear in all
     three datasets.  The data files marked <b>big</b> contain around 200 (max 242)
@@ -395,7 +395,7 @@
     Rank Aggregation: Theory and Experiments</em>. Proc. 5th International Symposium
     on Parameterized and Exact Computation (IPEC), 2010.'
   num_files: 79
-  zip_file_size: 143322
+  zip_file_size: 143309
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00015_cleanweb.zip
   data_types:
   - soc
@@ -677,10 +677,10 @@
     citation for the use of this dataset.</p>
   required_citations: 'Jean-Francois Laslier and Karine Van der Straeten. <em>A Live
     Experiment on Approval Voting</em>. Experimental Economics 11: 97-105, 2008 (<a
-    href="/static/bib/LaSt08.bib">Bibtex</a>).'
+    href="/assets/bib/LaSt08.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 12
-  zip_file_size: 27767
+  zip_file_size: 27768
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00026_frenchapproval.zip
   data_types:
   - cat
@@ -726,19 +726,17 @@
     SES # 08-20009, ICES # 1216016 (PI: M. Regenwetter), the University Library at
     the University of Illinois at Urbana-Champaign (PI: A. Popova), and the Basic
     Research Program at HSE (S. Popov). We thank the American Psychological Association
-    for permitting access to its election ballot data. More information and tools
-    for analyzing this data can be found at the website of the <a href="http://regenwetterlab.org/software/consensus/">Decision
-    Making Laboratory at the University of Illinois</a>.</p>'
+    for permitting access to its election ballot data.</p>'
   required_citations: 'S.  Popov, A. Popova, M. Regenwetter. <em>Consensus formation
     in organizations: Hunting for the social choice conundrum in American Psychological
-    Association elections</em> Decision, 2015 (<a href="/static/bib/PPR14.bib">Bibtex</a>).'
+    Association elections</em> Decision, 2015 (<a href="/assets/bib/PPR14.bib">Bibtex</a>).'
   selected_studies: 'M. Regenwetter, A. Kim, A. Kantor, and M.-H. R. Ho. <em>The unexpected
     empirical consensus among consensus methods</em>. Psychological Science, 18, 629-635,
     2007. | M. Regenwetter, B. Grofman, A. Popova, W. Messner, C. Davis-Stober and
     D. Cavagnaro. <em>Behavioural social choice: A status report</em>. Philosophical
     Transactions of the Royal Society B: Biological Sciences, 364, 833-843, 2009.'
   num_files: 24
-  zip_file_size: 35963
+  zip_file_size: 35879
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00028_apa.zip
   data_types:
   - soi
@@ -805,10 +803,10 @@
     district.</p>
   required_citations: 'Jeremy A. Hansen. <em>Ballot-Level Observations About Vermont''s
     2014 General Election</em>. New England Journal of Political Science 8 (2): 185-217,
-    2016 (<a href="/static/bib/Hans15.bib">Bibtex</a>).'
+    2016 (<a href="/assets/bib/Hans15.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 15
-  zip_file_size: 7812
+  zip_file_size: 7813
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00031_vermont.zip
   data_types:
   - toc
@@ -834,9 +832,9 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
   - toi
-  - soc
-  - soi
   - toc
+  - soi
+  - soc
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -934,14 +932,14 @@
     book</a>.</p>'
   required_citations: 'Paul E. Green, and Vithala R. Rao. <em>Applied Multidimensional
     Scaling: A Comparison of Approaches and Algorithms</em>. Holt, Rinehart and Winston,
-    1972 (<a href="/static/bib/GrHa72.bib">Bibtex</a>).'
+    1972 (<a href="/assets/bib/GrHa72.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 7
-  zip_file_size: 10120
+  zip_file_size: 10121
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00035_breakfast.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -973,7 +971,7 @@
     the corresponding pair is an altruist.</p>'
   required_citations: 'John P. Dickerson, Ariel D. Procaccia, and Tuomas Sandholm.
     <em>Optimizing Kidney Exchange with Transplant Chains: Theory and Reality</em>.
-    Proceedings of AAMAS, 2012 (<a href="/static/bib/DPS12.bib">Bibtex</a>).'
+    Proceedings of AAMAS, 2012 (<a href="/assets/bib/DPS12.bib">Bibtex</a>).'
   selected_studies: John P. Dickerson, Ariel D. Procaccia, and Tuomas Sandholm. <em>Failure-Aware
     Kidney Exchange</em> Proceedings of EC, 2013. | John P. Dickerson, Ariel D. Procaccia,
     and Tuomas Sandholm. <em>Dynamic Matching via Weighted Myopia with Application
@@ -981,7 +979,7 @@
     D. Procaccia, and Tuomas Sandholm. <em>Price of Fairness in Kidney Exchange</em>
     Proceedings of AAMAS, 2014.
   num_files: 620
-  zip_file_size: 207774399
+  zip_file_size: 207774400
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
   - wmd
@@ -1041,14 +1039,14 @@
   required_citations: Augustine Kwanashie, Robert W. Irving, David F. Manlove, and
     Colin T.S. Sng. <em>Profile-based optimal matchings in the Student/Project Allocation
     problem</em>. International Workshop on Combinatorial Algorithms Workshop on Combinatorial
-    Algorithms, 2014 (<a href="/static/bib/KIMS14.bib">Bibtex</a>).
+    Algorithms, 2014 (<a href="/assets/bib/KIMS14.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 24
-  zip_file_size: 29962
+  zip_file_size: 29963
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
-  - soi
   - dat
+  - soi
   - toc
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
@@ -1078,15 +1076,15 @@
   - Combinatorial
   publication_date: '2013-08-17'
   description: <p>This dataset contains 675,069 reviews of 1,851 hotels across the
-    world scraped from <a href="www.tripadvisor.com">Trip Advisor</a>.  The data was
-    scraped and donated by <a href="https://www.cs.virginia.edu/~hw5x/">Hongning Wang</a>.</p>
-    <p>One file contains the numerical aspect ratings provided by the users, along
-    with other information about the hotel.  The other files contains the text of
-    the users review (split into 3 files).  These reviews have been slightly modified,
-    all excess spaces and tabs have been removed and all commas have been changed
-    to semi-colons.</p> <p>Both files are encoded in the <b>dat</b> format but are
-    actually CSV files. The first line of each file explains the fields within the
-    file.  Some of the usernames are encoded in Unicode so please be careful when
+    world scraped from <a href="https://www.tripadvisor.com">Trip Advisor</a>.  The
+    data was scraped and donated by <a href="https://www.cs.virginia.edu/~hw5x/">Hongning
+    Wang</a>.</p> <p>One file contains the numerical aspect ratings provided by the
+    users, along with other information about the hotel.  The other files contains
+    the text of the users review (split into 3 files).  These reviews have been slightly
+    modified, all excess spaces and tabs have been removed and all commas have been
+    changed to semi-colons.</p> <p>Both files are encoded in the <b>dat</b> format
+    but are actually CSV files. The first line of each file explains the fields within
+    the file.  Some of the usernames are encoded in Unicode so please be careful when
     parsing the files!</p>
   required_citations: ''
   selected_studies: 'Hongning Wang, Yue Lu and Chengxiang Zhai. <em>Latent Aspect
@@ -1098,7 +1096,7 @@
     <em>Judgment Aggregation under Issue Dependencies</em>. 30th AAAI Conference on
     Artificial Intelligence (AAAI), 2016.'
   num_files: 4
-  zip_file_size: 81064184
+  zip_file_size: 81064182
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00040_trip.zip
   data_types:
   - dat
@@ -1115,7 +1113,7 @@
     game is a candidate and each vote corresponds to the ranking of the games in one
     week.</p> <p>The patch contains the raw election and a post-processed version
     where some candidates and voters are deleted to make the election complete.</p>
-    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/BoSc22">this
+    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/boehmer-schaar">this
     page</a> for a more detailed description of the dataset, the post-processing,
     and pointers to similar datasets). If you have any questions, please contact:
     niclas.boehmer@tu-berlin.de.</p>'
@@ -1124,11 +1122,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 2
-  zip_file_size: 1190856
+  zip_file_size: 1190860
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00041_boardgames.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Boxing
   abbreviation: boxing
   series_number: '00042'
@@ -1146,19 +1144,19 @@
     name of each patch starts with the relevant weight class followed by the year.</p>
     <p>Other sports world rankings have been used to create the table tennis world
     rankings and tennis world rankings datasets.</p> <p>This dataset is part of a
-    larger study by Boehmer and Schaar (see <a href="/BoSc22">this page</a> for a
-    more detailed description of the dataset, the post-processing, and pointers to
-    similar datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
+    larger study by Boehmer and Schaar (see <a href="/boehmer-schaar">this page</a>
+    for a more detailed description of the dataset, the post-processing, and pointers
+    to similar datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 189
-  zip_file_size: 130983
+  zip_file_size: 130989
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00042_boxing.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Cycling Races
   abbreviation: cycling
   series_number: '00043'
@@ -1181,19 +1179,19 @@
     candidates and voters are deleted to make the election complete. The name of each
     patch starts either with gdi (Giro d''Italia) or tdf (Tour de France), followed
     by the respective year.</p> <p>This dataset is part of a larger study by Boehmer
-    and Schaar (see <a href="/BoSc22">this page</a> for a more detailed description
+    and Schaar (see <a href="/boehmer-schaar">this page</a> for a more detailed description
     of the dataset, the post-processing, and pointers to similar datasets). If you
     have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 319
-  zip_file_size: 1397140
+  zip_file_size: 1397145
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00043_cycling.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Table Tennis Ranking
   abbreviation: tabletennis
   series_number: '00044'
@@ -1210,19 +1208,19 @@
     The name of each patch starts with the relevant gender followed by the year.</p>
     <p>Other sports world rankings have been used to create the boxing world rankings
     and tennis world rankings datasets.</p> <p>This dataset is part of a larger study
-    by Boehmer and Schaar (see <a href="/BoSc22">this page</a> for a more detailed
-    description of the dataset, the post-processing, and pointers to similar datasets).
-    If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
+    by Boehmer and Schaar (see <a href="/boehmer-schaar">this page</a> for a more
+    detailed description of the dataset, the post-processing, and pointers to similar
+    datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 74
-  zip_file_size: 1614973
+  zip_file_size: 1614977
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00044_tabletennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Tennis Ranking
   abbreviation: tennis
   series_number: '00045'
@@ -1238,19 +1236,19 @@
     version where some candidates and voters are deleted to make the election complete.</p>
     <p>Other sports world rankings have been used to create the table tennis world
     rankings and boxing world rankings datasets.</p> <p>This dataset is part of a
-    larger study by Boehmer and Schaar (see <a href="/BoSc22">this page</a> for a
-    more detailed description of the dataset, the post-processing, and pointers to
-    similar datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
+    larger study by Boehmer and Schaar (see <a href="/boehmer-schaar">this page</a>
+    for a more detailed description of the dataset, the post-processing, and pointers
+    to similar datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 58
-  zip_file_size: 279986
+  zip_file_size: 279990
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00045_tennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Global University Ranking
   abbreviation: university
   series_number: '00046'
@@ -1267,7 +1265,7 @@
     version where some candidates and voters are deleted to make the election complete.</p>
     <p>Other indicator-based rankings have been used to create the country rankings
     and city rankings datasets.</p> <p>This dataset is part of a larger study by Boehmer
-    and Schaar (see <a href="/BoSc22">this page</a> for a more detailed description
+    and Schaar (see <a href="/boehmer-schaar">this page</a> for a more detailed description
     of the dataset, the post-processing, and pointers to similar datasets). If you
     have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
@@ -1275,11 +1273,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 8
-  zip_file_size: 115584
+  zip_file_size: 115588
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00046_university.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Daily Chart
   abbreviation: spotifyday
   series_number: '00047'
@@ -1299,19 +1297,19 @@
     corresponds to "Welcome to New York" from Taylor Swift <a href="https://open.spotify.com/track/10nqz67NQWWa7XPq7ycihi"open.spotify.com/track/10nqz67NQWWa7XPq7ycihi</a>).</p>
     <p>The spotify country charts dataset contains elections generated from the same
     data.</p> <p>This dataset is part of a larger study by Boehmer and Schaar (see
-    <a href="/BoSc22">this page</a> for a more detailed description of the dataset,
-    the post-processing, and pointers to similar datasets). If you have any questions,
-    please contact: niclas.boehmer@tu-berlin.de.</p>'
+    <a href="/boehmer-schaar">this page</a> for a more detailed description of the
+    dataset, the post-processing, and pointers to similar datasets). If you have any
+    questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 724
-  zip_file_size: 25789408
+  zip_file_size: 25789412
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00047_spotifyday.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Countries Chart
   abbreviation: spotifycountry
   series_number: 00048
@@ -1333,19 +1331,19 @@
     <a href="https://open.spotify.com/track/10nqz67NQWWa7XPq7ycihi">open.spotify.com/track/10nqz67NQWWa7XPq7ycihi</a>).</p>
     <p>The spotify daily charts dataset contains elections generated from the same
     data.</p> <p>This dataset is part of a larger study by Boehmer and Schaar (see
-    <a href="/BoSc22">this page</a> for a more detailed description of the dataset,
-    the post-processing, and pointers to similar datasets). If you have any questions,
-    please contact: niclas.boehmer@tu-berlin.de.</p>'
+    <a href="/boehmer-schaar">this page</a> for a more detailed description of the
+    dataset, the post-processing, and pointers to similar datasets). If you have any
+    questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1286
-  zip_file_size: 13338574
+  zip_file_size: 13338579
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00048_spotifycountry.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Multilaps Competitions
   abbreviation: mylaps
   series_number: 00049
@@ -1360,20 +1358,20 @@
     and each vote corresponds to one lap and ranks the athletes by their completion
     time.</p> <p>Each patch contains the raw election and a post-processed version
     where some candidates and voters are deleted to make the election complete.</p>
-    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/BoSc22">this
+    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/boehmer-schaar">this
     page</a> for a more detailed description of the dataset, the post-processing,
     and pointers to similar datasets). If you have any questions, please contact:
     niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1144
-  zip_file_size: 1279578
+  zip_file_size: 1279585
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00049_mylaps.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Movehub City Ranking
   abbreviation: movehub
   series_number: '00050'
@@ -1389,15 +1387,15 @@
     version where some candidates and voters are deleted to make the election complete.</p>
     <p>Other indicator-based rankings have been used to create the country rankings
     and university rankings datasets.</p> <p>This dataset is part of a larger study
-    by Boehmer and Schaar (see <a href="/BoSc22">this page</a> for a more detailed
-    description of the dataset, the post-processing, and pointers to similar datasets).
-    If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
+    by Boehmer and Schaar (see <a href="/boehmer-schaar">this page</a> for a more
+    detailed description of the dataset, the post-processing, and pointers to similar
+    datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1
-  zip_file_size: 7294
+  zip_file_size: 7299
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00050_movehub.zip
   data_types:
   - soc
@@ -1416,7 +1414,7 @@
     patch contains the raw election and a post-processed version where some candidates
     and voters are deleted to make the election complete.</p> <p>Other indicator-based
     rankings have been used to create the university rankings and city rankings datasets.</p>
-    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/BoSc22">this
+    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/boehmer-schaar">this
     page</a> for a more detailed description of the dataset, the post-processing,
     and pointers to similar datasets). If you have any questions, please contact:
     niclas.boehmer@tu-berlin.de.</p>'
@@ -1425,11 +1423,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 24
-  zip_file_size: 84707
+  zip_file_size: 84709
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00051_countries.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Seasons
   abbreviation: f1seasons
   series_number: '00052'
@@ -1444,7 +1442,7 @@
     this race.</p> <p>Each patch contains the raw election and a post-processed version
     where some candidates and voters are deleted to make the election complete.</p>
     <p>The Formula 1 races dataset contains elections generated from the same data.</p>
-    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/BoSc22">this
+    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/boehmer-schaar">this
     page</a> for a more detailed description of the dataset, the post-processing,
     and pointers to similar datasets). If you have any questions, please contact:
     niclas.boehmer@tu-berlin.de.</p>'
@@ -1453,11 +1451,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 136
-  zip_file_size: 125621
+  zip_file_size: 125625
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00052_f1seasons.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Races
   abbreviation: f1races
   series_number: '00053'
@@ -1474,20 +1472,20 @@
     deleted to make the election complete. The name of each patch starts with the
     year in which the race took place followed by the name of the race.</p> <p>The
     Formula 1 seasons dataset contains elections generated from the same data.</p>
-    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/BoSc22">this
+    <p>This dataset is part of a larger study by Boehmer and Schaar (see <a href="/boehmer-schaar">this
     page</a> for a more detailed description of the dataset, the post-processing,
     and pointers to similar datasets). If you have any questions, please contact:
     niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 908
-  zip_file_size: 1190935
+  zip_file_size: 1190941
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00053_f1races.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Weeks Power Ranking
   abbreviation: weeksport
   series_number: '00054'
@@ -1508,19 +1506,19 @@
     rankings were published (there is one day from each covered weeek).</p> <p>The
     combined power rankings and season power rankings datasets were generated from
     the same data.</p> <p>This dataset is part of a larger study by Boehmer and Schaar
-    (see <a href="/BoSc22">this page</a> for a more detailed description of the dataset,
-    the post-processing, and pointers to similar datasets). If you have any questions,
-    please contact: niclas.boehmer@tu-berlin.de.</p>'
+    (see <a href="/boehmer-schaar">this page</a> for a more detailed description of
+    the dataset, the post-processing, and pointers to similar datasets). If you have
+    any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1907
-  zip_file_size: 29485051
+  zip_file_size: 29485057
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00054_weeksport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Combined Power Ranking
   abbreviation: combinedsport
   series_number: '00055'
@@ -1540,19 +1538,19 @@
     name of each patch starts with the relevant sports followed by the relevant year.</p>
     <p>The season power rankings and weekly power rankings datasets were generated
     from the same data.</p> <p>This dataset is part of a larger study by Boehmer and
-    Schaar (see <a href="/BoSc22">this page</a> for a more detailed description of
-    the dataset, the post-processing, and pointers to similar datasets). If you have
-    any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
+    Schaar (see <a href="/boehmer-schaar">this page</a> for a more detailed description
+    of the dataset, the post-processing, and pointers to similar datasets). If you
+    have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 106
-  zip_file_size: 21773716
+  zip_file_size: 21773720
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00055_combinedsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Seasons Power Ranking
   abbreviation: seasonsport
   series_number: '00056'
@@ -1572,19 +1570,19 @@
     name of each patch starts with the sports, followed by the relevant year and ranking
     system.</p> <p>The combined power rankings and weekly power rankings datasets
     were generated from the same data.</p> <p>This dataset is part of a larger study
-    by Boehmer and Schaar (see <a href="/BoSc22">this page</a> for a more detailed
-    description of the dataset, the post-processing, and pointers to similar datasets).
-    If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
+    by Boehmer and Schaar (see <a href="/boehmer-schaar">this page</a> for a more
+    detailed description of the dataset, the post-processing, and pointers to similar
+    datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 4981
-  zip_file_size: 28130791
+  zip_file_size: 28130797
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00056_seasonsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Parliamentary Elections
   abbreviation: parliaments
   series_number: '00057'
@@ -1688,8 +1686,8 @@
   zip_file_size: 421438305
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00060_polkadot.zip
   data_types:
-  - dat
   - cat
+  - dat
 - name: Kusama Network
   abbreviation: kusama
   series_number: '00061'
@@ -1720,8 +1718,8 @@
   zip_file_size: 532216218
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00061_kusama.zip
   data_types:
-  - dat
   - cat
+  - dat
 - name: Alternative Order Experiment
   abbreviation: orderaltexpe
   series_number: '00062'
@@ -1750,8 +1748,8 @@
   zip_file_size: 2489
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00062_orderaltexpe.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: CTU Tutorial Time Selection
   abbreviation: ctu
   series_number: '00063'

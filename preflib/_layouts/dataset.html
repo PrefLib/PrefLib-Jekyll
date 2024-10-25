@@ -45,7 +45,7 @@ sitemap:
 				{% assign total_size = total_size | plus: file.size %}
 			{% endfor %}
 			<li> Total size: {{ total_size | filesize_format }}</li>
-			<li> Data types: {% for type in page.dataset.data_types %}<a href="{{ 'format/#' | append: type | relative_url }}">{{ type }}</a>{% unless forloop.last == true %}, {% endunless %}{% endfor %} </li>
+			<li> Data types: {% for type in page.dataset.data_types %}<a href="{{ 'format#' | append: type | relative_url }}">{{ type }}</a>{% unless forloop.last == true %}, {% endunless %}{% endfor %} </li>
 			<li> Publication date: {{ page.dataset.publication_date }} </li>
 		</ul>
 	</div>
