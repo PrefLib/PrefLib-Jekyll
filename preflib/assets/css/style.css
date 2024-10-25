@@ -618,8 +618,9 @@ Download button
 	color: white;
 	background-color: var(--color-blue2);
 	box-shadow: 0 0 1px 0 var(--color-blue1);
-	padding: 4px;
+	padding: 10px 20px;
 	border-radius: 5px;
+	font-size: smaller;
 }
 
 .download-button:hover {
@@ -1310,4 +1311,10 @@ Collection page
 .collection-button {
 	display: flex;
 	justify-content: center;
+}
+
+
+
+.collapsible:hover {
+	cursor: pointer;
 }

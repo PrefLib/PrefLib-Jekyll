@@ -54,7 +54,14 @@ sitemap:
 <div class="all-data-files">
     {% for file in data_files %}
         <div class="data-file-wrapper">
-            <div class="data-file-title collapsible" id="{{ file.name }}">
+            {% assign num_related_files = file.related_files | size %}
+            {% assign collapsibleContent = false %}
+            {% if num_related_files > 0 or file.description != "" %}
+                {% assign collapsibleContent = true %}
+            {% else %}
+                {% assign collapsibleContent = false %}
+            {% endif %}
+            <div class="data-file-title{% if collapsibleContent %} collapsible{% endif %}" id="{{ file.name }}">
                 <div class="menu-icon"><div></div><div></div><div></div></div>
                 <div class="file-name">
                     {{ file.title }} &#8212; {{ file.name }}
@@ -76,36 +83,37 @@ sitemap:
                 </div>
             </div>
 
-            <div class="collapsible-content" style="display: none">
-                <div class="data-file-content">
-                    {% if file.description %}
-                        <p>
-                            {{ file.description }}
-                        </p>
-                    {% endif %}
+            {% if collapsibleContent %}
+                <div class="collapsible-content" style="display: none">
+                    <div class="data-file-content">
+                        {% if file.description %}
+                            <p>
+                                {{ file.description }}
+                            </p>
+                        {% endif %}
 
-                    {% assign num_related_files = file.related_files | size %}
-                    {% if num_related_files > 0 %}
-                        <p>The following file{% if num_related_files > 1 %}s are{% else %} is{% endif %} related to this file:</p>
-                        <table class="data-file-related-files-table">
-                            <tr>
-                                <th>File name</th>
-                                <th>Description</th>
-                                <th></th>
-                            </tr>
-                            {% for related_file in file.related_files %}
+                        {% if num_related_files > 0 %}
+                            <p>The following file{% if num_related_files > 1 %}s are{% else %} is{% endif %} related to this file:</p>
+                            <table class="data-file-related-files-table">
                                 <tr>
-                                    <td>{{ related_file.name }}</td>
-                                    <td>{{ related_file.description }}</td>
-                                    <td>
-                                        <a href="{{ related_file.url }}"  target="_blank" download>Download [{{ related_file.size | filesize_format }}]</a>
-                                    </td>
+                                    <th>File name</th>
+                                    <th>Description</th>
+                                    <th></th>
                                 </tr>
-                            {% endfor %}
-                        </table>
-                    {% endif %}
+                                {% for related_file in file.related_files %}
+                                    <tr>
+                                        <td>{{ related_file.name }}</td>
+                                        <td>{{ related_file.description }}</td>
+                                        <td>
+                                            <a href="{{ related_file.url }}"  target="_blank" download>Download [{{ related_file.size | filesize_format }}]</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </table>
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
+            {% endif %}
         </div>
     {% endfor %}
 </div>
