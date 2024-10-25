@@ -18,6 +18,10 @@ sitemap:
 	you can either use the slider or the input fields, press enter after changing the values in the
 	input fields. Once all the criteria have been selected, press the search button to display the results.
 </p>
+<p>
+	You can find download scripts at the <a href="#download-script-wrap">bottom of this page</a> to
+	download all the files matching your search criteria.
+</p>
 
 </section>
 
@@ -559,32 +563,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			return ascending ? comparison : -comparison; // Return sorted order
 		});
 	}
-
-    function getMinMaxValues(filteredFiles, key) {
-        const values = filteredFiles.map(file => file[key]);
-        const minValue = Math.min(...values);
-        const maxValue = Math.max(...values);
-        return { minValue, maxValue };
-    }
-
-    function updateFilterRanges(filteredFiles) {
-        // Get min/max values for each attribute
-        const nvoterRange = getMinMaxValues(filteredFiles, 'num_voters');
-        const naltRange = getMinMaxValues(filteredFiles, 'num_alternatives');
-        const nuniqprefRange = getMinMaxValues(filteredFiles, 'num_unique_preferences');
-
-        // Update the input fields for "Number of voters"
-        document.getElementById('nvoter-selector-lb').value = nvoterRange.minValue;
-        document.getElementById('nvoter-selector-ub').value = nvoterRange.maxValue;
-
-        // Update the input fields for "Number of alternatives"
-        document.getElementById('nalt-selector-lb').value = naltRange.minValue;
-        document.getElementById('nalt-selector-ub').value = naltRange.maxValue;
-
-        // Update the input fields for "Number of unique preferences"
-        document.getElementById('nuniqpref-selector-lb').value = nuniqprefRange.minValue;
-        document.getElementById('nuniqpref-selector-ub').value = nuniqprefRange.maxValue;
-    }
 
     function toggleDatasetSelection(forceSelectAll = false) {
 		const datasetCheckboxes = document.querySelectorAll('#filter-dataset-group input[name="dataset"]');
