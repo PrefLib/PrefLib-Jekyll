@@ -959,6 +959,10 @@ nav#dataset-menu {
 Dataset page
 ========= */
 
+#dataset-content h2 {
+	background-color: var(--color-blue3);
+}
+
 .all-data-files {
 	margin-top: 20px;
 }
