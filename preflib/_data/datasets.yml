@@ -113,8 +113,8 @@
   zip_file_size: 9617
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00005_burlington.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Skate Data
   abbreviation: skate
   series_number: '00006'
@@ -276,8 +276,8 @@
   zip_file_size: 6482156
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
-  - soi
   - soc
+  - soi
   - toc
 - name: T Shirt
   abbreviation: shirt
@@ -359,10 +359,10 @@
   zip_file_size: 429948
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
-  - soi
   - soc
-  - toi
+  - soi
   - toc
+  - toi
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -419,9 +419,9 @@
   zip_file_size: 30289
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
-  - toi
-  - toc
   - dat
+  - toc
+  - toi
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -443,9 +443,9 @@
   zip_file_size: 2862
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
-  - toi
-  - toc
   - dat
+  - toc
+  - toi
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -494,9 +494,9 @@
   zip_file_size: 44341
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
-  - toi
-  - toc
   - dat
+  - toc
+  - toi
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -519,9 +519,9 @@
   zip_file_size: 14626
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
-  - toi
-  - toc
   - dat
+  - toc
+  - toi
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -545,9 +545,9 @@
   zip_file_size: 186520
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
-  - toi
-  - toc
   - dat
+  - toc
+  - toi
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -570,9 +570,9 @@
   zip_file_size: 9934
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
-  - toi
-  - toc
   - dat
+  - toc
+  - toi
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -594,8 +594,8 @@
   zip_file_size: 2057
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00023_takomapark.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Mechanical Turk Dots
   abbreviation: dots
   series_number: '00024'
@@ -681,8 +681,8 @@
   zip_file_size: 27767
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00026_frenchapproval.zip
   data_types:
-  - cat
   - toc
+  - cat
 - name: Proto French Election
   abbreviation: frenchrate
   series_number: '00027'
@@ -829,10 +829,10 @@
   zip_file_size: 8087
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
-  - soi
   - soc
-  - toi
+  - soi
   - toc
+  - toi
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -865,9 +865,9 @@
   zip_file_size: 6134
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00033_poster.zip
   data_types:
-  - cat
-  - toc
   - dat
+  - toc
+  - cat
 - name: Cities Survey
   abbreviation: cities
   series_number: '00034'
@@ -980,8 +980,8 @@
   zip_file_size: 207774413
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
-  - wmd
   - dat
+  - wmd
 - name: AAMAS Bidding Data
   abbreviation: aamas
   series_number: '00037'
@@ -1012,8 +1012,8 @@
   zip_file_size: 205846
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00037_aamas.zip
   data_types:
-  - csv
   - cat
+  - csv
 - name: Project Bidding Data
   abbreviation: project
   series_number: 00038
@@ -1043,9 +1043,9 @@
   zip_file_size: 29960
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
+  - dat
   - soi
   - toc
-  - dat
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
   series_number: 00039
@@ -1123,8 +1123,8 @@
   zip_file_size: 1190860
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00041_boardgames.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Boxing
   abbreviation: boxing
   series_number: '00042'
@@ -1153,8 +1153,8 @@
   zip_file_size: 130986
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00042_boxing.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Cycling Races
   abbreviation: cycling
   series_number: '00043'
@@ -1188,8 +1188,8 @@
   zip_file_size: 1397158
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00043_cycling.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Table Tennis Ranking
   abbreviation: tabletennis
   series_number: '00044'
@@ -1217,8 +1217,8 @@
   zip_file_size: 1614981
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00044_tabletennis.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Tennis Ranking
   abbreviation: tennis
   series_number: '00045'
@@ -1245,8 +1245,8 @@
   zip_file_size: 279983
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00045_tennis.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Global University Ranking
   abbreviation: university
   series_number: '00046'
@@ -1274,8 +1274,8 @@
   zip_file_size: 115588
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00046_university.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Spotify Daily Chart
   abbreviation: spotifyday
   series_number: '00047'
@@ -1306,8 +1306,8 @@
   zip_file_size: 25789422
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00047_spotifyday.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Spotify Countries Chart
   abbreviation: spotifycountry
   series_number: 00048
@@ -1340,8 +1340,8 @@
   zip_file_size: 13338590
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00048_spotifycountry.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Multilaps Competitions
   abbreviation: mylaps
   series_number: 00049
@@ -1368,8 +1368,8 @@
   zip_file_size: 1279585
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00049_mylaps.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Movehub City Ranking
   abbreviation: movehub
   series_number: '00050'
@@ -1424,8 +1424,8 @@
   zip_file_size: 84709
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00051_countries.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Formula 1 Seasons
   abbreviation: f1seasons
   series_number: '00052'
@@ -1452,8 +1452,8 @@
   zip_file_size: 125626
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00052_f1seasons.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Formula 1 Races
   abbreviation: f1races
   series_number: '00053'
@@ -1482,8 +1482,8 @@
   zip_file_size: 1190896
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00053_f1races.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Weeks Power Ranking
   abbreviation: weeksport
   series_number: '00054'
@@ -1515,8 +1515,8 @@
   zip_file_size: 29485084
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00054_weeksport.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Combined Power Ranking
   abbreviation: combinedsport
   series_number: '00055'
@@ -1547,8 +1547,8 @@
   zip_file_size: 21773721
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00055_combinedsport.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Seasons Power Ranking
   abbreviation: seasonsport
   series_number: '00056'
@@ -1579,8 +1579,8 @@
   zip_file_size: 28130891
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00056_seasonsport.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Parliamentary Elections
   abbreviation: parliaments
   series_number: '00057'
@@ -1684,8 +1684,8 @@
   zip_file_size: 421438304
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00060_polkadot.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Kusama Network
   abbreviation: kusama
   series_number: '00061'
@@ -1716,8 +1716,8 @@
   zip_file_size: 532216264
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00061_kusama.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Alternative Order Experiment
   abbreviation: orderaltexpe
   series_number: '00062'
@@ -1794,16 +1794,16 @@
   description: <p>The Marble League (formerly known as the MarbleLympics) is an annual
     tournament where marbles from different teams compete against each other in a
     number of different sports events (<a href="https://jellesmarbleruns.fandom.com/wiki/Marble_League">see
-    here</a> for more details.<p>For each instance of the league, several events are
-    organised that all lead to an intermediate ranking of the competitors. In the
-    files, each event corresponds to a voter ranking the alternatives as they were
-    ranked in the event.</p><p>This dataset was donated by <a href="https://sites.google.com/view/niclas-boehmer/home">Niclas
+    here</a> for more details).<p>For each instance of the league, several events
+    are organised that all lead to an intermediate ranking of the competitors. In
+    the files, each event corresponds to a voter ranking the alternatives as they
+    were ranked in the event.</p><p>This dataset was donated by <a href="https://sites.google.com/view/niclas-boehmer/home">Niclas
     Boehmer</a>.</p>
   required_citations: 'Niclas Boehmer. <em>Application-oriented Collective Decision
     Making: Experimental Toolbox and Dynamic Environments</em>, 2023.'
   selected_studies: ''
   num_files: 4
-  zip_file_size: 4146
+  zip_file_size: 4147
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00065_marblympics.zip
   data_types:
   - soi
@@ -1846,15 +1846,17 @@
     ranks the parties according to the participant's answer. Check the <a href="https://cses.org/">website
     of the CSES</a> for more details.</p><p>This dataset was donated by <a href="https://sites.google.com/view/niclas-boehmer/home">Niclas
     Boehmer</a>.</p>
-  required_citations: The Comparative Study of Electoral Systems. <em>CSES module
+  required_citations: 'The Comparative Study of Electoral Systems. <em>CSES module
     1 full release</em>, 2015. | The Comparative Study of Electoral Systems. <em>CSES
     module 2 full release</em>, 2015. | The Comparative Study of Electoral Systems.
     <em>CSES module 3 full release</em>, 2015. | The Comparative Study of Electoral
     Systems. <em>CSES module 4 full release</em>, 2018. | The Comparative Study of
-    Electoral Systems. <em>CSES module 5 full release</em>, 2022.
+    Electoral Systems. <em>CSES module 5 full release</em>, 2022. | Niclas Boehmer.
+    <em>Application-oriented Collective Decision Making: Experimental Toolbox and
+    Dynamic Environments</em>, 2023.'
   selected_studies: ''
   num_files: 305
-  zip_file_size: 974019
+  zip_file_size: 974090
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00067_cses.zip
   data_types:
   - soi
