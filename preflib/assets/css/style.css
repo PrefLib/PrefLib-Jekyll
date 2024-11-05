@@ -21,51 +21,52 @@ Responsiveness
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Kantumruy Pro", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 2560px) {
   html {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 3000px) {
   html {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 3500px) {
   html {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -1308,7 +1309,7 @@ Collection page
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 	box-sizing: border-box;
-	gap:20px;
+	gap: 20px;
 }
 
 .collections-wrap > .collection-wrap:nth-child(2n-1):last-of-type {
@@ -1331,7 +1332,7 @@ Collection page
 	flex-direction: column;
 	justify-content: space-around;
 	border: 1px solid var(--color-blue2);
-	padding: 10px;
+	padding: 10px 20px;
 	border-radius: 5px;
 }
 

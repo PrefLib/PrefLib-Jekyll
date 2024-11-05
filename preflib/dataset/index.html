@@ -32,11 +32,13 @@ sitemap:
         <a href="javascript:sortByNum()" id="sort-num">Series Number</a>
     </p>
 
+    {% assign sorted_datasets = site.data.datasets | sort: "publication_date" | reverse %}
 
 	<div id="section-datasets">
 	<nav id="dataset-menu">
 		<ul>
-        	{% for dataset in site.data.datasets %}
+
+        	{% for dataset in sorted_datasets %}
 		    	<li data-timestamp="{{ dataset.publication_date }}" data-number="{{ dataset.series_number }}" data-name="{{ dataset.name }}" data-tags="{{ dataset.tags }}" class="dataset-menu-item">
                     <a href="#{{ dataset.series_number }}">{{ dataset.name }}</a>
                 </li>
@@ -45,7 +47,7 @@ sitemap:
 	</nav>
 
 	<ul id="dataset-list">
-	{% for dataset in site.data.datasets %}
+	{% for dataset in sorted_datasets %}
         <li id="{{ dataset.series_number }}" data-timestamp="{{ dataset.publication_date }}" data-number="{{ dataset.series_number }}" data-name="{{ dataset.name }}" data-tags="{{ dataset.tags }}" class="dataset-list-item">
             <h2 class="dataset-title"><a href="{{ 'dataset/' | append: dataset.series_number | relative_url }}" id="{{ dataset.series_number }}_title">{{ dataset.name }}</a></h2>
 
