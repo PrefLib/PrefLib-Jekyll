@@ -87,12 +87,9 @@ for zip_file in zip_files:
             "is_approval": metadata.get("isApproval", None) == "True",
             "is_strict": metadata.get("isStrict", None) == "True",
             "is_complete": metadata.get("isComplete", None) == "True",
-            "is_single_peaked": None,
-            "is_single_peaked_circle": None,
-            "is_single_peaked_tree": None,
-            "is_single_crossing": None,
-            "is_1euclidean": None,
-            "is_euclidean": None,
+            "is_single_peaked": metadata.get("isSP", None) == "True",
+            "is_single_peaked_tree": metadata.get("isSPTree", None) == "True",
+            "is_single_crossing": metadata.get("isSC", None) == "True",
         }
     files_to_remove = []
     for file_name, file_dict in datafile_yml.items():

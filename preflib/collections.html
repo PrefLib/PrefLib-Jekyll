@@ -15,7 +15,7 @@ sitemap:
     </p>
 
     <p>
-        <em>Important:</em> By using automatically-generated collections of files you loose the fine-grained
+        <em>Important:</em> By using automatically-generated collections of files, you lose the fine-grained
         understanding of the files in the collection (e.g., the provenance of the data). Keep that
         in mind as this can impact your results.
     </p>
@@ -27,14 +27,14 @@ sitemap:
     <div class="collections-wrap">
         <div class="collection-wrap">
             <h3>Strict Order Complete (SOC)</h3>
-            <p>Strict order complete files encode preferences in which all respondent submitted a strict ranking containing all the alternatives.</p>
+            <p>Strict order complete files encode preferences in which all respondents submitted a strict ranking containing all the alternatives.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_soc.zip" class="download-button">Download all files</a>
             </div>
         </div>
         <div class="collection-wrap">
             <h3>Strict Order Incomplete (SOI)</h3>
-            <p>Strict order incomplete files encode preferences in which all respondent submitted a strict ranking containing some of the alternatives.</p>
+            <p>Strict order incomplete files encode preferences in which all respondents submitted a strict ranking containing some of the alternatives.</p>
             <p>This collection also includes the SOC files since they are a special case of SOI.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_soi.zip" class="download-button">Download all files</a>
@@ -43,7 +43,7 @@ sitemap:
 
         <div class="collection-wrap">
             <h3>Tie Order Complete (TOC)</h3>
-            <p>Strict order complete files encode preferences in which all respondent submitted a ranking containing all the alternatives where ties between alternatives are allowed.</p>
+            <p>Strict order complete files encode preferences in which all respondents submitted a ranking containing all the alternatives where ties between alternatives are allowed.</p>
             <p>This collection also includes the SOC files since they are a special case of TOC.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toc.zip" class="download-button">Download all files</a>
@@ -51,7 +51,7 @@ sitemap:
         </div>
         <div class="collection-wrap">
             <h3>Tie Order Incomplete (TOI)</h3>
-            <p>Strict order incomplete files encode preferences in which all respondent submitted a strict ranking containing some of the alternatives where ties between alternatives are allowed.</p>
+            <p>Strict order incomplete files encode preferences in which all respondents submitted a strict ranking containing some of the alternatives where ties between alternatives are allowed.</p>
             <p>This collection also includes the SOC, SOI and TOC files since they are a special case of TOI.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
@@ -59,16 +59,16 @@ sitemap:
         </div>
         <div class="collection-wrap">
             <h3>Categorical (CAT)</h3>
-            <p>Categorical files encode preferences in which all respondent classified some of the alternatives in categories. The categories are themselves globally ordered which defines preferences.</p>
+            <p>Categorical files encode preferences in which all respondents classified some of the alternatives in categories. The categories are themselves globally ordered which defines preferences.</p>
             <div class="collection-button button-wrapper">
-                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_cat.zip" class="download-button">Download all files</a>
             </div>
         </div>
         <div class="collection-wrap">
             <h3>Weighted Matching Data (WMD)</h3>
             <p>Weighted matching data files encode preferences that are seen as a weighted directed graphs, i.e., a collection of edges between the alternatives associated with a weight.</p>
             <div class="collection-button button-wrapper">
-                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_toi.zip" class="download-button">Download all files</a>
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/type_wmd.zip" class="download-button">Download all files</a>
             </div>
         </div>
     </div>
@@ -79,7 +79,7 @@ sitemap:
     <div class="collections-wrap">
         <div class="collection-wrap">
             <h3>Original Files</h3>
-            <p>In original files the preferences appear as they were submitted.</p>
+            <p>"In original files the preferences appear exactly as they were submitted.</p>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/modif_original.zip" class="download-button">Download all files</a>
             </div>
@@ -114,7 +114,7 @@ sitemap:
         <div class="collection-wrap">
             <h3>Strict Preferences</h3>
             <p>
-                In strict preferences files the respondent ordered the alternatives in a strict manner: no ties is allowed.
+                In strict preferences files the respondents ordered the alternatives in a strict manner: no ties is allowed.
             </p>
             <p>This should contain all SOC and SOI files (otherwise, there is a problem with the database).</p>
             <div class="collection-button button-wrapper">
@@ -124,7 +124,7 @@ sitemap:
         <div class="collection-wrap">
             <h3>Complete Preferences</h3>
             <p>
-                In complete preferences files the respondent reported their preferences for all the alternatives.
+                In complete preferences files the respondents reported their preferences for all the alternatives.
             </p>
             <p>This should contain all SOC and TOC files, together with the CAT files that are complete.</p>
             <div class="collection-button button-wrapper">
@@ -145,6 +145,48 @@ sitemap:
             </ul>
             <div class="collection-button button-wrapper">
                 <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isApproval.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Single-Peaked Preferences</h3>
+            <p>
+                Single-peaked files correspond to cases in which the alternatives can be arranged on a one-dimensional axis
+                that is consistent with the preferences of all the respondents.
+                Check the <a href="https://en.wikipedia.org/wiki/Single_peaked_preferences">Wikipedia page</a> for more information.
+            </p>
+            <p>
+                <em>Disclaimer:</em> This is computed on all SOC files, and the TOC files with no more than 15 alternatives.
+                This collection may thus be incomplete.
+            </p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isSP.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Single-Peaked on a Tree Preferences</h3>
+            <p>
+                Single-peaked on a tree files correspond to cases in which the alternatives can be arranged on a tree structure
+                that is consistent with the preferences of all the respondents.
+                Check <a href="https://arxiv.org/abs/2205.09092">this paper, Section 3.5,</a> for more information.
+            </p>
+            <p>
+                <em>Disclaimer:</em> This is only computed on SOC files (all of them). This collection may thus be incomplete.
+            </p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isSPTree.zip" class="download-button">Download all files</a>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <h3>Single-Crossing Preferences</h3>
+            <p>
+                Single-crossing  files correspond to cases in which the preferences can be ordered in a one-dimensional manner.
+                Check <a href="https://arxiv.org/abs/2205.09092">this paper, Section 3.3,</a> for more information.
+            </p>
+            <p>
+                <em>Disclaimer:</em> This is only computed on SOC files (all of them). This collection may thus be incomplete.
+            </p>
+            <div class="collection-button button-wrapper">
+                <a href="https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/prop_isSC.zip" class="download-button">Download all files</a>
             </div>
         </div>
     </div>

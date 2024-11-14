@@ -7,6 +7,7 @@ _site/
 vendor/
 
 scripts/zip
+scripts/tmp
 scripts/datafiles.yml
 scripts/datasets.yml
 

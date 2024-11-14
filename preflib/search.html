@@ -168,54 +168,30 @@ sitemap:
 					{% include tri_value_selector.html id="selector-approval" %}
 				</div>
 			</div>
-<!--			<div class="filter-wrap">-->
-<!--				<div class="filter-label">-->
-<!--					<a>Single-peaked preferences?</a>-->
-<!--				</div>-->
-<!--				<div class="filter-select-wrap">-->
-<!--					{% include tri_value_selector.html id="selector-singlepeaked" %}-->
-<!--				</div>-->
-<!--			</div>-->
-<!--			<div class="filter-wrap">-->
-<!--				<div class="filter-label">-->
-<!--					<a>Single-peaked on a circle preferences?</a>-->
-<!--				</div>-->
-<!--				<div class="filter-select-wrap">-->
-<!--					{% include tri_value_selector.html id="selector-singlepeaked-circle" %}-->
-<!--				</div>-->
-<!--			</div>-->
-<!--			<div class="filter-wrap">-->
-<!--				<div class="filter-label">-->
-<!--					<a>Single-peaked on a tree preferences?</a>-->
-<!--				</div>-->
-<!--				<div class="filter-select-wrap">-->
-<!--					{% include tri_value_selector.html id="selector-singlepeaked-tree" %}-->
-<!--				</div>-->
-<!--			</div>-->
-<!--			<div class="filter-wrap">-->
-<!--				<div class="filter-label">-->
-<!--					<a>Single-crossing preferences?</a>-->
-<!--				</div>-->
-<!--				<div class="filter-select-wrap">-->
-<!--					{% include tri_value_selector.html id="selector-singlecrossing" %}-->
-<!--				</div>-->
-<!--			</div>-->
-<!--			<div class="filter-wrap">-->
-<!--				<div class="filter-label">-->
-<!--					<a>1-Euclidean preferences?</a>-->
-<!--				</div>-->
-<!--				<div class="filter-select-wrap">-->
-<!--					{% include tri_value_selector.html id="selector-one-euclidean" %}-->
-<!--				</div>-->
-<!--			</div>-->
-<!--			<div class="filter-wrap">-->
-<!--				<div class="filter-label">-->
-<!--					<a>Euclidean preferences?</a>-->
-<!--				</div>-->
-<!--				<div class="filter-select-wrap">-->
-<!--					{% include tri_value_selector.html id="selector-euclidean" %}-->
-<!--				</div>-->
-<!--			</div>-->
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Single-peaked preferences</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-singlepeaked" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Single-peaked on a tree preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-singlepeaked-tree" %}
+				</div>
+			</div>
+			<div class="filter-wrap">
+				<div class="filter-label">
+					<a>Single-crossing preferences?</a>
+				</div>
+				<div class="filter-select-wrap">
+					{% include tri_value_selector.html id="selector-singlecrossing" %}
+				</div>
+			</div>
 		</div>
 	</div>
     <p style="text-align: center;">
@@ -239,6 +215,8 @@ sitemap:
 <div class="pagination_wrapper" id="paginator-bottom">
     <div class="pagination"></div>
 </div>
+
+<div id="file-info-bubble" class="hidden"></div>
 
 </section>
 
@@ -265,23 +243,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Pull in data from Jekyll
     const allFiles = [
-        {% for file in site.data.datafiles %}
-			{% assign dataset = site.data.datasets | where: "abbreviation", file.dataset | first %}
-			{
-				"num_voters": "{{ file.num_voters }}",
-				"num_alternatives": "{{ file.num_alternatives }}",
-				"num_unique_preferences": "{{ file.num_unique_preferences }}",
-				"is_approval": "{{ file.is_approval }}",
-				"is_strict": "{{ file.is_strict }}",
-				"is_complete": "{{ file.is_complete }}",
-				"data_type": "{{ file.data_type }}",
-				"modification_type": "{{ file.modification_type }}",
-				"dataset": "{{ dataset.series_number }} - {{ dataset.name }}",
-				"datasetUrl": "{{ 'dataset/' | append: dataset.series_number | relative_url }}",
-				"name": "{{ file.name }}",
-				"url": "{{ file.url }}",
-			}{% if forloop.last == false %},{% endif %}
-        {% endfor %}
+{% for file in site.data.datafiles %}
+{% assign dataset = site.data.datasets | where: "abbreviation", file.dataset | first %}
+{
+"n_vots": "{{ file.num_voters }}",
+"n_alts": "{{ file.num_alternatives }}",
+"n_uniq": "{{ file.num_unique_preferences }}",
+"is_app": "{{ file.is_approval }}",
+"is_sp": "{{ file.is_single_peaked }}",
+"is_sp_tree": "{{ file.is_single_peaked_tree }}",
+"is_sc": "{{ file.is_single_crossing }}",
+"is_strict": "{{ file.is_strict }}",
+"is_comp": "{{ file.is_complete }}",
+"data_type": "{{ file.data_type }}",
+"modif_type": "{{ file.modification_type }}",
+"ds": "{{ dataset.series_number }} - {{ dataset.name }}",
+"ds_url": "{{ 'dataset/' | append: dataset.series_number | relative_url }}",
+"name": "{{ file.name }}",
+"url": "{{ file.url }}",
+}{% if forloop.last == false %},{% endif %}
+{% endfor %}
     ];
     let filteredFiles = allFiles;
 
@@ -303,6 +284,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Filter structural properties (approval, single-peaked, etc.)
         const approvalFilter = document.querySelector('input[name="selector-approval"]:checked').value;
+        const singlePeakedFilter = document.querySelector('input[name="selector-singlepeaked"]:checked').value;
+        const singlePeakedTreeFilter = document.querySelector('input[name="selector-singlepeaked-tree"]:checked').value;
+        const singleCrossingFilter = document.querySelector('input[name="selector-singlecrossing"]:checked').value;
         const strictFilter = document.querySelector('input[name="selector-strict"]:checked').value;
         const completeFilter = document.querySelector('input[name="selector-complete"]:checked').value;
         // const singlePeakedFilter = document.querySelector('input[name="selector-singlepeaked"]:checked').value;
@@ -329,8 +313,8 @@ document.addEventListener('DOMContentLoaded', function() {
         filteredFiles = allFiles.filter(file => {
             // Check for number of voters
 			const numVotersMatch = (
-				(isNaN(nvoter_lb) || file.num_voters >= nvoter_lb) &&
-				(isNaN(nvoter_ub) || file.num_voters <= nvoter_ub)
+				(isNaN(nvoter_lb) || file.n_vots >= nvoter_lb) &&
+				(isNaN(nvoter_ub) || file.n_vots <= nvoter_ub)
 			);
             if (!numVotersMatch) {
                 return false;
@@ -338,8 +322,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Check for number of alternatives
 			const numAlternativesMatch = (
-				(isNaN(nalt_lb) || file.num_alternatives >= nalt_lb) &&
-				(isNaN(nalt_ub) || file.num_alternatives <= nalt_ub)
+				(isNaN(nalt_lb) || file.n_alts >= nalt_lb) &&
+				(isNaN(nalt_ub) || file.n_alts <= nalt_ub)
 			);
             if (!numAlternativesMatch) {
                 return false;
@@ -347,8 +331,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Check for number of unique preferences
 			const numUniqPrefsMatch = (
-				(isNaN(nuniqpref_lb) || file.num_unique_preferences >= nuniqpref_lb) &&
-				(isNaN(nuniqpref_ub) || file.num_unique_preferences <= nuniqpref_ub)
+				(isNaN(nuniqpref_lb) || file.n_uniq >= nuniqpref_lb) &&
+				(isNaN(nuniqpref_ub) || file.n_uniq <= nuniqpref_ub)
 			);
             if (!numUniqPrefsMatch) {
                 return false;
@@ -356,24 +340,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Apply approval filter (trinary logic: yes, no, or undefined)
             const approvalMatch = approvalFilter === "indef" ||
-                                  (approvalFilter === "yes" && file.is_approval === "true") ||
-                                  (approvalFilter === "no" && !file.is_approval === "false");
+                                  (approvalFilter === "yes" && file.is_app === "true") ||
+                                  (approvalFilter === "no" && !file.is_app !== "true");
             if (!approvalMatch) {
+                return false;
+            }
+
+            // Apply single-peaked filter (trinary logic: yes, no, or undefined)
+            const singlePeakedMatch = singlePeakedFilter === "indef" ||
+                                  (singlePeakedFilter === "yes" && file.is_sp === "true") ||
+                                  (singlePeakedFilter === "no" && file.is_sp !== "true");
+            if (!singlePeakedMatch) {
+                return false;
+            }
+
+            // Apply single-peaked on a tree filter (trinary logic: yes, no, or undefined)
+            const singlePeakedTreeMatch = singlePeakedTreeFilter === "indef" ||
+                                  (singlePeakedTreeFilter === "yes" && file.is_sp_tree === "true") ||
+                                  (singlePeakedTreeFilter === "no" && file.is_sp_tree !== "true");
+            if (!singlePeakedTreeMatch) {
+                return false;
+            }
+
+            // Apply single-crossing filter (trinary logic: yes, no, or undefined)
+            const singleCrossingMatch = singleCrossingFilter === "indef" ||
+                                  (singleCrossingFilter === "yes" && file.is_sc === "true") ||
+                                  (singleCrossingFilter === "no" && file.is_sc !== "true");
+            if (!singleCrossingMatch) {
                 return false;
             }
 
             // Apply strict filter (trinary logic: yes, no, or undefined)
             const strictMatch = strictFilter === "indef" ||
                                   (strictFilter === "yes" && file.is_strict === "true") ||
-                                  (strictFilter === "no" && !file.is_strict === "false");
+                                  (strictFilter === "no" && file.is_strict !== "true");
             if (!strictMatch) {
                 return false;
             }
 
             // Apply complete filter (trinary logic: yes, no, or undefined)
             const completeMatch = completeFilter === "indef" ||
-                                  (completeFilter === "yes" && file.is_complete === "true") ||
-                                  (completeFilter === "no" && !file.is_complete === "false");
+                                  (completeFilter === "yes" && file.is_comp === "true") ||
+                                  (completeFilter === "no" && file.is_comp !== "true");
             if (!completeMatch) {
                 return false;
             }
@@ -390,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Apply modification type filter
-            const modificationTypeMatch = acceptableModifTypes.includes(file.modification_type);
+            const modificationTypeMatch = acceptableModifTypes.includes(file.modif_type);
             if (!modificationTypeMatch) {
                 return false;
             }
@@ -399,7 +407,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			if (selectedDatasets.length === 0) {
 				datasetMatch = false;
 			} else {
-				datasetMatch = selectedDatasets.includes(file.dataset);
+				datasetMatch = selectedDatasets.includes(file.ds);
 			}
             if (!datasetMatch) {
                 return false;
@@ -438,25 +446,31 @@ document.addEventListener('DOMContentLoaded', function() {
             let filesToShow = filteredFiles.slice(startIndex, endIndex);
 
             searchResult.innerHTML += `
-				<div class="header column-header odd-line" data-sort="dataset">Dataset</div>
-				<div class="header column-header odd-line" data-sort="name">File</div>
-				<div class="header column-header odd-line" data-sort="data_type">Type</div>
-				<div class="header column-header odd-line" data-sort="modification_type">Modif.</div>
-				<div class="header column-header odd-line" data-sort="num_voters">#Voters</div>
-				<div class="header column-header odd-line" data-sort="num_alternatives">#Alt.</div>
-				<div class="header column-header odd-line" data-sort="num_unique_preferences">#Uniq.</div>
-				<div class="header column-header odd-line"></div>`;
+<div class="header column-header odd-line" data-sort="dataset">Dataset</div>
+<div class="header column-header odd-line" data-sort="name">File</div>
+<div class="header column-header odd-line" data-sort="data_type">Type</div>
+<div class="header column-header odd-line" data-sort="modification_type">Modif.</div>
+<div class="header column-header odd-line" data-sort="n_vots">#Voters</div>
+<div class="header column-header odd-line" data-sort="n_alts">#Alt.</div>
+<div class="header column-header odd-line" data-sort="n_uniq">#Uniq.</div>
+<div class="header column-header odd-line"></div>
+<div class="header column-header odd-line"></div>`;
             filesToShow.forEach(function (file, index) {
                 let rowClass = (index % 2 === 0) ? 'even-line' : 'odd-line';
                 searchResult.innerHTML += `
-                    <div class="${rowClass}"><span class="header row-header">Dataset:&nbsp;</span> <a href="${file.datasetUrl}">${file.dataset}</a></div>
-                    <div class="${rowClass}"><span class="header row-header">File:&nbsp;</span>${file.name}</div>
-                    <div class="${rowClass}"><span class="header row-header">Type:&nbsp;</span>${file.data_type}</div>
-                    <div class="${rowClass}"><span class="header row-header">Modif.:&nbsp;</span>${file.modification_type}</div>
-                    <div class="${rowClass}"><span class="header row-header">#Voters:&nbsp;</span>${file.num_voters}</div>
-                    <div class="${rowClass}"><span class="header row-header">#Alt.:&nbsp;</span>${file.num_alternatives}</div>
-                    <div class="${rowClass}"><span class="header row-header">#Uniq.:&nbsp;</span>${file.num_unique_preferences}</div>
-                    <div class="${rowClass}"><a href="${file.url}" class="download-button" target="_blank" download>Download</a></div>`;
+<div class="${rowClass}"><span class="header row-header">Dataset:&nbsp;</span> <a href="${file.ds_url}">${file.ds}</a></div>
+<div class="${rowClass}"><span class="header row-header">File:&nbsp;</span>${file.name}</div>
+<div class="${rowClass}"><span class="header row-header">Type:&nbsp;</span>${file.data_type}</div>
+<div class="${rowClass}"><span class="header row-header">Modif.:&nbsp;</span>${file.modif_type}</div>
+<div class="${rowClass}"><span class="header row-header">#Voters:&nbsp;</span>${file.n_vots}</div>
+<div class="${rowClass}"><span class="header row-header">#Alt.:&nbsp;</span>${file.n_alts}</div>
+<div class="${rowClass}"><span class="header row-header">#Uniq.:&nbsp;</span>${file.n_uniq}</div>
+<div class="${rowClass}">
+	<span class="info-icon"
+		  onmouseenter="showHelpText(event, '${file.is_strict}', '${file.is_comp}', '${file.is_app}', '${file.is_sp}', '${file.is_sp_tree}', '${file.is_sc}')"
+		  onmouseleave="hideHelpText(this)">&#9432;</span>
+</div>
+<div class="${rowClass}"><a href="${file.url}" class="download-button" target="_blank" download>Download</a></div>`;
             });
 
 			document.querySelectorAll('.column-header').forEach(header => {
@@ -554,7 +568,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			let comparison = 0;
 
 			// Determine comparison based on the key
-			if (key === "num_voters" || key === "num_alternatives" || key === "num_unique_preferences") {
+			if (key === "n_vots" || key === "n_alts" || key === "n_uniq") {
 				comparison = a[key] - b[key]; // Numeric comparison
 			} else {
 				comparison = a[key].localeCompare(b[key]); // String comparison
@@ -651,4 +665,53 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial render
 	applyFilters();
 });
+
+	function showHelpText(event, strict, complete, approval, singlepeaked, singlepeakedtree, singlecrossing) {
+        const bubble = document.getElementById("file-info-bubble");
+
+    // Clear any previous content in the bubble
+    bubble.innerHTML = "";
+
+    // Object to store argument names and values
+    const args = {
+        "Strict:": strict,
+        "Complete:": complete,
+        "Approval:": approval,
+        "Single-Peaked:": singlepeaked,
+        "Single-Peaked on a Tree:": singlepeakedtree,
+        "Single-Crossing:": singlecrossing
+    };
+
+    // Loop through each argument and create a div with the name and value
+    for (const [name, value] of Object.entries(args)) {
+        const nameDiv = document.createElement("div");
+        nameDiv.className = "info-header";
+        nameDiv.textContent = name;
+
+        const valueDiv = document.createElement("div");
+        valueDiv.className = "info-value";
+		if (value === "true") {
+			valueDiv.innerHTML = "&#10003;";
+		} else if (value === "false") {
+			valueDiv.innerHTML = "&#10007;";
+		} else {
+			valueDiv.textContent = value;
+		}
+
+        bubble.appendChild(nameDiv);
+        bubble.appendChild(valueDiv);
+    }
+
+    // Position the bubble near the clicked icon
+    const rect = event.target.getBoundingClientRect();
+    bubble.style.top = `${rect.bottom + window.scrollY}px`;
+    bubble.style.left = `${rect.left}px`;
+
+	bubble.classList.toggle("hidden");
+    }
+
+	function hideHelpText() {
+        document.getElementById("file-info-bubble").classList.toggle("hidden");
+	}
+
 </script>

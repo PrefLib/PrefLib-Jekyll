@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 import time
 
-checked_links = set()
+ALREADY_CHECKED_LINKS = set()
 
 
 def check_link(url):
@@ -35,14 +35,14 @@ def crawl_and_check(base_url, max_depth=2, current_depth=0):
 
         for link in links:
             # Only check internal links
-            if urlparse(link).netloc == urlparse(base_url).netloc and link not in checked_links:
-                checked_links.add(link)
+            if urlparse(link).netloc == urlparse(base_url).netloc and link not in ALREADY_CHECKED_LINKS:
+                ALREADY_CHECKED_LINKS.add(link)
                 check_link(link)
                 # Recursive crawl
                 crawl_and_check(link, max_depth, current_depth + 1)
-            elif link not in checked_links:
+            elif link not in ALREADY_CHECKED_LINKS:
                 # For external links, just check status without recursion
-                checked_links.add(link)
+                ALREADY_CHECKED_LINKS.add(link)
                 check_link(link)
     except requests.RequestException as e:
         print(f"Error retrieving page: {base_url} - {e}")
