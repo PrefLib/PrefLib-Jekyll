@@ -18,11 +18,11 @@
     2013.
   selected_studies: ''
   num_files: 6
-  zip_file_size: 623377
+  zip_file_size: 623507
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00001_irish.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Debian Project Data
   abbreviation: debian
   series_number: '00002'
@@ -38,11 +38,11 @@
   required_citations: ''
   selected_studies: ''
   num_files: 16
-  zip_file_size: 22032
+  zip_file_size: 22363
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00002_debian.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Mariner Path Selection
   abbreviation: nasa
   series_number: '00003'
@@ -60,7 +60,7 @@
     Problems?; Toby Walsh; Journal of Artificial Intelligence Research, 42, 1-39;
     2011
   num_files: 1
-  zip_file_size: 1867
+  zip_file_size: 1896
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00003_nasa.zip
   data_types:
   - toc
@@ -88,7 +88,7 @@
     of Voting Rules with Strictly Ordered Preference Data; Nicholas Mattei; 2nd International
     Conference on Algorithmic Decision Theory (ADT); 2011
   num_files: 200
-  zip_file_size: 93447
+  zip_file_size: 97653
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00004_netflix.zip
   data_types:
   - soc
@@ -110,7 +110,7 @@
     2013.
   selected_studies: ''
   num_files: 4
-  zip_file_size: 9770
+  zip_file_size: 9857
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00005_burlington.zip
   data_types:
   - toc
@@ -133,7 +133,7 @@
     at RangeVoting.com</a>, 2000. Sandra J. Loosemore. <em>OBO: A Detailed Analysis</em>.
     No longer available, 1998.'
   num_files: 48
-  zip_file_size: 42782
+  zip_file_size: 43761
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00006_skate.zip
   data_types:
   - toc
@@ -164,11 +164,11 @@
     encounter voting paradoxes in three-candidate elections?</em> Social Choice and
     Welfare, 2013.'
   num_files: 174
-  zip_file_size: 305435
+  zip_file_size: 308944
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00007_ers.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Glasgow City Council
   abbreviation: glasgow
   series_number: 00008
@@ -188,11 +188,11 @@
     2013.
   selected_studies: ''
   num_files: 42
-  zip_file_size: 468844
+  zip_file_size: 469698
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00008_glasgow.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: AGH Course Selection
   abbreviation: agh
   series_number: 00009
@@ -210,7 +210,7 @@
     | V. Hashemi and U. Endriss. <em>Measuring Diversity of Preferences in a Group</em>.
     Proceedings of ECAI, 2014.
   num_files: 2
-  zip_file_size: 2719
+  zip_file_size: 2770
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00009_agh.zip
   data_types:
   - soc
@@ -238,11 +238,11 @@
     <em>Partial Kernelization for Rank Aggregation: Theory and Experiments</em>. Proc.
     5th International Symposium on Parameterized and Exact Computation (IPEC), 2010.'
   num_files: 4
-  zip_file_size: 19798
+  zip_file_size: 19890
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00010_ski.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Web Search
   abbreviation: web
   series_number: '00011'
@@ -273,12 +273,12 @@
     Rank Aggregation: Theory and Experiments</em>. Proc. 5th International Symposium
     on Parameterized and Exact Computation (IPEC), 2010.'
   num_files: 151
-  zip_file_size: 6487778
+  zip_file_size: 6490875
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
-  - soi
   - toc
   - soc
+  - soi
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -293,7 +293,7 @@
   required_citations: ''
   selected_studies: ''
   num_files: 1
-  zip_file_size: 1511
+  zip_file_size: 1538
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00012_shirt.zip
   data_types:
   - soc
@@ -319,7 +319,7 @@
     Group Decision and Negotiation Journal: 26(3): 473-494, 2017 (<a href="/assets/bib/LNKE17.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 3
-  zip_file_size: 221965
+  zip_file_size: 221970
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00013_social.zip
   data_types:
   - csv
@@ -356,13 +356,13 @@
     and S. Akaho. <em>A Survey and Empirical Comparison of Object Ranking Methods</em>.
     In J. Furnkranz and E. Hullermeier (eds.), Preference Learning, 2010.'
   num_files: 5
-  zip_file_size: 431643
+  zip_file_size: 431755
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
-  - soi
   - toc
   - soc
   - toi
+  - soi
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -393,7 +393,7 @@
     Rank Aggregation: Theory and Experiments</em>. Proc. 5th International Symposium
     on Parameterized and Exact Computation (IPEC), 2010.'
   num_files: 79
-  zip_file_size: 144205
+  zip_file_size: 145818
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00015_cleanweb.zip
   data_types:
   - soc
@@ -416,12 +416,12 @@
     2013.
   selected_studies: ''
   num_files: 6
-  zip_file_size: 30677
+  zip_file_size: 30764
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -440,12 +440,12 @@
     2013.
   selected_studies: ''
   num_files: 3
-  zip_file_size: 2924
+  zip_file_size: 2973
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -467,11 +467,11 @@
     2013.
   selected_studies: ''
   num_files: 8
-  zip_file_size: 59539
+  zip_file_size: 59700
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00018_minneapolis.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Oakland Election Data
   abbreviation: oakland
   series_number: 00019
@@ -491,12 +491,12 @@
     2013.
   selected_studies: ''
   num_files: 21
-  zip_file_size: 44848
+  zip_file_size: 45134
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -516,12 +516,12 @@
     2013.
   selected_studies: ''
   num_files: 12
-  zip_file_size: 14821
+  zip_file_size: 14992
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -542,12 +542,12 @@
     2013.
   selected_studies: ''
   num_files: 42
-  zip_file_size: 188189
+  zip_file_size: 188756
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -567,12 +567,12 @@
     2013.
   selected_studies: ''
   num_files: 9
-  zip_file_size: 10065
+  zip_file_size: 10196
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -591,7 +591,7 @@
     2013.
   selected_studies: ''
   num_files: 2
-  zip_file_size: 2107
+  zip_file_size: 2158
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00023_takomapark.zip
   data_types:
   - toc
@@ -621,7 +621,7 @@
     Conference on Artificial Intelligence (AAAI), 2013.
   selected_studies: ''
   num_files: 4
-  zip_file_size: 3042
+  zip_file_size: 3128
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00024_dots.zip
   data_types:
   - soc
@@ -650,7 +650,7 @@
     Conference on Artificial Intelligence (AAAI), 2013.
   selected_studies: ''
   num_files: 4
-  zip_file_size: 3099
+  zip_file_size: 3194
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00025_puzzle.zip
   data_types:
   - soc
@@ -678,11 +678,11 @@
     href="/assets/bib/LaSt08.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 12
-  zip_file_size: 27919
+  zip_file_size: 28181
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00026_frenchapproval.zip
   data_types:
-  - cat
   - toc
+  - cat
 - name: Proto French Election
   abbreviation: frenchrate
   series_number: '00027'
@@ -705,7 +705,7 @@
     assentiment pendant la presidentielle de 2002: analyse d''une experience</em>.
     Revue Francaise de Science Politique 54 : 99-130, 2004.'
   num_files: 1
-  zip_file_size: 2475
+  zip_file_size: 2503
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00027_frenchrate.zip
   data_types:
   - toc
@@ -734,11 +734,11 @@
     D. Cavagnaro. <em>Behavioural social choice: A status report</em>. Philosophical
     Transactions of the Royal Society B: Biological Sciences, 364, 833-843, 2009.'
   num_files: 24
-  zip_file_size: 36292
+  zip_file_size: 36786
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00028_apa.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Proto French Election Ratings
   abbreviation: frenchratecombi
   series_number: 00029
@@ -760,7 +760,7 @@
     assentiment pendant la presidentielle de 2002: analyse d''une experience</em>.
     Revue Francaise de Science Politique 54 : 99-130, 2004.'
   num_files: 1
-  zip_file_size: 6582
+  zip_file_size: 6587
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00029_frenchratecombi.zip
   data_types:
   - dat
@@ -782,11 +782,11 @@
     Available at <a href="http://rangevoting.org/LabourUK2010.html">www.rangevoting.com</a>,
     2010.
   num_files: 2
-  zip_file_size: 2335
+  zip_file_size: 2383
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00030_uklabor.zip
   data_types:
-  - soi
   - toc
+  - soi
 - name: Vermont District Races
   abbreviation: vermont
   series_number: '00031'
@@ -804,7 +804,7 @@
     2016 (<a href="/assets/bib/Hans15.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 15
-  zip_file_size: 7966
+  zip_file_size: 8280
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00031_vermont.zip
   data_types:
   - toc
@@ -826,13 +826,13 @@
   required_citations: ''
   selected_studies: ''
   num_files: 10
-  zip_file_size: 8201
+  zip_file_size: 8418
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
-  - soi
   - toc
   - soc
   - toi
+  - soi
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -862,11 +862,11 @@
   required_citations: ''
   selected_studies: ''
   num_files: 5
-  zip_file_size: 6199
+  zip_file_size: 6287
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00033_poster.zip
   data_types:
-  - cat
   - toc
+  - cat
   - dat
 - name: Cities Survey
   abbreviation: cities
@@ -899,7 +899,7 @@
     2017.
   selected_studies: ''
   num_files: 2
-  zip_file_size: 7794
+  zip_file_size: 7846
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00034_cities.zip
   data_types:
   - soi
@@ -933,11 +933,11 @@
     1972 (<a href="/assets/bib/GrHa72.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 7
-  zip_file_size: 10239
+  zip_file_size: 10370
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00035_breakfast.zip
   data_types:
-  - csv
   - soc
+  - csv
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -977,7 +977,7 @@
     D. Procaccia, and Tuomas Sandholm. <em>Price of Fairness in Kidney Exchange</em>
     Proceedings of AAMAS, 2014.
   num_files: 620
-  zip_file_size: 207857589
+  zip_file_size: 207863928
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
   - wmd
@@ -1009,11 +1009,11 @@
   required_citations: ''
   selected_studies: ''
   num_files: 4
-  zip_file_size: 206664
+  zip_file_size: 206730
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00037_aamas.zip
   data_types:
-  - cat
   - csv
+  - cat
 - name: Project Bidding Data
   abbreviation: project
   series_number: 00038
@@ -1040,11 +1040,11 @@
     Algorithms, 2014 (<a href="/assets/bib/KIMS14.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 24
-  zip_file_size: 30223
+  zip_file_size: 30557
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
-  - soi
   - toc
+  - soi
   - dat
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
@@ -1063,7 +1063,7 @@
   required_citations: ''
   selected_studies: ''
   num_files: 3
-  zip_file_size: 10899
+  zip_file_size: 10968
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00039_csconf.zip
   data_types:
   - cat
@@ -1094,7 +1094,7 @@
     <em>Judgment Aggregation under Issue Dependencies</em>. 30th AAAI Conference on
     Artificial Intelligence (AAAI), 2016.'
   num_files: 4
-  zip_file_size: 81093329
+  zip_file_size: 81093334
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00040_trip.zip
   data_types:
   - dat
@@ -1120,11 +1120,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 2
-  zip_file_size: 1190990
+  zip_file_size: 1191035
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00041_boardgames.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Boxing
   abbreviation: boxing
   series_number: '00042'
@@ -1150,11 +1150,11 @@
     (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 189
-  zip_file_size: 132608
+  zip_file_size: 136407
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00042_boxing.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Cycling Races
   abbreviation: cycling
   series_number: '00043'
@@ -1185,11 +1185,11 @@
     (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 319
-  zip_file_size: 1400967
+  zip_file_size: 1407572
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00043_cycling.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Table Tennis Ranking
   abbreviation: tabletennis
   series_number: '00044'
@@ -1214,11 +1214,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 74
-  zip_file_size: 1610383
+  zip_file_size: 1611897
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00044_tabletennis.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Tennis Ranking
   abbreviation: tennis
   series_number: '00045'
@@ -1242,11 +1242,11 @@
     (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 58
-  zip_file_size: 281124
+  zip_file_size: 282290
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00045_tennis.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Global University Ranking
   abbreviation: university
   series_number: '00046'
@@ -1271,11 +1271,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 8
-  zip_file_size: 115765
+  zip_file_size: 115932
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00046_university.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Spotify Daily Chart
   abbreviation: spotifyday
   series_number: '00047'
@@ -1303,11 +1303,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 724
-  zip_file_size: 25782757
+  zip_file_size: 25797706
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00047_spotifyday.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Spotify Countries Chart
   abbreviation: spotifycountry
   series_number: 00048
@@ -1337,11 +1337,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1286
-  zip_file_size: 13368002
+  zip_file_size: 13395177
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00048_spotifycountry.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Multilaps Competitions
   abbreviation: mylaps
   series_number: 00049
@@ -1365,11 +1365,11 @@
     (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1144
-  zip_file_size: 1288504
+  zip_file_size: 1312773
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00049_mylaps.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Movehub City Ranking
   abbreviation: movehub
   series_number: '00050'
@@ -1393,7 +1393,7 @@
     (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1
-  zip_file_size: 7347
+  zip_file_size: 7374
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00050_movehub.zip
   data_types:
   - soc
@@ -1421,11 +1421,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 24
-  zip_file_size: 84990
+  zip_file_size: 85485
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00051_countries.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Formula 1 Seasons
   abbreviation: f1seasons
   series_number: '00052'
@@ -1449,11 +1449,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 136
-  zip_file_size: 126931
+  zip_file_size: 129706
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00052_f1seasons.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Formula 1 Races
   abbreviation: f1races
   series_number: '00053'
@@ -1479,11 +1479,11 @@
     (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 908
-  zip_file_size: 1200012
+  zip_file_size: 1219085
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00053_f1races.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Weeks Power Ranking
   abbreviation: weeksport
   series_number: '00054'
@@ -1512,11 +1512,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1907
-  zip_file_size: 29501928
+  zip_file_size: 29542029
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00054_weeksport.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Combined Power Ranking
   abbreviation: combinedsport
   series_number: '00055'
@@ -1544,11 +1544,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 106
-  zip_file_size: 21780782
+  zip_file_size: 21782973
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00055_combinedsport.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Seasons Power Ranking
   abbreviation: seasonsport
   series_number: '00056'
@@ -1576,11 +1576,11 @@
     (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 4981
-  zip_file_size: 28180591
+  zip_file_size: 28287437
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00056_seasonsport.zip
   data_types:
-  - soi
   - soc
+  - soi
 - name: Parliamentary Elections
   abbreviation: parliaments
   series_number: '00057'
@@ -1593,7 +1593,7 @@
   required_citations: ''
   selected_studies: ''
   num_files: 9
-  zip_file_size: 6831
+  zip_file_size: 7040
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00057_parliaments.zip
   data_types:
   - cat
@@ -1620,7 +1620,7 @@
     <a href="https://elections.nsw.gov.au/copyright">elections.nsw.gov.au</a>, 2018.
   selected_studies: ''
   num_files: 279
-  zip_file_size: 2018202
+  zip_file_size: 2023992
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00058_nswla.zip
   data_types:
   - soi
@@ -1649,7 +1649,7 @@
   required_citations: ''
   selected_studies: ''
   num_files: 4
-  zip_file_size: 10277
+  zip_file_size: 10363
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00059_campsongs.zip
   data_types:
   - cat
@@ -1681,11 +1681,11 @@
     AAAI, 2024.'
   selected_studies: ''
   num_files: 992
-  zip_file_size: 423948295
+  zip_file_size: 423958698
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00060_polkadot.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Kusama Network
   abbreviation: kusama
   series_number: '00061'
@@ -1713,11 +1713,11 @@
     AAAI, 2024.'
   selected_studies: ''
   num_files: 3040
-  zip_file_size: 534635947
+  zip_file_size: 534668009
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00061_kusama.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Alternative Order Experiment
   abbreviation: orderaltexpe
   series_number: '00062'
@@ -1743,11 +1743,11 @@
     \ Ramsza ,\tPaweł Zawiślak. Impact of a priori positive information on the results\
     \ of voting methods. Statistical Review, 69(4), 2022."
   num_files: 3
-  zip_file_size: 2533
+  zip_file_size: 2597
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00062_orderaltexpe.zip
   data_types:
-  - csv
   - soc
+  - csv
 - name: CTU AG1 Tutorial Time Selection
   abbreviation: ctu
   series_number: '00063'
@@ -1762,7 +1762,7 @@
   required_citations: ''
   selected_studies: ''
   num_files: 1
-  zip_file_size: 2234
+  zip_file_size: 2262
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00063_ctu.zip
   data_types:
   - cat
@@ -1781,7 +1781,7 @@
     Making: Experimental Toolbox and Dynamic Environments</em>, 2023.'
   selected_studies: ''
   num_files: 73
-  zip_file_size: 64419
+  zip_file_size: 66004
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00064_eurovision.zip
   data_types:
   - soi
@@ -1803,7 +1803,7 @@
     Making: Experimental Toolbox and Dynamic Environments</em>, 2023.'
   selected_studies: ''
   num_files: 4
-  zip_file_size: 4221
+  zip_file_size: 4315
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00065_marblympics.zip
   data_types:
   - soi
@@ -1824,7 +1824,7 @@
     (Real-World) Election Winners</em>, 2022.
   selected_studies: ''
   num_files: 13
-  zip_file_size: 11499
+  zip_file_size: 11791
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00066_uk_general_elections.zip
   data_types:
   - soi
@@ -1856,7 +1856,7 @@
     Dynamic Environments</em>, 2023.'
   selected_studies: ''
   num_files: 305
-  zip_file_size: 976963
+  zip_file_size: 984073
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00067_cses.zip
   data_types:
   - soi
@@ -1880,7 +1880,35 @@
     (Real-World) Election Winners</em>, 2022.
   selected_studies: ''
   num_files: 1315
-  zip_file_size: 625033
+  zip_file_size: 653763
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00068_poland_local_elections.zip
   data_types:
   - soi
+- name: '"Pol.is'
+  abbreviation: polis
+  series_number: 00069
+  tags:
+  - Election
+  publication_date: '2025-10-16'
+  description: <p><a href="https://pol.is/signin">Polis</a> is a survey software that
+    allows users to share their opinions and ideas over statements and comments regarding
+    a given theme.</p><p>The data presented here is a reformat of the Polis data available
+    on <a href="https://github.com/compdemocracy/openData/tree/master">GitHub</a>
+    under under a Creative Commons Attribution 4.0 International license. The data
+    has been reformated to fit the PrefLib categorical preferences data.</p><p>Each
+    file describes a polis poll. The alternatives correspond to the statements/comments
+    from the polls. For each statement, the voters can either express positive opinion
+    (corresponding to the "Approved" category), negative opinion (corresponding to
+    the "disapproved" category), or the absence of opinion (in the "Neutral/Skipped"
+    category). Voters do not have to express an opinion, or absence thereof, for all
+    statements/comments.</p><p>The data has been provided by Simon Rey, as part of
+    the development of the <a href="https://simon-rey.github.io/ProportionalityPress/">Proportionality
+    Press</a> within the Fair online group decision making (FairOGD) project of <a
+    href="https://janmaly.de/">Jan Maly</a>.</p>
+  required_citations: ''
+  selected_studies: ''
+  num_files: 20
+  zip_file_size: 1861285
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00069_polis.zip
+  data_types:
+  - cat
