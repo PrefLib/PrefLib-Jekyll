@@ -1884,7 +1884,7 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00068_poland_local_elections.zip
   data_types:
   - soi
-- name: '"Pol.is'
+- name: 'Pol.is'
   abbreviation: polis
   series_number: 00069
   tags:
