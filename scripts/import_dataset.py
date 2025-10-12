@@ -6,7 +6,7 @@ from zipfile import ZipFile
 import yaml
 from preflibtools.instances.dataset import read_info_file
 
-if __name__ == "__main__":
+def main():
     zip_files = sorted([os.path.join("zip", f) for f in os.listdir("zip") if f.endswith(".zip")])
     # zip_files = ["zip/00001 - irish.zip", "zip/00002 - debian.zip", "zip/00003 - nasa.zip"]
 
@@ -41,7 +41,8 @@ if __name__ == "__main__":
             "data_types": list(set(f["file_name"][-3:] for f in dataset_info["files"].values()))
         }
         with open(dataset_file_path, "a", encoding="utf-8") as dataset_file:
-                yaml.dump([dataset_yml], dataset_file, default_flow_style=False, sort_keys=False, encoding='utf-8', allow_unicode=True)
+            yaml.dump([dataset_yml], dataset_file, default_flow_style=False, sort_keys=False, encoding='utf-8',
+                      allow_unicode=True)
 
         file_to_metadatas = dict()
         with open(os.path.join(tmp_dir_path, "metadata.csv"), encoding="utf-8") as f:
@@ -100,12 +101,16 @@ if __name__ == "__main__":
                     "description": file_dict["description"],
                     "url": file_dict["url"],
                     "size": file_dict["size"]
-                    })
+                })
                 files_to_remove.append(file_name)
         for f in files_to_remove:
             del datafile_yml[f]
 
         with open(datafile_file_path, "a", encoding="utf-8") as datafile_file:
-                yaml.dump(list(datafile_yml.values()), datafile_file, default_flow_style=False, sort_keys=False, encoding='utf-8', allow_unicode=True)
+            yaml.dump(list(datafile_yml.values()), datafile_file, default_flow_style=False, sort_keys=False,
+                      encoding='utf-8', allow_unicode=True)
 
         shutil.rmtree(tmp_dir_path)
+
+if __name__ == "__main__":
+    main()
