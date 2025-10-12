@@ -24,3 +24,6 @@
 
 - name: STV
   description: STV (single-transferable vote) was the voting rule used for the selection of the winner.
+
+- name: Deliberation
+  description: Instance resulting from a deliberation process.
