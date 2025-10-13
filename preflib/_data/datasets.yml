@@ -1924,7 +1924,7 @@
     topic and an LLM was used to generate four statements agregating the participants'
     opinions. Participants could then rank the different propositions, and Schulze's
     method was used to select the winning statement. The original data was <a href="https://github.com/google-deepmind/habermas_machine">collected
-    by Google DeepMind</a>, and was converted to the appropriate format by <a href="https://theo.delemazure.fr/>Théo
+    by Google DeepMind</a>, and was converted to the appropriate format by <a href="https://theo.delemazure.fr"/>Théo
     Delemazure</a>.</p>
   required_citations: Michael Henry Tessler et al. <em>AI can help humans find common
     ground in democratic deliberation</em>. Science 386, 2024.
