@@ -113,8 +113,8 @@
   zip_file_size: 9859
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00005_burlington.zip
   data_types:
-  - toc
   - toi
+  - toc
 - name: Skate Data
   abbreviation: skate
   series_number: '00006'
@@ -136,8 +136,8 @@
   zip_file_size: 43826
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00006_skate.zip
   data_types:
-  - soc
   - toc
+  - soc
 - name: Electoral Reform Society (ERS) Data
   abbreviation: ers
   series_number: '00007'
@@ -277,8 +277,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
   - soi
-  - soc
   - toc
+  - soc
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -359,10 +359,10 @@
   zip_file_size: 431761
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
-  - soi
-  - soc
-  - toc
   - toi
+  - soi
+  - toc
+  - soc
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -419,8 +419,8 @@
   zip_file_size: 30764
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
-  - toi
   - toc
+  - toi
   - dat
 - name: Berkley Election Data
   abbreviation: berkley
@@ -443,8 +443,8 @@
   zip_file_size: 2976
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
-  - toi
   - toc
+  - toi
   - dat
 - name: Minneapolis Election Data
   abbreviation: minneapolis
@@ -494,8 +494,8 @@
   zip_file_size: 45159
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
-  - toi
   - toc
+  - toi
   - dat
 - name: Pierce Election Data
   abbreviation: pierce
@@ -519,8 +519,8 @@
   zip_file_size: 14996
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
-  - toi
   - toc
+  - toi
   - dat
 - name: San Francisco Election Data
   abbreviation: sf
@@ -545,8 +545,8 @@
   zip_file_size: 188800
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
-  - toi
   - toc
+  - toi
   - dat
 - name: San Leandro Election Data
   abbreviation: sl
@@ -570,8 +570,8 @@
   zip_file_size: 10197
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
-  - toi
   - toc
+  - toi
   - dat
 - name: Takoma Park Election Data
   abbreviation: takomapark
@@ -594,8 +594,8 @@
   zip_file_size: 2157
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00023_takomapark.zip
   data_types:
-  - toc
   - toi
+  - toc
 - name: Mechanical Turk Dots
   abbreviation: dots
   series_number: '00024'
@@ -829,10 +829,10 @@
   zip_file_size: 8429
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
-  - soi
-  - soc
-  - toc
   - toi
+  - soi
+  - toc
+  - soc
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -866,8 +866,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00033_poster.zip
   data_types:
   - cat
-  - toc
   - dat
+  - toc
 - name: Cities Survey
   abbreviation: cities
   series_number: '00034'
@@ -936,8 +936,8 @@
   zip_file_size: 10371
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00035_breakfast.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -980,8 +980,8 @@
   zip_file_size: 207864653
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
-  - wmd
   - dat
+  - wmd
 - name: AAMAS Bidding Data
   abbreviation: aamas
   series_number: '00037'
@@ -1043,8 +1043,8 @@
   zip_file_size: 30572
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
-  - soi
   - toc
+  - soi
   - dat
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
@@ -1746,8 +1746,8 @@
   zip_file_size: 2586
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00062_orderaltexpe.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: CTU AG1 Tutorial Time Selection
   abbreviation: ctu
   series_number: '00063'
@@ -1934,36 +1934,6 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00070_habermas.zip
   data_types:
   - soc
-- name: Experiment on Approval Voting during the 2007 French Presidential Election
-  abbreviation: french-approval-2007
-  series_number: '00071'
-  tags:
-  - Experiment
-  - Election
-  publication_date: '2025-10-13'
-  description: <p>This dataset contains data from a voting experiment conducted in
-    April 2007 during the French presidential election in the cities of Louvigny,
-    Cigné and Illkirch. In this experiment, participants were asked to test alternative
-    voting methods to elect the French president, more precisely approval voting and
-    evaluative voting (with the scale {0,1,2}). The experiment took place in situ
-    in six polling stations during the first round of the presidential election (using
-    paper ballots). The full dataset (that contains more information) can be found
-    <a href="https://zenodo.org/records/14990025">here</a>. This dataset and more
-    similar datasets collected during voting experiments can be found <a href="https://theo.delemazure.fr/datasets/">here</a>.</p>
-  required_citations: 'Antoinette Baujard, Herrade Igersheim; <em>Framed field experiments
-    on approval voting: lessons from the 2002 and 2007 french presidential elections</em>.
-    Handbook of Approval Voting, 2010 <a href="https://doi.org/10.1007/978-3-642-02839-7_15">https://doi.org/10.1007/978-3-642-02839-7_15</a>
-    (and if possible Antoinette Baujard, Herrade Igersheim, Théo Delemazure; <em>Voter
-    Autrement 2007 - Dataset of the In Situ Experiments</em>, Zenodo Dataset <a href="https://doi.org/10.5281/zenodo.14990025">https://doi.org/10.5281/zenodo.14990025</a>)'
-  selected_studies: 'Antoinette Baujard, Herrade Igersheim, Thomas Senne; <em>The
-    Political Supply in the 2007 French Presidential Elections: An Analysis Based
-    on Experimental Data</em>.  Annals of Economics and Statistics, GENES (2011).'
-  num_files: 24
-  zip_file_size: 54161
-  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00071_french-approval-2007.zip
-  data_types:
-  - cat
-  - toc
 - name: '"Voter Autrement" In Situ Experiments in French Presidential Elections'
   abbreviation: voter-autrement-in-situ
   series_number: '00071'
@@ -1988,8 +1958,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00071_voter-autrement-in-situ.zip
   data_types:
   - cat
-  - toc
   - toi
+  - toc
 - name: Voting Experiments on IRV and Borda in French Presidental Elections
   abbreviation: french-experiments-rankings
   series_number: '00072'
@@ -2010,29 +1980,6 @@
   num_files: 3
   zip_file_size: 12225
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00072_french-experiments-rankings.zip
-  data_types:
-  - soi
-- name: Voting Experiment on IRV during the 2007 French Presidental Election
-  abbreviation: french-irv-2007
-  series_number: '00072'
-  tags:
-  - Election
-  - Politics
-  publication_date: '2025-10-13'
-  description: <p>This dataset contains the data collected during a voting experiment
-    carried out in the city of Faches-Thumesnil, in northern France, during the first
-    round of the presidential election in April 2007. Participants were invited to
-    vote using the Instant Runoff Voting method (also called Hare's method). The full
-    dataset (that contains more information) can be found <a href="https://zenodo.org/records/15290477">here</a>.
-    This dataset and more similar datasets collected during voting experiments can
-    be found <a href="https://theo.delemazure.fr/datasets/">here</a>.</p>
-  required_citations: Étienne Farvaque, Hubert Jayet et Lionel Ragot. <em>Quel mode
-    de scrutin pour quel « vainqueur » ? Une expérience sur le vote préférentiel transférable</em>.
-    Revue d'Économie Politique, 2009 (<a href="https://doi.org/10.3917/redp.192.0221">https://doi.org/10.3917/redp.192.0221</a>).
-  selected_studies: ''
-  num_files: 1
-  zip_file_size: 6244
-  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00072_french-irv-2007.zip
   data_types:
   - soi
 - name: '"Voter Autrement" Online Experiments in French Presidential Elections'
@@ -2056,10 +2003,10 @@
   zip_file_size: 422277
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00073_voter-autrement-online.zip
   data_types:
-  - soi
   - cat
-  - toc
+  - soi
   - toi
+  - toc
 - name: Vote Pluriel - Online Experiment during the 2012 French Experiment
   abbreviation: votepluriel
   series_number: '00074'
@@ -2082,8 +2029,8 @@
   zip_file_size: 26996
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00074_votepluriel.zip
   data_types:
-  - soi
   - cat
+  - soi
   - toc
 - name: Opinions of the Supreme Court of the US
   abbreviation: scotus
