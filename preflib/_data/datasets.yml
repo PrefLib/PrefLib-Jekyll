@@ -113,8 +113,8 @@
   zip_file_size: 9859
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00005_burlington.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Skate Data
   abbreviation: skate
   series_number: '00006'
@@ -136,8 +136,8 @@
   zip_file_size: 43826
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00006_skate.zip
   data_types:
-  - soc
   - toc
+  - soc
 - name: Electoral Reform Society (ERS) Data
   abbreviation: ers
   series_number: '00007'
@@ -277,8 +277,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
   - soi
-  - soc
   - toc
+  - soc
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -359,10 +359,10 @@
   zip_file_size: 431761
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
-  - toi
   - soi
-  - soc
   - toc
+  - soc
+  - toi
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -419,9 +419,9 @@
   zip_file_size: 30764
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
+  - toc
   - dat
   - toi
-  - toc
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -443,9 +443,9 @@
   zip_file_size: 2976
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
+  - toc
   - dat
   - toi
-  - toc
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -494,9 +494,9 @@
   zip_file_size: 45159
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
+  - toc
   - dat
   - toi
-  - toc
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -519,9 +519,9 @@
   zip_file_size: 14996
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
+  - toc
   - dat
   - toi
-  - toc
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -545,9 +545,9 @@
   zip_file_size: 188800
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
+  - toc
   - dat
   - toi
-  - toc
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -570,9 +570,9 @@
   zip_file_size: 10197
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
+  - toc
   - dat
   - toi
-  - toc
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -594,8 +594,8 @@
   zip_file_size: 2157
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00023_takomapark.zip
   data_types:
-  - toi
   - toc
+  - toi
 - name: Mechanical Turk Dots
   abbreviation: dots
   series_number: '00024'
@@ -681,8 +681,8 @@
   zip_file_size: 28195
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00026_frenchapproval.zip
   data_types:
-  - cat
   - toc
+  - cat
 - name: Proto French Election
   abbreviation: frenchrate
   series_number: '00027'
@@ -829,10 +829,10 @@
   zip_file_size: 8429
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
-  - soc
-  - toi
   - soi
   - toc
+  - soc
+  - toi
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -865,9 +865,9 @@
   zip_file_size: 6291
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00033_poster.zip
   data_types:
-  - dat
-  - cat
   - toc
+  - cat
+  - dat
 - name: Cities Survey
   abbreviation: cities
   series_number: '00034'
@@ -936,8 +936,8 @@
   zip_file_size: 10371
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00035_breakfast.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -980,8 +980,8 @@
   zip_file_size: 207864653
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
-  - dat
   - wmd
+  - dat
 - name: AAMAS Bidding Data
   abbreviation: aamas
   series_number: '00037'
@@ -1012,8 +1012,8 @@
   zip_file_size: 206735
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00037_aamas.zip
   data_types:
-  - cat
   - csv
+  - cat
 - name: Project Bidding Data
   abbreviation: project
   series_number: 00038
@@ -1043,9 +1043,9 @@
   zip_file_size: 30572
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
-  - dat
   - soi
   - toc
+  - dat
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
   series_number: 00039
@@ -1123,8 +1123,8 @@
   zip_file_size: 1191036
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00041_boardgames.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Boxing
   abbreviation: boxing
   series_number: '00042'
@@ -1153,8 +1153,8 @@
   zip_file_size: 136703
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00042_boxing.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Cycling Races
   abbreviation: cycling
   series_number: '00043'
@@ -1188,8 +1188,8 @@
   zip_file_size: 1408081
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00043_cycling.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Table Tennis Ranking
   abbreviation: tabletennis
   series_number: '00044'
@@ -1217,8 +1217,8 @@
   zip_file_size: 1612019
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00044_tabletennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Tennis Ranking
   abbreviation: tennis
   series_number: '00045'
@@ -1245,8 +1245,8 @@
   zip_file_size: 282424
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00045_tennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Global University Ranking
   abbreviation: university
   series_number: '00046'
@@ -1274,8 +1274,8 @@
   zip_file_size: 115946
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00046_university.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Daily Chart
   abbreviation: spotifyday
   series_number: '00047'
@@ -1306,8 +1306,8 @@
   zip_file_size: 25799115
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00047_spotifyday.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Countries Chart
   abbreviation: spotifycountry
   series_number: 00048
@@ -1340,8 +1340,8 @@
   zip_file_size: 13397064
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00048_spotifycountry.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Multilaps Competitions
   abbreviation: mylaps
   series_number: 00049
@@ -1368,8 +1368,8 @@
   zip_file_size: 1314247
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00049_mylaps.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Movehub City Ranking
   abbreviation: movehub
   series_number: '00050'
@@ -1424,8 +1424,8 @@
   zip_file_size: 85524
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00051_countries.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Seasons
   abbreviation: f1seasons
   series_number: '00052'
@@ -1452,8 +1452,8 @@
   zip_file_size: 129888
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00052_f1seasons.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Races
   abbreviation: f1races
   series_number: '00053'
@@ -1482,8 +1482,8 @@
   zip_file_size: 1220262
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00053_f1races.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Weeks Power Ranking
   abbreviation: weeksport
   series_number: '00054'
@@ -1515,8 +1515,8 @@
   zip_file_size: 29545605
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00054_weeksport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Combined Power Ranking
   abbreviation: combinedsport
   series_number: '00055'
@@ -1547,8 +1547,8 @@
   zip_file_size: 21783162
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00055_combinedsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Seasons Power Ranking
   abbreviation: seasonsport
   series_number: '00056'
@@ -1579,8 +1579,8 @@
   zip_file_size: 28293430
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00056_seasonsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Parliamentary Elections
   abbreviation: parliaments
   series_number: '00057'
@@ -1684,8 +1684,8 @@
   zip_file_size: 423959511
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00060_polkadot.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Kusama Network
   abbreviation: kusama
   series_number: '00061'
@@ -1716,8 +1716,8 @@
   zip_file_size: 534670704
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00061_kusama.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Alternative Order Experiment
   abbreviation: orderaltexpe
   series_number: '00062'
@@ -1746,8 +1746,8 @@
   zip_file_size: 2586
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00062_orderaltexpe.zip
   data_types:
-  - soc
   - csv
+  - soc
 - name: CTU AG1 Tutorial Time Selection
   abbreviation: ctu
   series_number: '00063'
@@ -1908,7 +1908,7 @@
   required_citations: ''
   selected_studies: ''
   num_files: 20
-  zip_file_size: 1861284
+  zip_file_size: 1861262
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00069_polis.zip
   data_types:
   - cat
@@ -1928,9 +1928,9 @@
     Delemazure</a>.</p>
   required_citations: Michael Henry Tessler et al. <em>AI can help humans find common
     ground in democratic deliberation</em>. Science 386, 2024.
-  selected_studies: ''
+  selected_studies: Théo Delemazure. <em>Independence of Approximate Clones</em>.
   num_files: 2710
-  zip_file_size: 3290074
+  zip_file_size: 3290106
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00070_habermas.zip
   data_types:
   - soc
@@ -1962,8 +1962,56 @@
   zip_file_size: 54161
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00071_french-approval-2007.zip
   data_types:
-  - cat
   - toc
+  - cat
+- name: '"Voter Autrement" In Situ Experiments in French Presidential Elections'
+  abbreviation: voter-autrement-in-situ
+  series_number: '00071'
+  tags:
+  - Experiment
+  - Election
+  publication_date: '2026-02-04'
+  description: <p>This dataset contains data from voting experiments conducted in
+    2007, 2012 and 2017 during the French presidential elections in the different
+    cities. In these experiments, participants were asked to test alternative voting
+    methods to elect the French president, more precisely approval voting and evaluative
+    voting (with scales depending on the year and the city). The experiments took
+    place in situ in polling stations during the first round of the presidential election
+    (using paper ballots). The datasets of the different years (that contains more
+    information) can be found <a href="https://theo.delemazure.fr/datasets/">here</a>,
+    together with more datasets of voting experiments conducted during large-scale
+    political elections.</p>
+  required_citations: ''
+  selected_studies: ''
+  num_files: 66
+  zip_file_size: 173472
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00071_voter-autrement-in-situ.zip
+  data_types:
+  - toc
+  - cat
+  - toi
+- name: Voting Experiments on IRV and Borda in French Presidental Elections
+  abbreviation: french-experiments-rankings
+  series_number: '00072'
+  tags:
+  - Election
+  - Politics
+  publication_date: '2026-02-04'
+  description: <p>This dataset contains the data collected during two voting experiments.
+    The first one was carried out in the city of Faches-Thumesnil, in northern France,
+    during the first round of the presidential election in April 2007. Participants
+    were invited to vote using the Instant Runoff Voting method (also called Hare's
+    method). The second one was carried out in the city of Fort-de-France in Martinique
+    during the first round of the 2017 presidential election. Participants were invited
+    to vote using IRV and Borda-4 (ranking only 4 candidates).  These dataset and
+    more datasets collected during voting experiments can be found <a href="https://theo.delemazure.fr/datasets/">here</a>.</p>
+  required_citations: ''
+  selected_studies: ''
+  num_files: 3
+  zip_file_size: 12225
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00072_french-experiments-rankings.zip
+  data_types:
+  - soi
 - name: Voting Experiment on IRV during the 2007 French Presidental Election
   abbreviation: french-irv-2007
   series_number: '00072'
@@ -1987,3 +2035,85 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00072_french-irv-2007.zip
   data_types:
   - soi
+- name: '"Voter Autrement" Online Experiments in French Presidential Elections'
+  abbreviation: voter-autrement-online
+  series_number: '00073'
+  tags:
+  - Experiment
+  - Election
+  publication_date: '2026-02-04'
+  description: <p>This dataset contains data from online voting experiments conducted
+    in 2017 and 2022 during the French presidential elections. In this experiments,
+    participants were asked to test alternative voting methods to elect the French
+    president, more precisely approval voting, evaluative voting, Borda, IRV and the
+    majority judgement in 2022. The experiments took place online. The datasets of
+    the different years (that contains more information) can be found <a href="https://theo.delemazure.fr/datasets/">here</a>,
+    together with more datasets of voting experiments conducted during large-scale
+    political elections.</p>
+  required_citations: ''
+  selected_studies: ''
+  num_files: 30
+  zip_file_size: 422277
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00073_voter-autrement-online.zip
+  data_types:
+  - soi
+  - toc
+  - cat
+  - toi
+- name: Vote Pluriel - Online Experiment during the 2012 French Experiment
+  abbreviation: votepluriel
+  series_number: '00074'
+  tags:
+  - Experiment
+  - Election
+  publication_date: '2025-10-14'
+  description: '<p>This dataset contains data from the online experiment "Vote Pluriel"
+    conducted during the 2012 French presidential election. In this experiment, participants
+    were invited to vote using different voting methods: approval voting and instant-runoff
+    voting (IRV). For IRV, participants had to rank at least 3 candidats. The experiment
+    was conducted online, and participants were recruited through various channels,
+    including social media and email lists. This dataset and more similar datasets
+    collected during voting experiments can be found <a href="https://theo.delemazure.fr/datasets/">here</a>.</p>'
+  required_citations: 'Karine Van der Straeten, Jean-François Laslier and André Blais;
+    <em>Vote au pluriel: How people vote when offered to vote under different rules.</em>.
+    Political Science and Politics, 2013.'
+  selected_studies: ''
+  num_files: 3
+  zip_file_size: 26996
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00074_votepluriel.zip
+  data_types:
+  - soi
+  - toc
+  - cat
+- name: Opinions of the Supreme Court of the US
+  abbreviation: scotus
+  series_number: '00075'
+  tags:
+  - Politics
+  publication_date: '2026-01-29'
+  description: <p>The dataset is based on the opinions authored and joined by the
+    justices betwen 1946 and 2021, derived from the <a href="http://scdb.wustl.edu/">Supreme
+    Court Database</a>. The Court consists of 9 justices who vote on each case about
+    which of the two parties to the case wins. The Court then publishes a majority
+    opinion explaining the Court’s reasoning. Justices can also submit concurring
+    opinions and dissenting opinions, and join any of the opinions submitted by others.
+    Concurring opinions explain additional or alternative reasons, written by justices
+    who voted with the majority. Dissenting opinions explain why a justice did not
+    vote with the majority. Note that there might be several dissenting and concurring
+    opinions. Each opinion, concurrence, or dissent becomes a ballot “approving” the
+    justices that joined in it. The data was converted to the appropriate format by
+    <a href="https://dominik-peters.de/>Dominik Peters</a> and <a href="https://theo.delemazure.fr/>Théo
+    Delemazure</a>.</p>
+  required_citations: 'Harold J. Spaeth, Lee Epstein, Andrew D. Martin, Jeffrey A.
+    Segal, Theodore J. Ruger and Sara C. Benesh. 2023 Supreme Court Database, Version
+    2023 Release 01. URL: <a href="http://supremecourtdatabase.org">http://supremecourtdatabase.org</a>.'
+  selected_studies: Comparing Ways of Obtaining Candidate Orderings from Approval
+    Ballots (2025). Théo Delemazure, Chris Dong, Dominik Peters, and Magdalena Tydrichova.
+    In Proceedings of the Thirty-Third International Joint Conference on Artificial
+    Intelligence (IJCAI).
+  num_files: 304
+  zip_file_size: 253356
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00075_scotus.zip
+  data_types:
+  - toc
+  - cat
