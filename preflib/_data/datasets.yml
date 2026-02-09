@@ -81,7 +81,7 @@
     3 candidate elections and the elements 101 - 201 are all 4 candidate elections.
     </p>
   required_citations: James Bennett and Stan Lanning. <em>The Netflix Prize</em>.
-    Proceedings of The KDD Cup and Workshops, 2007 (<a href="/assets/bib/BeLa07.bib">Bibtex</a>).
+    Proceedings of The KDD Cup and Workshops, 2007 (<a href="/PrefLib-Jekyll/assets/bib/BeLa07.bib">Bibtex</a>).
   selected_studies: An Empirical Study of Voting Rules and Manipulation with Large
     Datasets; Nicholas Mattei, James Forshee, and Judy Goldsmith; 4th International
     Workshop on Computational Social Choice (COMSOC); 2012 | Empirical Evaluation
@@ -316,7 +316,7 @@
     by <a href="https://www.ariel.ac.il/wp/lihi-dery/">Lihi Dery</a>.</p>'
   required_citations: 'Ofrit Lesser, Lihi Naamani-Dery, Meir Kalech, and Yuval Elovici.
     <em>Group Decision Support for Leisure Activities Using Voting and Social Networks</em>
-    Group Decision and Negotiation Journal: 26(3): 473-494, 2017 (<a href="/assets/bib/LNKE17.bib">Bibtex</a>).'
+    Group Decision and Negotiation Journal: 26(3): 473-494, 2017 (<a href="/PrefLib-Jekyll/assets/bib/LNKE17.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 3
   zip_file_size: 221970
@@ -675,7 +675,7 @@
     citation for the use of this dataset.</p>
   required_citations: 'Jean-Francois Laslier and Karine Van der Straeten. <em>A Live
     Experiment on Approval Voting</em>. Experimental Economics 11: 97-105, 2008 (<a
-    href="/assets/bib/LaSt08.bib">Bibtex</a>).'
+    href="/PrefLib-Jekyll/assets/bib/LaSt08.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 12
   zip_file_size: 28195
@@ -727,7 +727,7 @@
     for permitting access to its election ballot data.</p>'
   required_citations: 'S.  Popov, A. Popova, M. Regenwetter. <em>Consensus formation
     in organizations: Hunting for the social choice conundrum in American Psychological
-    Association elections</em> Decision, 2015 (<a href="/assets/bib/PPR14.bib">Bibtex</a>).'
+    Association elections</em> Decision, 2015 (<a href="/PrefLib-Jekyll/assets/bib/PPR14.bib">Bibtex</a>).'
   selected_studies: 'M. Regenwetter, A. Kim, A. Kantor, and M.-H. R. Ho. <em>The unexpected
     empirical consensus among consensus methods</em>. Psychological Science, 18, 629-635,
     2007. | M. Regenwetter, B. Grofman, A. Popova, W. Messner, C. Davis-Stober and
@@ -801,7 +801,7 @@
     district.</p>
   required_citations: 'Jeremy A. Hansen. <em>Ballot-Level Observations About Vermont''s
     2014 General Election</em>. New England Journal of Political Science 8 (2): 185-217,
-    2016 (<a href="/assets/bib/Hans15.bib">Bibtex</a>).'
+    2016 (<a href="/PrefLib-Jekyll/assets/bib/Hans15.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 15
   zip_file_size: 8306
@@ -930,7 +930,7 @@
     book</a>.</p>'
   required_citations: 'Paul E. Green, and Vithala R. Rao. <em>Applied Multidimensional
     Scaling: A Comparison of Approaches and Algorithms</em>. Holt, Rinehart and Winston,
-    1972 (<a href="/assets/bib/GrHa72.bib">Bibtex</a>).'
+    1972 (<a href="/PrefLib-Jekyll/assets/bib/GrHa72.bib">Bibtex</a>).'
   selected_studies: ''
   num_files: 7
   zip_file_size: 10371
@@ -969,7 +969,7 @@
     the corresponding pair is an altruist.</p>'
   required_citations: 'John P. Dickerson, Ariel D. Procaccia, and Tuomas Sandholm.
     <em>Optimizing Kidney Exchange with Transplant Chains: Theory and Reality</em>.
-    Proceedings of AAMAS, 2012 (<a href="/assets/bib/DPS12.bib">Bibtex</a>).'
+    Proceedings of AAMAS, 2012 (<a href="/PrefLib-Jekyll/assets/bib/DPS12.bib">Bibtex</a>).'
   selected_studies: John P. Dickerson, Ariel D. Procaccia, and Tuomas Sandholm. <em>Failure-Aware
     Kidney Exchange</em> Proceedings of EC, 2013. | John P. Dickerson, Ariel D. Procaccia,
     and Tuomas Sandholm. <em>Dynamic Matching via Weighted Myopia with Application
@@ -1037,7 +1037,7 @@
   required_citations: Augustine Kwanashie, Robert W. Irving, David F. Manlove, and
     Colin T.S. Sng. <em>Profile-based optimal matchings in the Student/Project Allocation
     problem</em>. International Workshop on Combinatorial Algorithms Workshop on Combinatorial
-    Algorithms, 2014 (<a href="/assets/bib/KIMS14.bib">Bibtex</a>).
+    Algorithms, 2014 (<a href="/PrefLib-Jekyll/assets/bib/KIMS14.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 24
   zip_file_size: 30572
@@ -1117,7 +1117,7 @@
     niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 2
   zip_file_size: 1191036
@@ -1147,7 +1147,7 @@
     to similar datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 189
   zip_file_size: 136703
@@ -1182,7 +1182,7 @@
     have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 319
   zip_file_size: 1408081
@@ -1211,7 +1211,7 @@
     datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 74
   zip_file_size: 1612019
@@ -1239,7 +1239,7 @@
     to similar datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 58
   zip_file_size: 282424
@@ -1268,7 +1268,7 @@
     have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 8
   zip_file_size: 115946
@@ -1300,7 +1300,7 @@
     questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 724
   zip_file_size: 25799115
@@ -1334,7 +1334,7 @@
     questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1286
   zip_file_size: 13397064
@@ -1362,7 +1362,7 @@
     niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1144
   zip_file_size: 1314247
@@ -1390,7 +1390,7 @@
     datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1
   zip_file_size: 7374
@@ -1418,7 +1418,7 @@
     niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 24
   zip_file_size: 85524
@@ -1446,7 +1446,7 @@
     niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 136
   zip_file_size: 129888
@@ -1476,7 +1476,7 @@
     niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/assets/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 908
   zip_file_size: 1220262
@@ -1509,7 +1509,7 @@
     any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 1907
   zip_file_size: 29545605
@@ -1541,7 +1541,7 @@
     have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 106
   zip_file_size: 21783162
@@ -1573,7 +1573,7 @@
     datasets). If you have any questions, please contact: niclas.boehmer@tu-berlin.de.</p>'
   required_citations: Niclas Boehmer and Nathan Schaar. <em>Collecting, Classifying,
     Analyzing, and Using Real-World Elections</em>. Arxiv.org/abs/2204.03589, 2022
-    (<a href="/static/bib/BoSc22.bib">Bibtex</a>).
+    (<a href="/PrefLib-Jekyll/assets/bib/BoSc22.bib">Bibtex</a>).
   selected_studies: ''
   num_files: 4981
   zip_file_size: 28293430
