@@ -136,8 +136,8 @@
   zip_file_size: 43826
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00006_skate.zip
   data_types:
-  - toc
   - soc
+  - toc
 - name: Electoral Reform Society (ERS) Data
   abbreviation: ers
   series_number: '00007'
@@ -277,8 +277,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
   - soi
-  - toc
   - soc
+  - toc
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -360,8 +360,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
   - soi
-  - toc
   - soc
+  - toc
   - toi
 - name: Clean Web Search
   abbreviation: cleanweb
@@ -419,9 +419,9 @@
   zip_file_size: 30764
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
+  - toi
   - toc
   - dat
-  - toi
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -443,9 +443,9 @@
   zip_file_size: 2976
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
+  - toi
   - toc
   - dat
-  - toi
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -494,9 +494,9 @@
   zip_file_size: 45159
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
+  - toi
   - toc
   - dat
-  - toi
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -519,9 +519,9 @@
   zip_file_size: 14996
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
+  - toi
   - toc
   - dat
-  - toi
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -545,9 +545,9 @@
   zip_file_size: 188800
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
+  - toi
   - toc
   - dat
-  - toi
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -570,9 +570,9 @@
   zip_file_size: 10197
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
+  - toi
   - toc
   - dat
-  - toi
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -681,8 +681,8 @@
   zip_file_size: 28195
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00026_frenchapproval.zip
   data_types:
-  - toc
   - cat
+  - toc
 - name: Proto French Election
   abbreviation: frenchrate
   series_number: '00027'
@@ -830,8 +830,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
   - soi
-  - toc
   - soc
+  - toc
   - toi
 - name: San Sebastian Poster Competition
   abbreviation: poster
@@ -865,8 +865,8 @@
   zip_file_size: 6291
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00033_poster.zip
   data_types:
-  - toc
   - cat
+  - toc
   - dat
 - name: Cities Survey
   abbreviation: cities
@@ -936,8 +936,8 @@
   zip_file_size: 10371
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00035_breakfast.zip
   data_types:
-  - csv
   - soc
+  - csv
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -1012,8 +1012,8 @@
   zip_file_size: 206735
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00037_aamas.zip
   data_types:
-  - csv
   - cat
+  - csv
 - name: Project Bidding Data
   abbreviation: project
   series_number: 00038
@@ -1684,8 +1684,8 @@
   zip_file_size: 423959511
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00060_polkadot.zip
   data_types:
-  - dat
   - cat
+  - dat
 - name: Kusama Network
   abbreviation: kusama
   series_number: '00061'
@@ -1716,8 +1716,8 @@
   zip_file_size: 534670704
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00061_kusama.zip
   data_types:
-  - dat
   - cat
+  - dat
 - name: Alternative Order Experiment
   abbreviation: orderaltexpe
   series_number: '00062'
@@ -1746,8 +1746,8 @@
   zip_file_size: 2586
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00062_orderaltexpe.zip
   data_types:
-  - csv
   - soc
+  - csv
 - name: CTU AG1 Tutorial Time Selection
   abbreviation: ctu
   series_number: '00063'
@@ -1962,8 +1962,8 @@
   zip_file_size: 54161
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00071_french-approval-2007.zip
   data_types:
-  - toc
   - cat
+  - toc
 - name: '"Voter Autrement" In Situ Experiments in French Presidential Elections'
   abbreviation: voter-autrement-in-situ
   series_number: '00071'
@@ -1987,8 +1987,8 @@
   zip_file_size: 173472
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00071_voter-autrement-in-situ.zip
   data_types:
-  - toc
   - cat
+  - toc
   - toi
 - name: Voting Experiments on IRV and Borda in French Presidental Elections
   abbreviation: french-experiments-rankings
@@ -2057,8 +2057,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00073_voter-autrement-online.zip
   data_types:
   - soi
-  - toc
   - cat
+  - toc
   - toi
 - name: Vote Pluriel - Online Experiment during the 2012 French Experiment
   abbreviation: votepluriel
@@ -2083,8 +2083,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00074_votepluriel.zip
   data_types:
   - soi
-  - toc
   - cat
+  - toc
 - name: Opinions of the Supreme Court of the US
   abbreviation: scotus
   series_number: '00075'
@@ -2115,5 +2115,5 @@
   zip_file_size: 253356
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00075_scotus.zip
   data_types:
-  - toc
   - cat
+  - toc
