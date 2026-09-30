@@ -16130,32 +16130,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000040.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000040.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000040.dat
-    size: 667
-  title: Kidney Matching - 32 pairs with 0 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 3056
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000040.wmd
-  num_voters: 32
-  num_alternatives: 32
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000041.wmd
   dataset: kidney
   data_type: wmd
@@ -16329,32 +16303,6 @@
   size: 4259
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000047.wmd
-  num_voters: 33
-  num_alternatives: 33
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000048.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000048.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000048.dat
-    size: 687
-  title: Kidney Matching - 32 pairs with 1 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 4493
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000048.wmd
   num_voters: 33
   num_alternatives: 33
   num_unique_preferences: 0
@@ -16546,32 +16494,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000056.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000056.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000056.dat
-    size: 729
-  title: Kidney Matching - 32 pairs with 3 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 5117
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000056.wmd
-  num_voters: 35
-  num_alternatives: 35
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000057.wmd
   dataset: kidney
   data_type: wmd
@@ -16745,32 +16667,6 @@
   size: 6726
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000063.wmd
-  num_voters: 36
-  num_alternatives: 36
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000064.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000064.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000064.dat
-    size: 754
-  title: Kidney Matching - 32 pairs with 4 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 6644
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000064.wmd
   num_voters: 36
   num_alternatives: 36
   num_unique_preferences: 0
@@ -16962,32 +16858,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000072.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000072.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000072.dat
-    size: 1305
-  title: Kidney Matching - 64 pairs with 0 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 12732
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000072.wmd
-  num_voters: 64
-  num_alternatives: 64
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000073.wmd
   dataset: kidney
   data_type: wmd
@@ -17161,32 +17031,6 @@
   size: 12552
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000079.wmd
-  num_voters: 64
-  num_alternatives: 64
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000080.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000080.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000080.dat
-    size: 1297
-  title: Kidney Matching - 64 pairs with 0 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 11820
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000080.wmd
   num_voters: 64
   num_alternatives: 64
   num_unique_preferences: 0
@@ -17378,32 +17222,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000088.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000088.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000088.dat
-    size: 1394
-  title: Kidney Matching - 64 pairs with 3 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 16979
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000088.wmd
-  num_voters: 67
-  num_alternatives: 67
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000089.wmd
   dataset: kidney
   data_type: wmd
@@ -17577,32 +17395,6 @@
   size: 18811
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000095.wmd
-  num_voters: 70
-  num_alternatives: 70
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000096.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000096.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000096.dat
-    size: 1455
-  title: Kidney Matching - 64 pairs with 6 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 18550
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000096.wmd
   num_voters: 70
   num_alternatives: 70
   num_unique_preferences: 0
@@ -17794,32 +17586,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000104.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000104.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000104.dat
-    size: 1531
-  title: Kidney Matching - 64 pairs with 9 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 22762
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000104.wmd
-  num_voters: 73
-  num_alternatives: 73
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000105.wmd
   dataset: kidney
   data_type: wmd
@@ -18002,32 +17768,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000112.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000112.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000112.dat
-    size: 2675
-  title: Kidney Matching - 128 pairs with 0 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 54086
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000112.wmd
-  num_voters: 128
-  num_alternatives: 128
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000113.wmd
   dataset: kidney
   data_type: wmd
@@ -18201,32 +17941,6 @@
   size: 47282
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000119.wmd
-  num_voters: 128
-  num_alternatives: 128
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000120.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000120.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000120.dat
-    size: 2671
-  title: Kidney Matching - 128 pairs with 0 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 48755
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000120.wmd
   num_voters: 128
   num_alternatives: 128
   num_unique_preferences: 0
@@ -21746,32 +21460,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000256.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000256.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000256.dat
-    size: 25224
-  title: Kidney Matching - 1024 pairs with 102 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 5657721
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000256.wmd
-  num_voters: 1126
-  num_alternatives: 1126
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000257.wmd
   dataset: kidney
   data_type: wmd
@@ -21945,32 +21633,6 @@
   size: 6654642
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000263.wmd
-  num_voters: 1177
-  num_alternatives: 1177
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000264.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000264.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000264.dat
-    size: 26417
-  title: Kidney Matching - 1024 pairs with 153 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 6776024
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000264.wmd
   num_voters: 1177
   num_alternatives: 1177
   num_unique_preferences: 0
@@ -22162,32 +21824,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000272.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000272.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000272.dat
-    size: 47048
-  title: Kidney Matching - 2048 pairs with 0 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 14300345
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000272.wmd
-  num_voters: 2048
-  num_alternatives: 2048
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000273.wmd
   dataset: kidney
   data_type: wmd
@@ -22361,32 +21997,6 @@
   size: 14545378
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000279.wmd
-  num_voters: 2048
-  num_alternatives: 2048
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000280.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000280.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000280.dat
-    size: 47161
-  title: Kidney Matching - 2048 pairs with 0 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 14873530
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000280.wmd
   num_voters: 2048
   num_alternatives: 2048
   num_unique_preferences: 0
@@ -22578,32 +22188,6 @@
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false
-- name: 00036-00000288.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000288.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000288.dat
-    size: 49762
-  title: Kidney Matching - 2048 pairs with 102 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 19110133
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000288.wmd
-  num_voters: 2150
-  num_alternatives: 2150
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
 - name: 00036-00000289.wmd
   dataset: kidney
   data_type: wmd
@@ -22777,32 +22361,6 @@
   size: 23736189
   url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
     - kidney/00036-00000295.wmd
-  num_voters: 2252
-  num_alternatives: 2252
-  num_unique_preferences: 0
-  is_approval: false
-  is_strict: false
-  is_complete: false
-  is_single_peaked: false
-  is_single_peaked_tree: false
-  is_single_crossing: false
-- name: 00036-00000296.wmd
-  dataset: kidney
-  data_type: wmd
-  modification_type: synthetic
-  relates_to: ''
-  related_files:
-  - name: 00036-00000296.dat
-    description: Extra information about the wmd file
-    url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-      - kidney/00036-00000296.dat
-    size: 52147
-  title: Kidney Matching - 2048 pairs with 204 alturists
-  description: ''
-  publication_date: '2013-08-17'
-  size: 23432202
-  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00036
-    - kidney/00036-00000296.wmd
   num_voters: 2252
   num_alternatives: 2252
   num_unique_preferences: 0
@@ -364151,6 +363709,48 @@
   is_approval: true
   is_strict: false
   is_complete: true
+  is_single_peaked: false
+  is_single_peaked_tree: false
+  is_single_crossing: false
+- name: 00076-00000001.cat
+  dataset: policy_approvals
+  data_type: cat
+  modification_type: induced
+  relates_to: ''
+  related_files: []
+  title: France 2022 policy approvals
+  description: Filtered categorical approval preferences
+  publication_date: '2026-09-29'
+  size: 373396
+  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00076
+    - policy_approvals/00076-00000001.cat
+  num_voters: 1624
+  num_alternatives: 114
+  num_unique_preferences: 1624
+  is_approval: false
+  is_strict: false
+  is_complete: false
+  is_single_peaked: false
+  is_single_peaked_tree: false
+  is_single_crossing: false
+- name: 00076-00000002.cat
+  dataset: policy_approvals
+  data_type: cat
+  modification_type: induced
+  relates_to: ''
+  related_files: []
+  title: Brazil 2022 policy approvals
+  description: Filtered categorical approval preferences
+  publication_date: '2026-09-29'
+  size: 86737
+  url: https://raw.githubusercontent.com/PrefLib/PrefLib-Data/main/datasets/00076
+    - policy_approvals/00076-00000002.cat
+  num_voters: 606
+  num_alternatives: 67
+  num_unique_preferences: 605
+  is_approval: false
+  is_strict: false
+  is_complete: false
   is_single_peaked: false
   is_single_peaked_tree: false
   is_single_crossing: false

@@ -21,8 +21,8 @@
   zip_file_size: 623510
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00001_irish.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: Debian Project Data
   abbreviation: debian
   series_number: '00002'
@@ -41,8 +41,8 @@
   zip_file_size: 22376
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00002_debian.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: Mariner Path Selection
   abbreviation: nasa
   series_number: '00003'
@@ -113,8 +113,8 @@
   zip_file_size: 9859
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00005_burlington.zip
   data_types:
-  - toc
   - toi
+  - toc
 - name: Skate Data
   abbreviation: skate
   series_number: '00006'
@@ -136,8 +136,8 @@
   zip_file_size: 43826
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00006_skate.zip
   data_types:
-  - toc
   - soc
+  - toc
 - name: Electoral Reform Society (ERS) Data
   abbreviation: ers
   series_number: '00007'
@@ -167,8 +167,8 @@
   zip_file_size: 309213
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00007_ers.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: Glasgow City Council
   abbreviation: glasgow
   series_number: 00008
@@ -191,8 +191,8 @@
   zip_file_size: 469768
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00008_glasgow.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: AGH Course Selection
   abbreviation: agh
   series_number: 00009
@@ -241,8 +241,8 @@
   zip_file_size: 19892
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00010_ski.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: Web Search
   abbreviation: web
   series_number: '00011'
@@ -276,9 +276,9 @@
   zip_file_size: 6491230
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00011_web.zip
   data_types:
-  - toc
-  - soc
   - soi
+  - soc
+  - toc
 - name: T Shirt
   abbreviation: shirt
   series_number: '00012'
@@ -359,10 +359,10 @@
   zip_file_size: 431761
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00014_sushi.zip
   data_types:
-  - toc
-  - soc
   - soi
+  - soc
   - toi
+  - toc
 - name: Clean Web Search
   abbreviation: cleanweb
   series_number: '00015'
@@ -420,8 +420,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00016_aspen.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Berkley Election Data
   abbreviation: berkley
   series_number: '00017'
@@ -444,8 +444,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00017_berkley.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Minneapolis Election Data
   abbreviation: minneapolis
   series_number: 00018
@@ -470,8 +470,8 @@
   zip_file_size: 59716
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00018_minneapolis.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: Oakland Election Data
   abbreviation: oakland
   series_number: 00019
@@ -495,8 +495,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00019_oakland.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Pierce Election Data
   abbreviation: pierce
   series_number: '00020'
@@ -520,8 +520,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00020_pierce.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: San Francisco Election Data
   abbreviation: sf
   series_number: '00021'
@@ -546,8 +546,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00021_sf.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: San Leandro Election Data
   abbreviation: sl
   series_number: '00022'
@@ -571,8 +571,8 @@
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00022_sl.zip
   data_types:
   - toc
-  - dat
   - toi
+  - dat
 - name: Takoma Park Election Data
   abbreviation: takomapark
   series_number: '00023'
@@ -594,8 +594,8 @@
   zip_file_size: 2157
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00023_takomapark.zip
   data_types:
-  - toc
   - toi
+  - toc
 - name: Mechanical Turk Dots
   abbreviation: dots
   series_number: '00024'
@@ -681,8 +681,8 @@
   zip_file_size: 28207
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00026_frenchapproval.zip
   data_types:
-  - cat
   - toc
+  - cat
 - name: Proto French Election
   abbreviation: frenchrate
   series_number: '00027'
@@ -737,8 +737,8 @@
   zip_file_size: 36820
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00028_apa.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: Proto French Election Ratings
   abbreviation: frenchratecombi
   series_number: 00029
@@ -785,8 +785,8 @@
   zip_file_size: 2383
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00030_uklabor.zip
   data_types:
-  - toc
   - soi
+  - toc
 - name: Vermont District Races
   abbreviation: vermont
   series_number: '00031'
@@ -829,10 +829,10 @@
   zip_file_size: 8429
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00032_education.zip
   data_types:
-  - toc
-  - soc
   - soi
+  - soc
   - toi
+  - toc
 - name: San Sebastian Poster Competition
   abbreviation: poster
   series_number: '00033'
@@ -936,8 +936,8 @@
   zip_file_size: 10383
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00035_breakfast.zip
   data_types:
-  - csv
   - soc
+  - csv
 - name: Kidney Data
   abbreviation: kidney
   series_number: '00036'
@@ -960,13 +960,15 @@
     need a kidney), which have weight 0. </p> <p> There is a <b>dat</b> file associated
     with each kidney exchange datafile.  This file contains some extra fields that
     may be of interest to researchers.  Specifically, the file contains the following
-    files: <b>Pair</b> index number of the pair in the corresponding wmd file.; <b>Patient</b>
+    fields: <b>Pair</b> index number of the pair in the corresponding wmd file.; <b>Patient</b>
     the blood type of the person needing the kidney; <b>Donor</b> the blood type of
     the person donating the kidney; <b>Wife-P?</b> 1 if the person needing the kidney
     is the wife of the donor; <b>%Pra</b> denotes the panel reactive antibody level
     of the patient, discretized into three levels; <b>Out-Deg</b> the number of nodes
     in the wmd file that can receive a kidney from this donor; <b>Altruist</b>1 if
-    the corresponding pair is an altruist.</p>'
+    the corresponding pair is an altruist.</p><p>Note that all the files labelled
+    with "altruists" have been removed in September 2026 after having been found to
+    be faulty.</p>'
   required_citations: 'John P. Dickerson, Ariel D. Procaccia, and Tuomas Sandholm.
     <em>Optimizing Kidney Exchange with Transplant Chains: Theory and Reality</em>.
     Proceedings of AAMAS, 2012 (<a href="/PrefLib-Jekyll/assets/bib/DPS12.bib">Bibtex</a>).'
@@ -976,8 +978,8 @@
     to Kidney Exchange</em>. Proceedings of AAAI, 2012. | John P. Dickerson, Ariel
     D. Procaccia, and Tuomas Sandholm. <em>Price of Fairness in Kidney Exchange</em>
     Proceedings of AAMAS, 2014.
-  num_files: 620
-  zip_file_size: 207864667
+  num_files: 586
+  zip_file_size: 192214397
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00036_kidney.zip
   data_types:
   - wmd
@@ -1012,8 +1014,8 @@
   zip_file_size: 206735
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00037_aamas.zip
   data_types:
-  - cat
   - csv
+  - cat
 - name: Project Bidding Data
   abbreviation: project
   series_number: 00038
@@ -1043,8 +1045,8 @@
   zip_file_size: 30584
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00038_project.zip
   data_types:
-  - toc
   - soi
+  - toc
   - dat
 - name: Computer Science Conference Bidding Data
   abbreviation: csconf
@@ -1123,8 +1125,8 @@
   zip_file_size: 1191048
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00041_boardgames.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Boxing
   abbreviation: boxing
   series_number: '00042'
@@ -1153,8 +1155,8 @@
   zip_file_size: 136716
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00042_boxing.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Cycling Races
   abbreviation: cycling
   series_number: '00043'
@@ -1188,8 +1190,8 @@
   zip_file_size: 1408097
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00043_cycling.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Table Tennis Ranking
   abbreviation: tabletennis
   series_number: '00044'
@@ -1217,8 +1219,8 @@
   zip_file_size: 1612033
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00044_tabletennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Tennis Ranking
   abbreviation: tennis
   series_number: '00045'
@@ -1245,8 +1247,8 @@
   zip_file_size: 282437
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00045_tennis.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Global University Ranking
   abbreviation: university
   series_number: '00046'
@@ -1274,8 +1276,8 @@
   zip_file_size: 115960
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00046_university.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Daily Chart
   abbreviation: spotifyday
   series_number: '00047'
@@ -1306,8 +1308,8 @@
   zip_file_size: 25799132
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00047_spotifyday.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Spotify Countries Chart
   abbreviation: spotifycountry
   series_number: 00048
@@ -1340,8 +1342,8 @@
   zip_file_size: 13397080
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00048_spotifycountry.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Multilaps Competitions
   abbreviation: mylaps
   series_number: 00049
@@ -1368,8 +1370,8 @@
   zip_file_size: 1314264
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00049_mylaps.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Movehub City Ranking
   abbreviation: movehub
   series_number: '00050'
@@ -1424,8 +1426,8 @@
   zip_file_size: 85537
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00051_countries.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Seasons
   abbreviation: f1seasons
   series_number: '00052'
@@ -1452,8 +1454,8 @@
   zip_file_size: 129903
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00052_f1seasons.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Formula 1 Races
   abbreviation: f1races
   series_number: '00053'
@@ -1482,8 +1484,8 @@
   zip_file_size: 1220277
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00053_f1races.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Weeks Power Ranking
   abbreviation: weeksport
   series_number: '00054'
@@ -1515,8 +1517,8 @@
   zip_file_size: 29545625
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00054_weeksport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Combined Power Ranking
   abbreviation: combinedsport
   series_number: '00055'
@@ -1547,8 +1549,8 @@
   zip_file_size: 21783177
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00055_combinedsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Seasons Power Ranking
   abbreviation: seasonsport
   series_number: '00056'
@@ -1579,8 +1581,8 @@
   zip_file_size: 28293446
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00056_seasonsport.zip
   data_types:
-  - soc
   - soi
+  - soc
 - name: Parliamentary Elections
   abbreviation: parliaments
   series_number: '00057'
@@ -1684,8 +1686,8 @@
   zip_file_size: 423959511
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00060_polkadot.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Kusama Network
   abbreviation: kusama
   series_number: '00061'
@@ -1716,8 +1718,8 @@
   zip_file_size: 534670704
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00061_kusama.zip
   data_types:
-  - cat
   - dat
+  - cat
 - name: Alternative Order Experiment
   abbreviation: orderaltexpe
   series_number: '00062'
@@ -1746,8 +1748,8 @@
   zip_file_size: 2586
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00062_orderaltexpe.zip
   data_types:
-  - csv
   - soc
+  - csv
 - name: CTU AG1 Tutorial Time Selection
   abbreviation: ctu
   series_number: '00063'
@@ -1957,9 +1959,9 @@
   zip_file_size: 173472
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00071_voter-autrement-in-situ.zip
   data_types:
-  - cat
   - toc
   - toi
+  - cat
 - name: Voting Experiments on IRV and Borda in French Presidental Elections
   abbreviation: french-experiments-rankings
   series_number: '00072'
@@ -2003,10 +2005,10 @@
   zip_file_size: 422277
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00073_voter-autrement-online.zip
   data_types:
-  - cat
-  - toc
   - soi
+  - toc
   - toi
+  - cat
 - name: Vote Pluriel - Online Experiment during the 2012 French Experiment
   abbreviation: votepluriel
   series_number: '00074'
@@ -2029,9 +2031,9 @@
   zip_file_size: 26996
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00074_votepluriel.zip
   data_types:
-  - cat
-  - toc
   - soi
+  - toc
+  - cat
 - name: Opinions of the Supreme Court of the US
   abbreviation: scotus
   series_number: '00075'
@@ -2062,5 +2064,45 @@
   zip_file_size: 253356
   zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00075_scotus.zip
   data_types:
-  - cat
   - toc
+  - cat
+- name: Policy Approval in the 2022 French and Brazilian Presidential Elections
+  abbreviation: policy_approvals
+  series_number: '00076'
+  tags:
+  - Politics
+  - Experiment
+  publication_date: '2026-09-29'
+  description: '<p>This dataset contains categorical preferences over public policy
+    proposals collected through Mon Programme in France and Brazucracia in Brazil
+    during the 2022 presidential elections. These online participation platforms allowed
+    participants to build personalized government programmes from proposals put forward
+    by presidential candidates. The data were collected as part of the study by <a
+    href="https://arxiv.org/abs/2211.04577">Navarrete et al., <em>Understanding Political
+    Divisiveness using Online Participation data from the 2022 French and Brazilian
+    Presidential Elections</em></a>.</p><p>The collection consists of two files in
+    PrefLib''s categorical preference format (<code>.cat</code>), one for each country.
+    They are derived from the approval responses in Dataset 1 of the <a href="https://doi.org/10.7910/DVN/8E0EA4">original
+    Harvard Dataverse collection</a>, with proposal names obtained from Dataset 5.
+    Alternatives correspond to policy proposals, and each voter corresponds to a participant
+    identifier in the source data. Proposal names are provided in French for France
+    and Portuguese for Brazil.</p><p>Each recorded response assigns a proposal to
+    one of three categories, listed in the order used in the files:</p><ol><li><strong>Approved</strong>:
+    the participant approves the proposal (<code>agree = 1</code>).</li><li><strong>Don''t
+    know</strong>: the participant explicitly expresses no preference (<code>agree
+    = 0</code>).</li><li><strong>Disapproved</strong>: the participant disapproves
+    of the proposal (<code>agree = -1</code>).</li></ol><p>The middle category represents
+    the source data''s explicit no-preference response. Proposals without a recorded
+    response remain uncategorized. A voter may therefore categorize only a subset
+    of the alternatives, and any category may be empty. Identical categorical preferences
+    are grouped together with their multiplicities.</p>'
+  required_citations: 'Carlos Navarrete et al. Understanding Political Divisiveness
+    using Online Participation data from the 2022 French and Brazilian Presidential
+    Elections. <a href="https://arxiv.org/abs/2211.04577">arXiv:2211.04577</a>. Source
+    data: <a href="https://doi.org/10.7910/DVN/8E0EA4">Harvard Dataverse; doi:10.7910/DVN/8E0EA4</a>.'
+  selected_studies: ''
+  num_files: 2
+  zip_file_size: 94793
+  zip_file_url: https://github.com/PrefLib/PrefLib-Data/releases/download/v1.0/00076_policy_approvals.zip
+  data_types:
+  - cat
